@@ -1,0 +1,9 @@
+[submodule "buildroot"]
+	path = buildroot
+	url = ./buildroot
+[submodule "kernel"]
+	path = kernel
+	url = ./kernel
+[submodule "u-boot"]
+	path = u-boot
+	url = ./u-boot

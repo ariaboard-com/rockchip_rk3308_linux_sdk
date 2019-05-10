@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="LocalMediaPlayerObserverInterface_8h" kind="file" language="C++">
+    <compoundname>LocalMediaPlayerObserverInterface.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="LocalMediaPlayerInterface_8h" local="yes">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerInterface.h</includedby>
+    <incdepgraph>
+      <node id="92">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h</label>
+        <link refid="LocalMediaPlayerObserverInterface_8h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="95">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerInterface.h</label>
+        <link refid="LocalMediaPlayerInterface_8h_source"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h</label>
+        <link refid="LocalMediaPlayerObserverInterface_8h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h_source"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</label>
+        <link refid="DcsSdk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" prot="public">duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface</innerclass>
+    <innernamespace refid="namespaceduerOSDcsSDK">duerOSDcsSDK</innernamespace>
+    <innernamespace refid="namespaceduerOSDcsSDK_1_1sdkInterfaces">duerOSDcsSDK::sdkInterfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>MediaPlayerObserverInterface.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2017<sp/>Amazon.com,<sp/>Inc.<sp/>or<sp/>its<sp/>affiliates.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>A<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>is<sp/>located<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://aws.amazon.com/apache2.0/</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>or<sp/>in<sp/>the<sp/>&quot;license&quot;<sp/>file<sp/>accompanying<sp/>this<sp/>file.<sp/>This<sp/>file<sp/>is<sp/>distributed</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_LOCAL_MEDIA_PLAYER_OBSERVER_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_LOCAL_MEDIA_PLAYER_OBSERVER_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceduerOSDcsSDK" kindref="compound">duerOSDcsSDK</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sdkInterfaces<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LocalMediaPlayerPlayActivity<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>IDLE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>PAUSED,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>PLAYING,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>STOPPED</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LocalMediaPlayerPlayStatus<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>FOREGROUND<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>BACKGROUND,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>CLOSED</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>LocalMediaPlayerName<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>BLUETOOTH<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>QQ,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>BAIDU,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>XIAMI,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>NETEASE,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>KUWO,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>KUGOU</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" kindref="compound">LocalMediaPlayerPlayInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="185" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a50478449b67a6fe841f1f568ea125ac2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LocalMediaPlayerPlayActivity<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a50478449b67a6fe841f1f568ea125ac2" kindref="member">m_playerActivity</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a17da3f1a2f0f61df1241f91b0e7e4cce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LocalMediaPlayerPlayStatus<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a17da3f1a2f0f61df1241f91b0e7e4cce" kindref="member">m_status</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a8838f186d30e5878010c50019bda9c17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LocalMediaPlayerName<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a8838f186d30e5878010c50019bda9c17" kindref="member">m_playerName</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1acfafdcdfad0dd820068b05ca07b511f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1acfafdcdfad0dd820068b05ca07b511f8" kindref="member">m_audioId</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1ae2e0b63af38f5d1b1bb96b960f3dcd2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1ae2e0b63af38f5d1b1bb96b960f3dcd2a" kindref="member">m_title</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a142a0a14dbb28c0f9d3127bdd5cd92ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a142a0a14dbb28c0f9d3127bdd5cd92ad" kindref="member">m_artist</ref>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a22393f1fb99c6d3c3f66461fa24650e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a22393f1fb99c6d3c3f66461fa24650e7" kindref="member">m_album</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a0ae7b7047fe5ceadf7fcdd4db0556cbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a0ae7b7047fe5ceadf7fcdd4db0556cbe" kindref="member">m_year</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a330b7580750ad5d327151f0bfb96953a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a330b7580750ad5d327151f0bfb96953a" kindref="member">m_genre</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface" kindref="compound">LocalMediaPlayerObserverInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1a3f2b7c693e44a830714fea4f809c1fab" kindref="member">~LocalMediaPlayerObserverInterface</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1afd784161702cb69aeda0350bd31289a5" kindref="member">setLocalMediaPlayerPlayInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" kindref="compound">LocalMediaPlayerPlayInfo</ref>&amp;<sp/>playInfo)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sdkInterfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>duerOSDcsSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_LOCAL_MEDIA_PLAYER_OBSERVER_INTERFACE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h"/>
+  </compounddef>
+</doxygen>

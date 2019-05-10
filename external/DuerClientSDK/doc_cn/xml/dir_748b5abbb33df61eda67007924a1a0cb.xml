@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_748b5abbb33df61eda67007924a1a0cb" kind="dir">
+    <compoundname>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities</compoundname>
+    <innerdir refid="dir_168a8188d71c1f0ae121c89391738129">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/"/>
+  </compounddef>
+</doxygen>

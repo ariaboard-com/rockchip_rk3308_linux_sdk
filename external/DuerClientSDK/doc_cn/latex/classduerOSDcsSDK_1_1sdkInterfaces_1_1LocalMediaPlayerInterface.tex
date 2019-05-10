@@ -1,0 +1,135 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Local\+Media\+Player\+Interface Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+
+
+本地(蓝牙播放)播放器播放控制接口类  
+
+
+
+
+{\ttfamily \#include $<$Local\+Media\+Player\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_af9761f288afcba9866dad714e690501b}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_af9761f288afcba9866dad714e690501b}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_af9761f288afcba9866dad714e690501b}{$\sim$\+Local\+Media\+Player\+Interface} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+virtual Local\+Media\+Player\+Status \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_aab502afd0db0728b813a8b85d915c1c5}{play} ()=0
+\begin{DoxyCompactList}\small\item\em 本地播放器开始播放 \end{DoxyCompactList}\item 
+virtual Local\+Media\+Player\+Status \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a562eaa0a0448c10031296f72c1362ec6}{stop} ()=0
+\begin{DoxyCompactList}\small\item\em 本地播放器结束播放 \end{DoxyCompactList}\item 
+virtual Local\+Media\+Player\+Status \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_ac134ae6ae0862f930c7eb728ae58706a}{pause} ()=0
+\begin{DoxyCompactList}\small\item\em 本地播放器暂停播放 \end{DoxyCompactList}\item 
+virtual Local\+Media\+Player\+Status \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a960a77263704220915e58df376e72498}{resume} ()=0
+\begin{DoxyCompactList}\small\item\em 本地播放器继续播放 \end{DoxyCompactList}\item 
+virtual Local\+Media\+Player\+Status \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a539d83dcddade8c758371b708bd03dad}{play\+Next} ()=0
+\begin{DoxyCompactList}\small\item\em 播放下一首 \end{DoxyCompactList}\item 
+virtual Local\+Media\+Player\+Status \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a15217d174ee9c7a6d278823aa1ef8d01}{play\+Previous} ()=0
+\begin{DoxyCompactList}\small\item\em 播放上一首 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_aaf5ec74c15c0f2910d390e38b502ddec}{set\+Observer} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface}{Local\+Media\+Player\+Observer\+Interface} $>$ player\+Observer)=0
+\begin{DoxyCompactList}\small\item\em 设置本地播放器观察者/监听者对象 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+本地(蓝牙播放)播放器播放控制接口类 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_ac134ae6ae0862f930c7eb728ae58706a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_ac134ae6ae0862f930c7eb728ae58706a}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!pause@{pause}}
+\index{pause@{pause}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily virtual Local\+Media\+Player\+Status duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+本地播放器暂停播放 
+
+\begin{DoxyReturn}{Returns}
+Local\+Media\+Player\+Status 暂停播放是否成功 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_aab502afd0db0728b813a8b85d915c1c5}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_aab502afd0db0728b813a8b85d915c1c5}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!play@{play}}
+\index{play@{play}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual Local\+Media\+Player\+Status duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+本地播放器开始播放 
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Local\+Media\+Player\+Status 播放是否成功 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a539d83dcddade8c758371b708bd03dad}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a539d83dcddade8c758371b708bd03dad}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!play\+Next@{play\+Next}}
+\index{play\+Next@{play\+Next}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{play\+Next()}{playNext()}}
+{\footnotesize\ttfamily virtual Local\+Media\+Player\+Status duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::play\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+播放下一首 
+
+\begin{DoxyReturn}{Returns}
+Local\+Media\+Player\+Status 播放下一首是否成功 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a15217d174ee9c7a6d278823aa1ef8d01}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a15217d174ee9c7a6d278823aa1ef8d01}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!play\+Previous@{play\+Previous}}
+\index{play\+Previous@{play\+Previous}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{play\+Previous()}{playPrevious()}}
+{\footnotesize\ttfamily virtual Local\+Media\+Player\+Status duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::play\+Previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+播放上一首 
+
+\begin{DoxyReturn}{Returns}
+Local\+Media\+Player\+Status 播放上一首是否成功 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a960a77263704220915e58df376e72498}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a960a77263704220915e58df376e72498}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!resume@{resume}}
+\index{resume@{resume}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily virtual Local\+Media\+Player\+Status duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+本地播放器继续播放 
+
+\begin{DoxyReturn}{Returns}
+Local\+Media\+Player\+Status 继续播放是否成功 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_aaf5ec74c15c0f2910d390e38b502ddec}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_aaf5ec74c15c0f2910d390e38b502ddec}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!set\+Observer@{set\+Observer}}
+\index{set\+Observer@{set\+Observer}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{set\+Observer()}{setObserver()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::set\+Observer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface}{Local\+Media\+Player\+Observer\+Interface} $>$}]{player\+Observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+设置本地播放器观察者/监听者对象 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Observer} & 观察者/监听者对象 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a562eaa0a0448c10031296f72c1362ec6}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_a562eaa0a0448c10031296f72c1362ec6}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}!stop@{stop}}
+\index{stop@{stop}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual Local\+Media\+Player\+Status duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Media\+Player\+Interface\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+本地播放器结束播放 
+
+\begin{DoxyReturn}{Returns}
+Local\+Media\+Player\+Status 结束播放是否成功 
+\end{DoxyReturn}

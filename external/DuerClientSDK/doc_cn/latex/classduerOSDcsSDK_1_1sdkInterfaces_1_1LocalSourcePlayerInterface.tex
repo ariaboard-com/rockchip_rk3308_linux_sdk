@@ -1,0 +1,66 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Local\+Source\+Player\+Interface Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface}}
+
+
+Interface of local source player.  
+
+
+
+
+{\ttfamily \#include $<$Local\+Source\+Player\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_a431411441e84ce2cf6e1beb3a1e9b92e}{play\+Local\+Source} (const std\+::string \&source, bool need\+Focus, void($\ast$start\+\_\+callback)(void $\ast$arg), void $\ast$start\+\_\+cb\+\_\+arg, void($\ast$finish\+\_\+callback)())=0
+\begin{DoxyCompactList}\small\item\em 播放local资源. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_add348d72e87c2bcb4c7fbdd91fc4f590}{play\+Tts} (const std\+::string \&content, bool need\+Focus, void($\ast$callback)())=0
+\begin{DoxyCompactList}\small\item\em 播放tts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of local source player. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_a431411441e84ce2cf6e1beb3a1e9b92e}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_a431411441e84ce2cf6e1beb3a1e9b92e}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface}!play\+Local\+Source@{play\+Local\+Source}}
+\index{play\+Local\+Source@{play\+Local\+Source}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface}}
+\subsubsection{\texorpdfstring{play\+Local\+Source()}{playLocalSource()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface\+::play\+Local\+Source (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{source,  }\item[{bool}]{need\+Focus,  }\item[{void($\ast$)(void $\ast$arg)}]{start\+\_\+callback,  }\item[{void $\ast$}]{start\+\_\+cb\+\_\+arg,  }\item[{void($\ast$)()}]{finish\+\_\+callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+播放local资源. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em source} & source uri。 \\
+\hline
+\mbox{\tt in}  & {\em need\+Focus} & True/\+False。 \\
+\hline
+\mbox{\tt in}  & {\em start\+\_\+callback} & 开始播放时的回调函数。 \\
+\hline
+\mbox{\tt in}  & {\em start\+\_\+cb\+\_\+arg} & 开始播放时回调函数的参数列表。 \\
+\hline
+\mbox{\tt in}  & {\em finish\+\_\+callback} & 结束播放时的回调函数。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_add348d72e87c2bcb4c7fbdd91fc4f590}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_add348d72e87c2bcb4c7fbdd91fc4f590}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface}!play\+Tts@{play\+Tts}}
+\index{play\+Tts@{play\+Tts}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface}}
+\subsubsection{\texorpdfstring{play\+Tts()}{playTts()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Local\+Source\+Player\+Interface\+::play\+Tts (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{content,  }\item[{bool}]{need\+Focus,  }\item[{void($\ast$)()}]{callback }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+播放tts. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em content} & content。 \\
+\hline
+\mbox{\tt in}  & {\em need\+Focus} & True/\+False。 \\
+\hline
+\mbox{\tt in}  & {\em callback} & 播放时的回调函数。 \\
+\hline
+\end{DoxyParams}

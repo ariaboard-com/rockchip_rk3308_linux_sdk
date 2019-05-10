@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="MediaPlayerObserverInterface_8h" kind="file" language="C++">
+    <compoundname>MediaPlayerObserverInterface.h</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="ErrorTypes_8h" local="no">DcsSdk/ErrorTypes.h</includes>
+    <includedby refid="MediaPlayerInterface_8h" local="yes">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h</includedby>
+    <incdepgraph>
+      <node id="120">
+        <label>string</label>
+      </node>
+      <node id="119">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h</label>
+        <link refid="MediaPlayerObserverInterface_8h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>ostream</label>
+      </node>
+      <node id="121">
+        <label>DcsSdk/ErrorTypes.h</label>
+        <link refid="ErrorTypes_8h_source"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="124">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h</label>
+        <link refid="MediaPlayerInterface_8h_source"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h</label>
+        <link refid="MediaPlayerObserverInterface_8h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h_source"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</label>
+        <link refid="DcsSdk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</innerclass>
+    <innernamespace refid="namespaceduerOSDcsSDK">duerOSDcsSDK</innernamespace>
+    <innernamespace refid="namespaceduerOSDcsSDK_1_1sdkInterfaces">duerOSDcsSDK::sdkInterfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>MediaPlayerObserverInterface.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2017<sp/>Amazon.com,<sp/>Inc.<sp/>or<sp/>its<sp/>affiliates.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>A<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>is<sp/>located<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://aws.amazon.com/apache2.0/</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>or<sp/>in<sp/>the<sp/>&quot;license&quot;<sp/>file<sp/>accompanying<sp/>this<sp/>file.<sp/>This<sp/>file<sp/>is<sp/>distributed</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_MEDIA_PLAYER_OBSERVER_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_MEDIA_PLAYER_OBSERVER_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/ErrorTypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceduerOSDcsSDK" kindref="compound">duerOSDcsSDK</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sdkInterfaces<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" kindref="compound">MediaPlayerObserverInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae2ead9476d1259d8af4b930dd753f542" kindref="member">~MediaPlayerObserverInterface</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a937a26a85f0be08cca2887aac1b504e5" kindref="member">onPlaybackStarted</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a91a0d0a61da7e59ee2a5206046bd7206" kindref="member">onPlaybackFinished</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a38aa45e3f2e3f125f6713e26c1bda5f4" kindref="member">onPlaybackError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ErrorType&amp;<sp/>type,<sp/>std::string<sp/>error)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae209d280fa356a0beefc5719ee60d283" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae209d280fa356a0beefc5719ee60d283" kindref="member">onPlaybackPaused</ref>(){};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a45a55d1c8017d1f727a4b44c91b5946a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a45a55d1c8017d1f727a4b44c91b5946a" kindref="member">onPlaybackResumed</ref>(){};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a8d1bf84a79d836f81a0271cad45320f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a8d1bf84a79d836f81a0271cad45320f7" kindref="member">onPlaybackStopped</ref>(){};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a658c20b56b62445a8b1f73a05036f7a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a658c20b56b62445a8b1f73a05036f7a7" kindref="member">onBufferUnderrun</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a608847626ca3d7e1a89d29fe58b1b21c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a608847626ca3d7e1a89d29fe58b1b21c" kindref="member">onBufferRefilled</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a1dfdd4526d9fd246e931895a1227d1ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a1dfdd4526d9fd246e931895a1227d1ad" kindref="member">onPlaybackNearlyfinished</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a5ad3622df1af84c861fc02ca128e5b18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a5ad3622df1af84c861fc02ca128e5b18" kindref="member">onRecvFirstpacket</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sdkInterfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>duerOSDcsSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_MEDIA_PLAYER_OBSERVER_INTERFACE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h"/>
+  </compounddef>
+</doxygen>

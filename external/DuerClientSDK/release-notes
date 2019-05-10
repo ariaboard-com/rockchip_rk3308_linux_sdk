@@ -1,0 +1,7 @@
+            version:0.2.0
+
+This release includes the following changes: 
+    1 merge rk3308 32bit and 64bit devkit into DuerClientSDK
+    2 增加 wakeup dynamic configuration
+    3 支持lstm vad
+    4 duer linux使用jemalloc 

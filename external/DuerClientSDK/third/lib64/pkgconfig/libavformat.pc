@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/lib
+includedir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/include/
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.56.101
+Requires: 
+Requires.private: libavcodec >= 57.64.101, libswresample >= 2.3.100, libavutil >= 55.34.101
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lasound -lssl -lcrypto -lm -lz -pthread
+Cflags: -I${includedir}

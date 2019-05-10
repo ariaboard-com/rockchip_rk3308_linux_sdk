@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</compoundname>
+    <includes refid="MediaPlayerObserverInterface_8h" local="no">MediaPlayerObserverInterface.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae2ead9476d1259d8af4b930dd753f542" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::~MediaPlayerObserverInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MediaPlayerObserverInterface</name>
+        <briefdescription>
+<para>析构函数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a937a26a85f0be08cca2887aac1b504e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackStarted</definition>
+        <argsstring>()=0</argsstring>
+        <name>onPlaybackStarted</name>
+        <briefdescription>
+<para>当播放器真正开始播放时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在play执行后尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a91a0d0a61da7e59ee2a5206046bd7206" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackFinished</definition>
+        <argsstring>()=0</argsstring>
+        <name>onPlaybackFinished</name>
+        <briefdescription>
+<para>当播放器真正播放结束时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放结束后尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a38aa45e3f2e3f125f6713e26c1bda5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackError</definition>
+        <argsstring>(const ErrorType &amp;type, std::string error)=0</argsstring>
+        <name>onPlaybackError</name>
+        <param>
+          <type>const ErrorType &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>播放器播放遇到错误时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放遇到错误时尽快回调，否则可能会影响MediaPlayer对其它消息的处理。</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>错误消息类型 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>错误消息内容 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae209d280fa356a0beefc5719ee60d283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackPaused</definition>
+        <argsstring>()</argsstring>
+        <name>onPlaybackPaused</name>
+        <briefdescription>
+<para>当播放器播放暂停时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放暂停后尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="109" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a45a55d1c8017d1f727a4b44c91b5946a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackResumed</definition>
+        <argsstring>()</argsstring>
+        <name>onPlaybackResumed</name>
+        <briefdescription>
+<para>当播放器播放恢复时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放恢复后尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="123" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a8d1bf84a79d836f81a0271cad45320f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackStopped</definition>
+        <argsstring>()</argsstring>
+        <name>onPlaybackStopped</name>
+        <briefdescription>
+<para>当播放器播放停止时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放停止时尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="137" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a658c20b56b62445a8b1f73a05036f7a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onBufferUnderrun</definition>
+        <argsstring>()</argsstring>
+        <name>onBufferUnderrun</name>
+        <briefdescription>
+<para>当播放器读不到数据进入缓冲状态时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放进入缓冲状态时尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="152" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="152" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a608847626ca3d7e1a89d29fe58b1b21c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onBufferRefilled</definition>
+        <argsstring>()</argsstring>
+        <name>onBufferRefilled</name>
+        <briefdescription>
+<para>当播放器缓冲到足够数据时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放器缓冲到足够数据时尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="168" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="168" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a1dfdd4526d9fd246e931895a1227d1ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onPlaybackNearlyfinished</definition>
+        <argsstring>()</argsstring>
+        <name>onPlaybackNearlyfinished</name>
+        <briefdescription>
+<para>当播放器播放即将结束时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>这个方法需要在播放即将结束时尽快回调，否则可能会影响MediaPlayer对其它消息的处理。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="183" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="183" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a5ad3622df1af84c861fc02ca128e5b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface::onRecvFirstpacket</definition>
+        <argsstring>()</argsstring>
+        <name>onRecvFirstpacket</name>
+        <briefdescription>
+<para>播放器接收到第一包数据时回调此方法。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="193" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="193" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>播放器状态观察者接口。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" line="37" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerObserverInterface.h" bodystart="37" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a608847626ca3d7e1a89d29fe58b1b21c" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onBufferRefilled</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a658c20b56b62445a8b1f73a05036f7a7" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onBufferUnderrun</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a38aa45e3f2e3f125f6713e26c1bda5f4" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackError</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a91a0d0a61da7e59ee2a5206046bd7206" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackFinished</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a1dfdd4526d9fd246e931895a1227d1ad" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackNearlyfinished</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae209d280fa356a0beefc5719ee60d283" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackPaused</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a45a55d1c8017d1f727a4b44c91b5946a" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackResumed</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a937a26a85f0be08cca2887aac1b504e5" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackStarted</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a8d1bf84a79d836f81a0271cad45320f7" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onPlaybackStopped</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a5ad3622df1af84c861fc02ca128e5b18" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>onRecvFirstpacket</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae2ead9476d1259d8af4b930dd753f542" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</scope><name>~MediaPlayerObserverInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

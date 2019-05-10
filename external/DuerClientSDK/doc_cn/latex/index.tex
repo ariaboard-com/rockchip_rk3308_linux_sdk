@@ -1,0 +1,17 @@
+\hypertarget{index_缩略语}{}\section{缩略语}\label{index_缩略语}
+\begin{DoxyItemize}
+\item Duer\+O\+S：\+Duer\+OS 开放平台主要面向企业级用户及个人开发者，提供对话式操作系统能力的输出（\+Duer\+O\+S智能设备开放平台）及输入（\+Duer\+O\+S技能开放平台）。(\href{https://dueros.baidu.com/didp/doc/overall/open-platform-intro_markdown}{\tt https\+://dueros.\+baidu.\+com/didp/doc/overall/open-\/platform-\/intro\+\_\+markdown}) \item D\+C\+S：\+D\+C\+S协议是\+Duer\+O\+S服务端与设备端之间的通讯协议，是一套把\+Duer\+O\+S的智能语音交互能力向所有设备开放的\+A\+P\+I。 \item D\+CS S\+D\+K（\+Linux）：封装了\+D\+C\+S协议与\+Duer\+O\+S开放平台交互的细节，实现了\+D\+C\+S对外开放的大部分协议，并支持第三方bot的自定义指令，可用于第三方开发者在\+Linux平台中基于\+Duer\+O\+S平台快速建立自己的语音交互应用。 \end{DoxyItemize}
+\hypertarget{index_概述}{}\section{概述}\label{index_概述}
+本文档用于描述\+D\+CS S\+D\+K（\+Linux版本）对外的主要接口说明。 
+
+A\+P\+P开发者可以通过\+Dcs\+Sdk\+::create函数创建一个\+D\+CS S\+D\+K实例，并实现必要的观察类接口，应用层设备调用接口来实现与\+Duer\+O\+S的交互，通信，以及\+T\+T\+S、\+Audio的播放。 
+
+目前\+D\+CS S\+D\+K（\+Linux）支持的\+D\+C\+S协议有： \begin{DoxyItemize}
+\item 语音输入 \item 语音输出 \item 扬声器控制 \item 音频播放器 \item 播放控制 \item 闹钟 \item 屏幕展示 \item 系统 \end{DoxyItemize}
+
+
+并支持通过小度之家与\+S\+D\+K之间进行交互，并控制音箱。 
+\begin{DoxyCodeInclude}
+
+\end{DoxyCodeInclude}
+ 

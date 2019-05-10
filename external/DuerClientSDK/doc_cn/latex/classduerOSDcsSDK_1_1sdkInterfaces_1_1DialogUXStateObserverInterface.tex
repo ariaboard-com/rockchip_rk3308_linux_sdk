@@ -1,0 +1,343 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Dialog\+U\+X\+State\+Observer\+Interface Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+
+
+Duer\+O\+S状态观察接口。  
+
+
+
+
+{\ttfamily \#include $<$Dialog\+U\+X\+State\+Observer\+Interface.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}{Dialog\+U\+X\+State} \{ \newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdaa5daf7f2ebbba4975d61dab1c40188c7}{Dialog\+U\+X\+State\+::\+I\+D\+LE}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdac0ff938e396e72c225bd66562b80a77e}{Dialog\+U\+X\+State\+::\+L\+I\+S\+T\+E\+N\+I\+NG}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda18004389aa6f827c608aad2441a2bc53}{Dialog\+U\+X\+State\+::\+T\+H\+I\+N\+K\+I\+NG}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdaddee564b336f5de690b746eb04e62114}{Dialog\+U\+X\+State\+::\+S\+P\+E\+A\+K\+I\+NG}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda2c616b2713e2e0aed04b4c4752c88133}{Dialog\+U\+X\+State\+::\+F\+I\+N\+I\+S\+H\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdad91f1c898ec44b2a141bcd5c214bae42}{Dialog\+U\+X\+State\+::\+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda0dd094bc11dfac6f035f22c4740ae0fc}{Dialog\+U\+X\+State\+::\+M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda07cd4dc17fafe8ec3c4eb3f8d384c947}{Dialog\+U\+X\+State\+::\+M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED}
+ \}
+\begin{DoxyCompactList}\small\item\em D\+CS U\+X状态枚举。 \end{DoxyCompactList}\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}{Alert\+State} \{ \newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a2baa69eafc7204f3bd8648eba580c489}{Alert\+State\+::\+R\+E\+A\+DY}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a17130e6c806885e23770df1519b18eb7}{Alert\+State\+::\+S\+T\+A\+R\+T\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a09d4d696b4e935115b9313e3c412509a}{Alert\+State\+::\+S\+T\+O\+P\+P\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46adbd414f9aaabb67e8430e9520f604a79}{Alert\+State\+::\+S\+N\+O\+O\+Z\+ED}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a8f7afecbc8fbc4cd0f50a57d1172482e}{Alert\+State\+::\+C\+O\+M\+P\+L\+E\+T\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a560bb2d9ea9002aa8c70a4462ca6c304}{Alert\+State\+::\+P\+A\+S\+T\+\_\+\+D\+UE}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46aa72d9c6d4fab6a8bb2fcc8fe3f7dff13}{Alert\+State\+::\+F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a8f2c39a6e3871da5c682a37a792a6b05}{Alert\+State\+::\+F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46abb1ca97ec761fc37101737ba0aa2e7c5}{Alert\+State\+::\+E\+R\+R\+OR}
+ \}
+\begin{DoxyCompactList}\small\item\em 闹钟状态枚举。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a35c278a6bbec5a99f727adf843b1f6ca}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a35c278a6bbec5a99f727adf843b1f6ca}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a35c278a6bbec5a99f727adf843b1f6ca}{$\sim$\+Dialog\+U\+X\+State\+Observer\+Interface} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a637d0af6797816b4e5cd72198e3f3781}{on\+Dialog\+U\+X\+State\+Changed} (\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}{Dialog\+U\+X\+State} new\+State)=0
+\begin{DoxyCompactList}\small\item\em 回调函数，用于通知\+D\+CS U\+X系统状态变化。由于此回调函数回阻塞其他状态，所以实现方需要尽快返回。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ae7aeb5e14429beb2de4f39343e212454}{on\+Message\+Send\+Complete} (bool success)=0
+\begin{DoxyCompactList}\small\item\em 发送语音流(做语音识别)是否成功 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a444993d3b7cf37527bb2201659215094}{on\+Http2\+Not\+Connected} ()
+\begin{DoxyCompactList}\small\item\em 通知http2 stream连接断开了 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aa2696e09b8315aebb1a5a22a954c0131}{on\+Listen\+Started} (bool success)
+\begin{DoxyCompactList}\small\item\em 通知开始上传语音流数据做语音识别 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a4449d08c2a37dab840892f81e4aef8b2}{on\+Stop\+Listen} (bool success)
+\begin{DoxyCompactList}\small\item\em 通知已结束上传语音流数据 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a1d2558050e701fd223c5f71d41e6042a}{on\+Received\+Directive} (const std\+::string \&context\+Id, const std\+::string \&message)=0
+\begin{DoxyCompactList}\small\item\em 通知已结束上传语音流数据 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aad6473c61fe192e97afa9a2b79aad7cc}{on\+Alert\+State\+Change} (const std\+::string \&alert\+Token, \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}{Alert\+State} state, const std\+::string \&reason=\char`\"{}\char`\"{})=0
+\begin{DoxyCompactList}\small\item\em 回调函数，用于通知闹钟状态变化。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ad64bcd73399ce997208ff0eb438b9ca7}{on\+Expect\+Speech} (bool success)=0
+\begin{DoxyCompactList}\small\item\em 通知已进入多轮识别状态 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac705edbf0fe9a07e4f72ecd4c911e779}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac705edbf0fe9a07e4f72ecd4c911e779}} 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac705edbf0fe9a07e4f72ecd4c911e779}{on\+Speech\+Finished} ()
+\begin{DoxyCompactList}\small\item\em T\+T\+S播放已结束。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a92870093ce3de85233e4e7b098c94185}{state\+To\+String} (\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}{Dialog\+U\+X\+State} state)
+\begin{DoxyCompactList}\small\item\em 枚举状态转换成字符串。 \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aa80a09873abe1e5f805594deb2a38afa}{state\+To\+String} (\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}{Alert\+State} state)
+\begin{DoxyCompactList}\small\item\em 枚举状态转换成字符串。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Duer\+O\+S状态观察接口。 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!Alert\+State@{Alert\+State}}
+\index{Alert\+State@{Alert\+State}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{Alert\+State}{AlertState}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::\+Alert\+State}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+闹钟状态枚举。 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+A\+DY@{R\+E\+A\+DY}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!R\+E\+A\+DY@{R\+E\+A\+DY}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a2baa69eafc7204f3bd8648eba580c489}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a2baa69eafc7204f3bd8648eba580c489}} 
+R\+E\+A\+DY&闹钟时间到，等待音频焦点。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+R\+T\+ED@{S\+T\+A\+R\+T\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!S\+T\+A\+R\+T\+ED@{S\+T\+A\+R\+T\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a17130e6c806885e23770df1519b18eb7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a17130e6c806885e23770df1519b18eb7}} 
+S\+T\+A\+R\+T\+ED&闹钟已经开始播放。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+O\+P\+P\+ED@{S\+T\+O\+P\+P\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!S\+T\+O\+P\+P\+ED@{S\+T\+O\+P\+P\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a09d4d696b4e935115b9313e3c412509a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a09d4d696b4e935115b9313e3c412509a}} 
+S\+T\+O\+P\+P\+ED&系统或者用户打断闹钟，导致闹钟结束播放。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+N\+O\+O\+Z\+ED@{S\+N\+O\+O\+Z\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!S\+N\+O\+O\+Z\+ED@{S\+N\+O\+O\+Z\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46adbd414f9aaabb67e8430e9520f604a79}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46adbd414f9aaabb67e8430e9520f604a79}} 
+S\+N\+O\+O\+Z\+ED&小睡一会儿。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+M\+P\+L\+E\+T\+ED@{C\+O\+M\+P\+L\+E\+T\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!C\+O\+M\+P\+L\+E\+T\+ED@{C\+O\+M\+P\+L\+E\+T\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a8f7afecbc8fbc4cd0f50a57d1172482e}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a8f7afecbc8fbc4cd0f50a57d1172482e}} 
+C\+O\+M\+P\+L\+E\+T\+ED&闹钟响铃超时(15分钟)。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+A\+S\+T\+\_\+\+D\+UE@{P\+A\+S\+T\+\_\+\+D\+UE}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!P\+A\+S\+T\+\_\+\+D\+UE@{P\+A\+S\+T\+\_\+\+D\+UE}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a560bb2d9ea9002aa8c70a4462ca6c304}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a560bb2d9ea9002aa8c70a4462ca6c304}} 
+P\+A\+S\+T\+\_\+\+D\+UE&闹钟已经过期太久(30分钟)，不会再响铃。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND@{F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND@{F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46aa72d9c6d4fab6a8bb2fcc8fe3f7dff13}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46aa72d9c6d4fab6a8bb2fcc8fe3f7dff13}} 
+F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND&闹钟进入前台。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND@{F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND@{F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a8f2c39a6e3871da5c682a37a792a6b05}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46a8f2c39a6e3871da5c682a37a792a6b05}} 
+F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND&闹钟进入后台。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+OR@{E\+R\+R\+OR}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!E\+R\+R\+OR@{E\+R\+R\+OR}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46abb1ca97ec761fc37101737ba0aa2e7c5}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46abb1ca97ec761fc37101737ba0aa2e7c5}} 
+E\+R\+R\+OR&闹钟发生错误，播放错误时发生。 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!Dialog\+U\+X\+State@{Dialog\+U\+X\+State}}
+\index{Dialog\+U\+X\+State@{Dialog\+U\+X\+State}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{Dialog\+U\+X\+State}{DialogUXState}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::\+Dialog\+U\+X\+State}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+D\+CS U\+X状态枚举。 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+D\+LE@{I\+D\+LE}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!I\+D\+LE@{I\+D\+LE}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdaa5daf7f2ebbba4975d61dab1c40188c7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdaa5daf7f2ebbba4975d61dab1c40188c7}} 
+I\+D\+LE&Duer\+O\+S处于空闲状态，可以进行交互。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+S\+T\+E\+N\+I\+NG@{L\+I\+S\+T\+E\+N\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!L\+I\+S\+T\+E\+N\+I\+NG@{L\+I\+S\+T\+E\+N\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdac0ff938e396e72c225bd66562b80a77e}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdac0ff938e396e72c225bd66562b80a77e}} 
+L\+I\+S\+T\+E\+N\+I\+NG&Duer\+O\+S正在聆听。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+H\+I\+N\+K\+I\+NG@{T\+H\+I\+N\+K\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!T\+H\+I\+N\+K\+I\+NG@{T\+H\+I\+N\+K\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda18004389aa6f827c608aad2441a2bc53}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda18004389aa6f827c608aad2441a2bc53}} 
+T\+H\+I\+N\+K\+I\+NG&聆听结束，等待\+D\+C\+S返回内容。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+P\+E\+A\+K\+I\+NG@{S\+P\+E\+A\+K\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!S\+P\+E\+A\+K\+I\+NG@{S\+P\+E\+A\+K\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdaddee564b336f5de690b746eb04e62114}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdaddee564b336f5de690b746eb04e62114}} 
+S\+P\+E\+A\+K\+I\+NG&Duer\+O\+S正在播放\+T\+T\+S。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+I\+N\+I\+S\+H\+ED@{F\+I\+N\+I\+S\+H\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!F\+I\+N\+I\+S\+H\+ED@{F\+I\+N\+I\+S\+H\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda2c616b2713e2e0aed04b4c4752c88133}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda2c616b2713e2e0aed04b4c4752c88133}} 
+F\+I\+N\+I\+S\+H\+ED&Duer\+O\+S播放\+T\+T\+S结束。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG@{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG@{M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdad91f1c898ec44b2a141bcd5c214bae42}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cdad91f1c898ec44b2a141bcd5c214bae42}} 
+M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG&Duer\+O\+S正在播放音乐。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED@{M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED@{M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda0dd094bc11dfac6f035f22c4740ae0fc}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda0dd094bc11dfac6f035f22c4740ae0fc}} 
+M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED&Duer\+O\+S停止音乐播放。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED@{M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED@{M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda07cd4dc17fafe8ec3c4eb3f8d384c947}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cda07cd4dc17fafe8ec3c4eb3f8d384c947}} 
+M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED&Duer\+O\+S完成音乐播放。 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aad6473c61fe192e97afa9a2b79aad7cc}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aad6473c61fe192e97afa9a2b79aad7cc}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Alert\+State\+Change@{on\+Alert\+State\+Change}}
+\index{on\+Alert\+State\+Change@{on\+Alert\+State\+Change}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Alert\+State\+Change()}{onAlertStateChange()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Alert\+State\+Change (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{alert\+Token,  }\item[{\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}{Alert\+State}}]{state,  }\item[{const std\+::string \&}]{reason = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+回调函数，用于通知闹钟状态变化。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em alert\+Token} & D\+C\+S协议里的闹钟token，标识不同的闹钟。 \\
+\hline
+\mbox{\tt in}  & {\em state} & 闹钟状态。 \\
+\hline
+\mbox{\tt in}  & {\em reason} & 触发状态变化的原因。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a637d0af6797816b4e5cd72198e3f3781}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a637d0af6797816b4e5cd72198e3f3781}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Dialog\+U\+X\+State\+Changed@{on\+Dialog\+U\+X\+State\+Changed}}
+\index{on\+Dialog\+U\+X\+State\+Changed@{on\+Dialog\+U\+X\+State\+Changed}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Dialog\+U\+X\+State\+Changed()}{onDialogUXStateChanged()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Dialog\+U\+X\+State\+Changed (\begin{DoxyParamCaption}\item[{\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}{Dialog\+U\+X\+State}}]{new\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+回调函数，用于通知\+D\+CS U\+X系统状态变化。由于此回调函数回阻塞其他状态，所以实现方需要尽快返回。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+State} & D\+CS U\+X状态，参考\+Dialog\+U\+X\+State枚举。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ad64bcd73399ce997208ff0eb438b9ca7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ad64bcd73399ce997208ff0eb438b9ca7}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Expect\+Speech@{on\+Expect\+Speech}}
+\index{on\+Expect\+Speech@{on\+Expect\+Speech}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Expect\+Speech()}{onExpectSpeech()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Expect\+Speech (\begin{DoxyParamCaption}\item[{bool}]{success }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+通知已进入多轮识别状态 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em success} & 目前总是为true \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a444993d3b7cf37527bb2201659215094}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a444993d3b7cf37527bb2201659215094}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Http2\+Not\+Connected@{on\+Http2\+Not\+Connected}}
+\index{on\+Http2\+Not\+Connected@{on\+Http2\+Not\+Connected}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Http2\+Not\+Connected()}{onHttp2NotConnected()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Http2\+Not\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+通知http2 stream连接断开了 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aa2696e09b8315aebb1a5a22a954c0131}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aa2696e09b8315aebb1a5a22a954c0131}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Listen\+Started@{on\+Listen\+Started}}
+\index{on\+Listen\+Started@{on\+Listen\+Started}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Listen\+Started()}{onListenStarted()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Listen\+Started (\begin{DoxyParamCaption}\item[{bool}]{success }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+通知开始上传语音流数据做语音识别 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em success,目前总是为true} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ae7aeb5e14429beb2de4f39343e212454}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ae7aeb5e14429beb2de4f39343e212454}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Message\+Send\+Complete@{on\+Message\+Send\+Complete}}
+\index{on\+Message\+Send\+Complete@{on\+Message\+Send\+Complete}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Message\+Send\+Complete()}{onMessageSendComplete()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Message\+Send\+Complete (\begin{DoxyParamCaption}\item[{bool}]{success }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+发送语音流(做语音识别)是否成功 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em success} & true, 成功; false,失败 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a1d2558050e701fd223c5f71d41e6042a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a1d2558050e701fd223c5f71d41e6042a}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Received\+Directive@{on\+Received\+Directive}}
+\index{on\+Received\+Directive@{on\+Received\+Directive}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Received\+Directive()}{onReceivedDirective()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Received\+Directive (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{context\+Id,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+通知已结束上传语音流数据 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em context\+Id} & 上下文id \\
+\hline
+\mbox{\tt in}  & {\em message} & server端下发的指令信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a4449d08c2a37dab840892f81e4aef8b2}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a4449d08c2a37dab840892f81e4aef8b2}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!on\+Stop\+Listen@{on\+Stop\+Listen}}
+\index{on\+Stop\+Listen@{on\+Stop\+Listen}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Stop\+Listen()}{onStopListen()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::on\+Stop\+Listen (\begin{DoxyParamCaption}\item[{bool}]{success }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+通知已结束上传语音流数据 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em succcess,目前总是为true} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a92870093ce3de85233e4e7b098c94185}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_a92870093ce3de85233e4e7b098c94185}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!state\+To\+String@{state\+To\+String}}
+\index{state\+To\+String@{state\+To\+String}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{state\+To\+String()}{stateToString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::state\+To\+String (\begin{DoxyParamCaption}\item[{\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_abbcd31d45f9112289ba73c574bf191cd}{Dialog\+U\+X\+State}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+枚举状态转换成字符串。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em state} & 需要转换的状态枚举值。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+状态枚举值对应的字符串。 
+\end{DoxyReturn}
+
+
+References F\+I\+N\+I\+S\+H\+ED, I\+D\+LE, L\+I\+S\+T\+E\+N\+I\+NG, M\+E\+D\+I\+A\+\_\+\+F\+I\+N\+I\+S\+H\+ED, M\+E\+D\+I\+A\+\_\+\+P\+L\+A\+Y\+I\+NG, M\+E\+D\+I\+A\+\_\+\+S\+T\+O\+P\+P\+ED, S\+P\+E\+A\+K\+I\+NG, and T\+H\+I\+N\+K\+I\+NG.
+
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aa80a09873abe1e5f805594deb2a38afa}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_aa80a09873abe1e5f805594deb2a38afa}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}!state\+To\+String@{state\+To\+String}}
+\index{state\+To\+String@{state\+To\+String}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{state\+To\+String()}{stateToString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dialog\+U\+X\+State\+Observer\+Interface\+::state\+To\+String (\begin{DoxyParamCaption}\item[{\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_ac45d1c6a17f061837ace6a4aeff9cc46}{Alert\+State}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+枚举状态转换成字符串。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em state} & 需要转换的状态枚举值。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+状态枚举值对应的字符串。 
+\end{DoxyReturn}
+
+
+References C\+O\+M\+P\+L\+E\+T\+ED, E\+R\+R\+OR, F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND, F\+O\+C\+U\+S\+\_\+\+E\+N\+T\+E\+R\+E\+D\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+ND, P\+A\+S\+T\+\_\+\+D\+UE, R\+E\+A\+DY, S\+N\+O\+O\+Z\+ED, S\+T\+A\+R\+T\+ED, and S\+T\+O\+P\+P\+ED.
+

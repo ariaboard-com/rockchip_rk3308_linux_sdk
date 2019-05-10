@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/lib
+includedir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/include/
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 4.2.100
+Requires: 
+Requires.private: libavutil >= 55.34.101
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}

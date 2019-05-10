@@ -1,0 +1,5 @@
+1.aclocal 
+2.autoconf
+3.automake
+4.source config.sh      ---please modify config.sh for your compile environment
+5.make

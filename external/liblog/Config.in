@@ -1,0 +1,3 @@
+config RV_TARGET_LIBLOG
+	bool
+	default RV_TARGET_LIBCUTILS

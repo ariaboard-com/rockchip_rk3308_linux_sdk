@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" kind="struct" language="C++" prot="public">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</compoundname>
+    <includes refid="ApplicationImplementation_8h" local="no">ApplicationImplementation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ad995326d15f1da8af0c1da21a2095d5e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation::currentVersion</definition>
+        <argsstring></argsstring>
+        <name>currentVersion</name>
+        <briefdescription>
+<para>系统当前版本。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="193" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a04c8fbb651fc3d91320ab35cbd2b0e8c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation::currentVersionDesc</definition>
+        <argsstring></argsstring>
+        <name>currentVersionDesc</name>
+        <briefdescription>
+<para>系统当前版本描述信息。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="202" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a50f921375b90b84c8a2f03ddc07d0b1e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation::targetVersion</definition>
+        <argsstring></argsstring>
+        <name>targetVersion</name>
+        <briefdescription>
+<para>系统目标版本。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="211" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a33eb6b7623da36d78be04d7fa5f26c8e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation::targetVersionDesc</definition>
+        <argsstring></argsstring>
+        <name>targetVersionDesc</name>
+        <briefdescription>
+<para>系统目标版本描述信息。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="220" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ab930a589e79a54318a0b2f4c0e74d2d9" prot="public" static="no" mutable="no">
+        <type>SystemUpdateState</type>
+        <definition>SystemUpdateState duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>系统更新状态。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="229" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>系统更新信息。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="185" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="185" bodyend="230"/>
+    <listofallmembers>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ad995326d15f1da8af0c1da21a2095d5e" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</scope><name>currentVersion</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a04c8fbb651fc3d91320ab35cbd2b0e8c" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</scope><name>currentVersionDesc</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ab930a589e79a54318a0b2f4c0e74d2d9" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</scope><name>state</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a50f921375b90b84c8a2f03ddc07d0b1e" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</scope><name>targetVersion</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a33eb6b7623da36d78be04d7fa5f26c8e" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</scope><name>targetVersionDesc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

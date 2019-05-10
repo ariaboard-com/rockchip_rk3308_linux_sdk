@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespaceduerOSDcsSDK_1_1dcsClient" kind="namespace" language="C++">
+    <compoundname>duerOSDcsSDK::dcsClient</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>内部类引用。 </para>    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h" line="68" column="1"/>
+  </compounddef>
+</doxygen>

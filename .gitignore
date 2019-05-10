@@ -1,0 +1,16 @@
+buildroot/board/rockchip/rk322x/fs-overlay/usr/bin/softapServer
+IMAGE/
+rockdev/
+*.swp
+*.swo
+*.bak
+
+# cscope files
+cscope.*
+ncscope.*                                                                                                                                              
+.tags*
+.svim
+
+*.patch
+.rkmkdirs
+.rkmkdirs_first

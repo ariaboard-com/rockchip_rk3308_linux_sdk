@@ -1,0 +1,12 @@
+prefix=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: PortAudio
+Description: Portable audio I/O
+Requires:
+Version: 19
+
+Libs: -L${libdir} -lportaudio  -lasound -lm -lpthread
+Cflags: -I${includedir} -pthread

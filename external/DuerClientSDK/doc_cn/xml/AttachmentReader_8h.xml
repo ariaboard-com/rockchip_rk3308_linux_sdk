@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="AttachmentReader_8h" kind="file" language="C++">
+    <compoundname>AttachmentReader.h</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">cstddef</includes>
+    <includedby refid="MediaPlayerInterface_8h" local="yes">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h</label>
+        <link refid="AttachmentReader_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="6">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h</label>
+        <link refid="AttachmentReader_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h</label>
+        <link refid="MediaPlayerInterface_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</label>
+        <link refid="DcsSdk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" prot="public">duerOSDcsSDK::sdkInterfaces::AttachmentReader</innerclass>
+    <innernamespace refid="namespaceduerOSDcsSDK">duerOSDcsSDK</innernamespace>
+    <innernamespace refid="namespaceduerOSDcsSDK_1_1sdkInterfaces">duerOSDcsSDK::sdkInterfaces</innernamespace>
+    <briefdescription>
+<para>应用层通过此接口，从SDK读取TTS数据。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>AttachmentReader.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2017<sp/>Amazon.com,<sp/>Inc.<sp/>or<sp/>its<sp/>affiliates.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>A<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>is<sp/>located<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://aws.amazon.com/apache2.0/</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>or<sp/>in<sp/>the<sp/>&quot;license&quot;<sp/>file<sp/>accompanying<sp/>this<sp/>file.<sp/>This<sp/>file<sp/>is<sp/>distributed</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#ifndef<sp/>DUEROS_DCS_SDK_DCS_COMMON_DCS_INCLUDE_DCS_COMMON_DCS_ATTACHMENT_ATTACHMENT_READER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUEROS_DCS_SDK_DCS_COMMON_DCS_INCLUDE_DCS_COMMON_DCS_ATTACHMENT_ATTACHMENT_READER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceduerOSDcsSDK" kindref="compound">duerOSDcsSDK</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sdkInterfaces<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" kindref="compound">AttachmentReader</ref><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8" kindref="member">Policy</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8a72323e5457d8fb855145bfee934aa415" kindref="member">BLOCKING</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8a71fed0a1fc7faaeab0a56a76799e5ad3" kindref="member">NON_BLOCKING</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" kindref="member">ReadStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">OK</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba787bd2f5224b6b864eea398349436849" kindref="member">OK_WOULDBLOCK</ref>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abadb301c3410dd8d428a7f17043740bb14" kindref="member">OK_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba110ccf2f5d2ff4eda1fd1a494293467d" kindref="member">CLOSED</ref>,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba6473b0b6f8e61be94630555e2d4a9baa" kindref="member">ERROR_OVERRUN</ref>,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abaa1238e1a739964feb62763f7bf0875f0" kindref="member">ERROR_BYTES_LESS_THAN_WORD_SIZE</ref>,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba7b6311615dfbbaccec8279677f19feea" kindref="member">ERROR_INTERNAL</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" kindref="member">ClosePoint</ref><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ad051319484a869ba5244878e7ed93b8d" kindref="member">IMMEDIATELY</ref>,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79" kindref="member">AFTER_DRAINING_CURRENT_BUFFER</ref></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a0524e068572417466c220cb44c27fd9a" kindref="member">~AttachmentReader</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::size_t<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a8e3e1a18275e89086c1b972401a98e38" kindref="member">read</ref>(</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buf,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>numBytes,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" kindref="member">ReadStatus</ref>*<sp/>readStatus,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::milliseconds<sp/>timeoutMs<sp/>=<sp/>std::chrono::milliseconds(0))<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a9660710b89712142a451236144968acc" kindref="member">close</ref>(<ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" kindref="member">ClosePoint</ref><sp/>closePoint<sp/>=<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79" kindref="member">ClosePoint::AFTER_DRAINING_CURRENT_BUFFER</ref>)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sdkInterfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>duerOSDcsSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>DUEROS_DCS_SDK_DCS_COMMON_DCS_INCLUDE_DCS_COMMON_DCS_ATTACHMENT_ATTACHMENT_READER_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,451 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Application\+Implementation Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+
+
+本类里的接口需要由\+A\+P\+P层实现，并在\+A\+P\+P生存期，由\+S\+D\+K进行调用。  
+
+
+
+
+{\ttfamily \#include $<$Application\+Implementation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a676b760481c0ea05cd2a870b6b324ad7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a676b760481c0ea05cd2a870b6b324ad7}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a676b760481c0ea05cd2a870b6b324ad7}{$\sim$\+Application\+Implementation} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a9fb5a1e88b63327a7216335c8668a427}{set\+Speaker\+Volume} (int64\+\_\+t volume)=0
+\begin{DoxyCompactList}\small\item\em 设置扬声器的音量。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_af1c0b876db837a498edfd46c07a642b0}{set\+Speaker\+Mute} (bool is\+Mute)=0
+\begin{DoxyCompactList}\small\item\em 取消/设置扬声器为静音状态。 \end{DoxyCompactList}\item 
+virtual int \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8578e0315740c83868c7d8818ad23023}{get\+Speaker\+Volume} ()=0
+\begin{DoxyCompactList}\small\item\em 获取扬声器的音量。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ae07cada57638548151d4ae53923ffd85}{get\+Speaker\+Mute\+Status} ()=0
+\begin{DoxyCompactList}\small\item\em 获取扬声器的静音状态。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab7c22526b77d47b463d8bfcba5320180}{set\+Bluetooth\+Status} (bool status)=0
+\begin{DoxyCompactList}\small\item\em 关闭/开启蓝牙设备。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a28e429d6ff9ee0f6ba70770b39007ca1}{set\+Bluetooth\+Connection\+Status} (bool status)
+\begin{DoxyCompactList}\small\item\em 连接蓝牙/断开蓝牙连接。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_af1dc79663449f715e08c35757d11bfab}{set\+Microphone\+Status} (bool status)=0
+\begin{DoxyCompactList}\small\item\em 关闭/开启麦克风。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab3c134187fc2961692b883f1121516e3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab3c134187fc2961692b883f1121516e3}} 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab3c134187fc2961692b883f1121516e3}{query\+Current\+Version} ()
+\begin{DoxyCompactList}\small\item\em 查询当前设备的版本号，\+A\+P\+P层往往需要播放一段tts来播放当前设备的版本信息，或留空本方法的实现。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aacb518c857399cc47c6ad005ebfc00fd}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aacb518c857399cc47c6ad005ebfc00fd}} 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aacb518c857399cc47c6ad005ebfc00fd}{power\+Sleep} ()
+\begin{DoxyCompactList}\small\item\em 进入休眠模式，\+A\+P\+P层往往需要执行休眠动作，或留空本方法的实现。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a200b09dedd7dced2e41d8980901226e3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a200b09dedd7dced2e41d8980901226e3}} 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a200b09dedd7dced2e41d8980901226e3}{power\+Shutdown} ()
+\begin{DoxyCompactList}\small\item\em 关机，\+A\+P\+P层往往需要执行关机动作，或留空本方法的实现。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a28300e1a0c2f3a41461a6d0a03b6299e}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a28300e1a0c2f3a41461a6d0a03b6299e}} 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a28300e1a0c2f3a41461a6d0a03b6299e}{power\+Reboot} ()
+\begin{DoxyCompactList}\small\item\em 重启，\+A\+P\+P层往往需要执行重启动作，或留空本方法的实现。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ac839c88ccbafd6fba8e5899bd2f2dd55}{inform\+Sdk\+Connection\+Status} (Sdk\+Connection\+State sdk\+Connection\+State)=0
+\begin{DoxyCompactList}\small\item\em 通知\+A\+P\+P当前\+S\+D\+K网络连接状态。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a239692cd30f184acb165447c9484cf9a}{inform\+Customize\+Directive} (const std\+::string \&directive)
+\begin{DoxyCompactList}\small\item\em 通知app收到云端下发的自定义指令。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aa4457826018c5fc361b29d141c723925}{link\+Third\+Device} (int device\+Type, const std\+::string \&client\+Id, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：用于音箱连接第三方设备。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a18b9694bc2863798907a8572caa1b5da}{unlink\+Third\+Device} (int device\+Type, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：断开音箱与第三方设备的连接。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a86a2762383d248b63f5f815f1fbdc2c5}{on\+Third\+Dlp\+Message} (int device\+Type, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：发送\+D\+L\+P消息给第三方设备。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab5b78477782d2aa18010d4da7cd45ca3}{on\+Third\+Party\+Message} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：收到小度之家发来的thirdparty指令。。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a0e9c517a15e1933d5cb12e8032b34d90}{notify\+Sdk\+Context} (const std\+::string \&context, int device\+Type)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：广播方式发送dlp消息给小度之家\+A\+P\+P。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a43f7f49462fc094905cf38b69bb4e848}{notify\+Sdk\+Context\+By\+Session\+Id} (const std\+::string \&context, unsigned short session\+Id, int device\+Type)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：发送dlp消息给指定的小度之家\+A\+P\+P。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aab4fcea97b804159073abf54e25075bb}{system\+Information\+Get\+Status} (\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation}{System\+Information} \&system\+Information)
+\begin{DoxyCompactList}\small\item\em 获取设备的系统信息。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8ce2c9ad1c35f8c75a0dad0731b8850e}{system\+Information\+Hard\+Reset} ()
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：通知\+A\+P\+P恢复出厂设置，具体实现由厂家定义。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aa1f6aab8cf3806120bce89da4f9447d6}{system\+Update\+Get\+Status} (\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation}{System\+Update\+Information} \&system\+Update\+Information)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：获取系统软件状态信息。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a644e2bfddb8d4a38fadc0acde7d568ac}{system\+Update\+Update} ()
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：通知\+A\+P\+P进行系统更新。 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8d12823ee272295a67796f6d39dcddae}{get\+Current\+Connected\+Device\+Info} (int device\+Type, std\+::string \&client\+Id, std\+::string \&device\+Id)
+\begin{DoxyCompactList}\small\item\em D\+L\+P协议：根据设备类型获取当前连接设备的client id和device id。 \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a2f38ee5cb10328c1dde10c8940dd4e8c}{get\+Wifi\+Bssid} ()
+\begin{DoxyCompactList}\small\item\em \+: 获取当前wifi连接的路由器的mac 地址 \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a852302b46fca3524968580092a9ff5e3}{send\+Infrared\+Ray\+Code\+Request} (int carrier\+Frequency, const std\+::string \&pattern)
+\begin{DoxyCompactList}\small\item\em 发射红外控制码 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+本类里的接口需要由\+A\+P\+P层实现，并在\+A\+P\+P生存期，由\+S\+D\+K进行调用。 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8d12823ee272295a67796f6d39dcddae}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8d12823ee272295a67796f6d39dcddae}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!get\+Current\+Connected\+Device\+Info@{get\+Current\+Connected\+Device\+Info}}
+\index{get\+Current\+Connected\+Device\+Info@{get\+Current\+Connected\+Device\+Info}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{get\+Current\+Connected\+Device\+Info()}{getCurrentConnectedDeviceInfo()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::get\+Current\+Connected\+Device\+Info (\begin{DoxyParamCaption}\item[{int}]{device\+Type,  }\item[{std\+::string \&}]{client\+Id,  }\item[{std\+::string \&}]{device\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：根据设备类型获取当前连接设备的client id和device id。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+Type} & 设备类型 \\
+\hline
+\mbox{\tt out}  & {\em client\+Id} & Duer\+Link返回的client id。 \\
+\hline
+\mbox{\tt out}  & {\em device\+Id} & Duer\+Link返回的device id。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ae07cada57638548151d4ae53923ffd85}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ae07cada57638548151d4ae53923ffd85}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!get\+Speaker\+Mute\+Status@{get\+Speaker\+Mute\+Status}}
+\index{get\+Speaker\+Mute\+Status@{get\+Speaker\+Mute\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{get\+Speaker\+Mute\+Status()}{getSpeakerMuteStatus()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::get\+Speaker\+Mute\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+获取扬声器的静音状态。 
+
+\begin{DoxyReturn}{Returns}
+扬声器的静音状态，\+True/\+False：静音/未静音。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8578e0315740c83868c7d8818ad23023}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8578e0315740c83868c7d8818ad23023}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!get\+Speaker\+Volume@{get\+Speaker\+Volume}}
+\index{get\+Speaker\+Volume@{get\+Speaker\+Volume}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{get\+Speaker\+Volume()}{getSpeakerVolume()}}
+{\footnotesize\ttfamily virtual int duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::get\+Speaker\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+获取扬声器的音量。 
+
+\begin{DoxyReturn}{Returns}
+扬声器的音量，取值范围【0 -\/ 100】。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a2f38ee5cb10328c1dde10c8940dd4e8c}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a2f38ee5cb10328c1dde10c8940dd4e8c}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!get\+Wifi\+Bssid@{get\+Wifi\+Bssid}}
+\index{get\+Wifi\+Bssid@{get\+Wifi\+Bssid}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{get\+Wifi\+Bssid()}{getWifiBssid()}}
+{\footnotesize\ttfamily virtual std\+::string duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::get\+Wifi\+Bssid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\+: 获取当前wifi连接的路由器的mac 地址 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a239692cd30f184acb165447c9484cf9a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a239692cd30f184acb165447c9484cf9a}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!inform\+Customize\+Directive@{inform\+Customize\+Directive}}
+\index{inform\+Customize\+Directive@{inform\+Customize\+Directive}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{inform\+Customize\+Directive()}{informCustomizeDirective()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::inform\+Customize\+Directive (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{directive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+通知app收到云端下发的自定义指令。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em directive} & 指令的详细信息（\+J\+S\+O\+N格式）。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ac839c88ccbafd6fba8e5899bd2f2dd55}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ac839c88ccbafd6fba8e5899bd2f2dd55}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!inform\+Sdk\+Connection\+Status@{inform\+Sdk\+Connection\+Status}}
+\index{inform\+Sdk\+Connection\+Status@{inform\+Sdk\+Connection\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{inform\+Sdk\+Connection\+Status()}{informSdkConnectionStatus()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::inform\+Sdk\+Connection\+Status (\begin{DoxyParamCaption}\item[{Sdk\+Connection\+State}]{sdk\+Connection\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+通知\+A\+P\+P当前\+S\+D\+K网络连接状态。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sdk\+Connection\+State} & 登录状态。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aa4457826018c5fc361b29d141c723925}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aa4457826018c5fc361b29d141c723925}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!link\+Third\+Device@{link\+Third\+Device}}
+\index{link\+Third\+Device@{link\+Third\+Device}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{link\+Third\+Device()}{linkThirdDevice()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::link\+Third\+Device (\begin{DoxyParamCaption}\item[{int}]{device\+Type,  }\item[{const std\+::string \&}]{client\+Id,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：用于音箱连接第三方设备。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+Type} & 设备类型。 \\
+\hline
+\mbox{\tt in}  & {\em client\+Id} & 设备的client id。 \\
+\hline
+\mbox{\tt in}  & {\em message} & 发送给第三方设备的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a0e9c517a15e1933d5cb12e8032b34d90}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a0e9c517a15e1933d5cb12e8032b34d90}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!notify\+Sdk\+Context@{notify\+Sdk\+Context}}
+\index{notify\+Sdk\+Context@{notify\+Sdk\+Context}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{notify\+Sdk\+Context()}{notifySdkContext()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::notify\+Sdk\+Context (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{context,  }\item[{int}]{device\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：广播方式发送dlp消息给小度之家\+A\+P\+P。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em context} & dlp消息(\+J\+S\+O\+N string)。 \\
+\hline
+\mbox{\tt in}  & {\em device\+Type} & 设备类型。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a43f7f49462fc094905cf38b69bb4e848}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a43f7f49462fc094905cf38b69bb4e848}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!notify\+Sdk\+Context\+By\+Session\+Id@{notify\+Sdk\+Context\+By\+Session\+Id}}
+\index{notify\+Sdk\+Context\+By\+Session\+Id@{notify\+Sdk\+Context\+By\+Session\+Id}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{notify\+Sdk\+Context\+By\+Session\+Id()}{notifySdkContextBySessionId()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::notify\+Sdk\+Context\+By\+Session\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{context,  }\item[{unsigned short}]{session\+Id,  }\item[{int}]{device\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：发送dlp消息给指定的小度之家\+A\+P\+P。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em context} & dlp消息(\+J\+S\+O\+N string)。 \\
+\hline
+\mbox{\tt in}  & {\em session\+Id} & session id。 \\
+\hline
+\mbox{\tt in}  & {\em device\+Type} & 设备类型。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a86a2762383d248b63f5f815f1fbdc2c5}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a86a2762383d248b63f5f815f1fbdc2c5}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!on\+Third\+Dlp\+Message@{on\+Third\+Dlp\+Message}}
+\index{on\+Third\+Dlp\+Message@{on\+Third\+Dlp\+Message}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{on\+Third\+Dlp\+Message()}{onThirdDlpMessage()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::on\+Third\+Dlp\+Message (\begin{DoxyParamCaption}\item[{int}]{device\+Type,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：发送\+D\+L\+P消息给第三方设备。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+Type} & 设备类型。 \\
+\hline
+\mbox{\tt in}  & {\em message} & 发送的消息（\+J\+S\+O\+N字符串） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab5b78477782d2aa18010d4da7cd45ca3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab5b78477782d2aa18010d4da7cd45ca3}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!on\+Third\+Party\+Message@{on\+Third\+Party\+Message}}
+\index{on\+Third\+Party\+Message@{on\+Third\+Party\+Message}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{on\+Third\+Party\+Message()}{onThirdPartyMessage()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::on\+Third\+Party\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：收到小度之家发来的thirdparty指令。。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em message} & 发送的消息（\+J\+S\+O\+N字符串） \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a852302b46fca3524968580092a9ff5e3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a852302b46fca3524968580092a9ff5e3}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!send\+Infrared\+Ray\+Code\+Request@{send\+Infrared\+Ray\+Code\+Request}}
+\index{send\+Infrared\+Ray\+Code\+Request@{send\+Infrared\+Ray\+Code\+Request}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{send\+Infrared\+Ray\+Code\+Request()}{sendInfraredRayCodeRequest()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::send\+Infrared\+Ray\+Code\+Request (\begin{DoxyParamCaption}\item[{int}]{carrier\+Frequency,  }\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+发射红外控制码 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em carrier\+Frequency} & 红外控制码的载波频率，单位是赫兹，取值范围在20000到60000 \\
+\hline
+\mbox{\tt in}  & {\em pattern} & 红外控制码是由多组连续的高低电平时间组成的波形，每个数字表示电平信号时间，单位是微秒。 第一个整数表示高电平信号时间，随后是低电平信号时间，随后又是高电平、低电平，如此类推。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a28e429d6ff9ee0f6ba70770b39007ca1}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a28e429d6ff9ee0f6ba70770b39007ca1}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!set\+Bluetooth\+Connection\+Status@{set\+Bluetooth\+Connection\+Status}}
+\index{set\+Bluetooth\+Connection\+Status@{set\+Bluetooth\+Connection\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{set\+Bluetooth\+Connection\+Status()}{setBluetoothConnectionStatus()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::set\+Bluetooth\+Connection\+Status (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+连接蓝牙/断开蓝牙连接。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em status} & 连接/断开状态，\+True/\+False：连接蓝牙/断开蓝牙。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab7c22526b77d47b463d8bfcba5320180}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_ab7c22526b77d47b463d8bfcba5320180}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!set\+Bluetooth\+Status@{set\+Bluetooth\+Status}}
+\index{set\+Bluetooth\+Status@{set\+Bluetooth\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{set\+Bluetooth\+Status()}{setBluetoothStatus()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::set\+Bluetooth\+Status (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+关闭/开启蓝牙设备。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em status} & 打开/关闭蓝牙，\+True/\+False：打开蓝牙/关闭蓝牙。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_af1dc79663449f715e08c35757d11bfab}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_af1dc79663449f715e08c35757d11bfab}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!set\+Microphone\+Status@{set\+Microphone\+Status}}
+\index{set\+Microphone\+Status@{set\+Microphone\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{set\+Microphone\+Status()}{setMicrophoneStatus()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::set\+Microphone\+Status (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+关闭/开启麦克风。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em status} & 打开/关闭麦克风，\+True/\+False：打开麦克风/关闭麦克风。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_af1c0b876db837a498edfd46c07a642b0}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_af1c0b876db837a498edfd46c07a642b0}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!set\+Speaker\+Mute@{set\+Speaker\+Mute}}
+\index{set\+Speaker\+Mute@{set\+Speaker\+Mute}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{set\+Speaker\+Mute()}{setSpeakerMute()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::set\+Speaker\+Mute (\begin{DoxyParamCaption}\item[{bool}]{is\+Mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+取消/设置扬声器为静音状态。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\+Mute} & 是否静音，\+True/\+False\+: 静音/取消静音。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a9fb5a1e88b63327a7216335c8668a427}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a9fb5a1e88b63327a7216335c8668a427}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!set\+Speaker\+Volume@{set\+Speaker\+Volume}}
+\index{set\+Speaker\+Volume@{set\+Speaker\+Volume}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{set\+Speaker\+Volume()}{setSpeakerVolume()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::set\+Speaker\+Volume (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+设置扬声器的音量。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em volume} & 音量，取值范围\mbox{[}0 -\/ 100\mbox{]}。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aab4fcea97b804159073abf54e25075bb}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aab4fcea97b804159073abf54e25075bb}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!system\+Information\+Get\+Status@{system\+Information\+Get\+Status}}
+\index{system\+Information\+Get\+Status@{system\+Information\+Get\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{system\+Information\+Get\+Status()}{systemInformationGetStatus()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::system\+Information\+Get\+Status (\begin{DoxyParamCaption}\item[{\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation}{System\+Information} \&}]{system\+Information }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+获取设备的系统信息。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em system\+Information} & 设备信息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8ce2c9ad1c35f8c75a0dad0731b8850e}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a8ce2c9ad1c35f8c75a0dad0731b8850e}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!system\+Information\+Hard\+Reset@{system\+Information\+Hard\+Reset}}
+\index{system\+Information\+Hard\+Reset@{system\+Information\+Hard\+Reset}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{system\+Information\+Hard\+Reset()}{systemInformationHardReset()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::system\+Information\+Hard\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：通知\+A\+P\+P恢复出厂设置，具体实现由厂家定义。 
+
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aa1f6aab8cf3806120bce89da4f9447d6}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_aa1f6aab8cf3806120bce89da4f9447d6}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!system\+Update\+Get\+Status@{system\+Update\+Get\+Status}}
+\index{system\+Update\+Get\+Status@{system\+Update\+Get\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{system\+Update\+Get\+Status()}{systemUpdateGetStatus()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::system\+Update\+Get\+Status (\begin{DoxyParamCaption}\item[{\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation}{System\+Update\+Information} \&}]{system\+Update\+Information }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：获取系统软件状态信息。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em system\+Update\+Information} & 接收\+A\+P\+P层传入的系统更新信息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a644e2bfddb8d4a38fadc0acde7d568ac}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a644e2bfddb8d4a38fadc0acde7d568ac}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!system\+Update\+Update@{system\+Update\+Update}}
+\index{system\+Update\+Update@{system\+Update\+Update}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{system\+Update\+Update()}{systemUpdateUpdate()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::system\+Update\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：通知\+A\+P\+P进行系统更新。 
+
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a18b9694bc2863798907a8572caa1b5da}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_a18b9694bc2863798907a8572caa1b5da}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}!unlink\+Third\+Device@{unlink\+Third\+Device}}
+\index{unlink\+Third\+Device@{unlink\+Third\+Device}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation}}
+\subsubsection{\texorpdfstring{unlink\+Third\+Device()}{unlinkThirdDevice()}}
+{\footnotesize\ttfamily virtual bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Application\+Implementation\+::unlink\+Third\+Device (\begin{DoxyParamCaption}\item[{int}]{device\+Type,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+D\+L\+P协议：断开音箱与第三方设备的连接。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em device\+Type} & 设备类型。 \\
+\hline
+\mbox{\tt in}  & {\em message} & 发送给第三方设备的消息。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False：调用成功/调用失败。 
+\end{DoxyReturn}

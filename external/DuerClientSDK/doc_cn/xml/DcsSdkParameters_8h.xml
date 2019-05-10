@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="DcsSdkParameters_8h" kind="file" language="C++">
+    <compoundname>DcsSdkParameters.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">unordered_set</includes>
+    <includes refid="ApplicationImplementation_8h" local="no">DcsSdk/ApplicationImplementation.h</includes>
+    <includes refid="ConnectionStatusObserverInterface_8h" local="no">DcsSdk/ConnectionStatusObserverInterface.h</includes>
+    <includes refid="DialogUXStateObserverInterface_8h" local="no">DcsSdk/DialogUXStateObserverInterface.h</includes>
+    <includes refid="KeyWordObserverInterface_8h" local="no">DcsSdk/KeyWordObserverInterface.h</includes>
+    <includes refid="LocalMediaPlayerInterface_8h" local="no">DcsSdk/LocalMediaPlayerInterface.h</includes>
+    <includes refid="MediaPlayerInterface_8h" local="no">DcsSdk/MediaPlayerInterface.h</includes>
+    <includedby refid="DcsSdk_8h" local="no">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</includedby>
+    <incdepgraph>
+      <node id="59">
+        <label>DcsSdk/AttachmentReader.h</label>
+        <link refid="AttachmentReader_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>limits</label>
+      </node>
+      <node id="56">
+        <label>DcsSdk/MediaPlayerInterface.h</label>
+        <link refid="MediaPlayerInterface_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>cstdint</label>
+      </node>
+      <node id="52">
+        <label>DcsSdk/LocalMediaPlayerInterface.h</label>
+        <link refid="LocalMediaPlayerInterface_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>DcsSdk/LocalMediaPlayerObserverInterface.h</label>
+        <link refid="LocalMediaPlayerObserverInterface_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>DcsSdk/ApplicationImplementation.h</label>
+        <link refid="ApplicationImplementation_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>string</label>
+      </node>
+      <node id="45">
+        <label>unordered_set</label>
+      </node>
+      <node id="61">
+        <label>DcsSdk/MediaPlayerObserverInterface.h</label>
+        <link refid="MediaPlayerObserverInterface_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>ostream</label>
+      </node>
+      <node id="62">
+        <label>DcsSdk/ErrorTypes.h</label>
+        <link refid="ErrorTypes_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>DcsSdk/ConnectionStatusObserverInterface.h</label>
+        <link refid="ConnectionStatusObserverInterface_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>DcsSdk/KeyWordObserverInterface.h</label>
+        <link refid="KeyWordObserverInterface_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>future</label>
+      </node>
+      <node id="44">
+        <label>vector</label>
+      </node>
+      <node id="49">
+        <label>DcsSdk/DialogUXStateObserverInterface.h</label>
+        <link refid="DialogUXStateObserverInterface_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>iostream</label>
+      </node>
+      <node id="60">
+        <label>cstddef</label>
+      </node>
+      <node id="57">
+        <label>chrono</label>
+      </node>
+      <node id="54">
+        <label>memory</label>
+      </node>
+      <node id="64">
+        <label>DcsSdk/LocalSourcePlayerInterface.h</label>
+        <link refid="LocalSourcePlayerInterface_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="65">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</label>
+        <link refid="DcsSdk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters" prot="public">duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</innerclass>
+    <innernamespace refid="namespaceduerOSDcsSDK">duerOSDcsSDK</innernamespace>
+    <innernamespace refid="namespaceduerOSDcsSDK_1_1sdkInterfaces">duerOSDcsSDK::sdkInterfaces</innernamespace>
+    <briefdescription>
+<para>初始化SDK时，APP传入的参数。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Baidu,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>DUEROS_DCS_SDK_INCLUDE_DCS_SDK_DCS_SDK_PARAMETERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUEROS_DCS_SDK_INCLUDE_DCS_SDK_DCS_SDK_PARAMETERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/ApplicationImplementation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/ConnectionStatusObserverInterface.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/DialogUXStateObserverInterface.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/KeyWordObserverInterface.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/LocalMediaPlayerInterface.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;DcsSdk/MediaPlayerInterface.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceduerOSDcsSDK" kindref="compound">duerOSDcsSDK</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sdkInterfaces<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kindref="compound">duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DcsClient;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters" kindref="compound">DcsSdkParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4f7783b647c950318c10ba951f1a99e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4f7783b647c950318c10ba951f1a99e9" kindref="member">DcsSdkParameters</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_speakMediaPlayer(nullptr),</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_audioMediaPlayer(nullptr),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_alertsMediaPlayer(nullptr),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_localMediaPlayer(nullptr),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_connectionObservers(nullptr),</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_applicationImplementation(nullptr),</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_localTtsMediaPlayer(nullptr),</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_localPromptPlayer(nullptr),</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_enableSdkWakeup(true)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a95c8300f4163e33cc6d639900afe1a6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a95c8300f4163e33cc6d639900afe1a6d" kindref="member">setPathToConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_pathToConfig<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab62fb7501f438a401592b2a1c4ef1548" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab62fb7501f438a401592b2a1c4ef1548" kindref="member">setPathToRuntimeConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_pathToRuntimeConfig<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a560bb54f6250f35c976d32abc69f8879" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a560bb54f6250f35c976d32abc69f8879" kindref="member">setDeviceId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_deviceId<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a5f35981ec0f7f048c658dd5778c877af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a5f35981ec0f7f048c658dd5778c877af" kindref="member">setSpeakMediaPlayer</ref>(std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_speakMediaPlayer<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac9b35322064082a043a10c50631dfbab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac9b35322064082a043a10c50631dfbab" kindref="member">setAudioMediaPlayer</ref>(std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_audioMediaPlayer<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a08fd79d632571c5e943fd85196ba0411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a08fd79d632571c5e943fd85196ba0411" kindref="member">setAlertsMediaPlayer</ref>(std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_alertsMediaPlayer<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a02a6263c432994bf0acb036e4ed6d7c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a02a6263c432994bf0acb036e4ed6d7c7" kindref="member">setLocalMediaPlayer</ref>(std::shared_ptr&lt;LocalMediaPlayerInterface&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_localMediaPlayer<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad2b64e3b8c64580ea28c7699e6fa7d74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad2b64e3b8c64580ea28c7699e6fa7d74" kindref="member">setDialogStateObservers</ref>(std::unordered_set&lt;std::shared_ptr&lt;DialogUXStateObserverInterface&gt;&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_dialogStateObservers<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a82391d394920edd2cdce280c111021b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a82391d394920edd2cdce280c111021b4" kindref="member">setConnectionObservers</ref>(std::shared_ptr&lt;sdkInterfaces::ConnectionStatusObserverInterface&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_connectionObservers<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4560432cd5e52eb3aed9f40dba480ac3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4560432cd5e52eb3aed9f40dba480ac3" kindref="member">setApplicationImplementation</ref>(std::shared_ptr&lt;sdkInterfaces::ApplicationImplementation&gt;<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_applicationImplementation<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77608e2433a08f05eb6f4ab86ff44950" kindref="member">setLocalTtsMediaPlayer</ref></highlight></codeline>
+<codeline lineno="215" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77608e2433a08f05eb6f4ab86ff44950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>player)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_localTtsMediaPlayer<sp/>=<sp/>player;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab6583b5f18881e63eab064be6c006b35" kindref="member">setLocalPromptPlayer</ref></highlight></codeline>
+<codeline lineno="229" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab6583b5f18881e63eab064be6c006b35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>player)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_localPromptPlayer<sp/>=<sp/>player;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad1c083f3e2cd3c5be0e8cb96625bb5a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad1c083f3e2cd3c5be0e8cb96625bb5a0" kindref="member">setCustomizeDirectives</ref>(std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;&amp;<sp/>customizeDirective)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_customizeDirective<sp/>=<sp/>customizeDirective;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a681260954fd2cd2d198eebe4dff45603" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a681260954fd2cd2d198eebe4dff45603" kindref="member">setKeyWordObserverInterface</ref>(std::shared_ptr&lt;sdkInterfaces::KeyWordObserverInterface&gt;<sp/>keyWordObserverInterface)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_keyWordObserverInterface<sp/>=<sp/>keyWordObserverInterface;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a146e85296deb8442956997bf2b1e17ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a146e85296deb8442956997bf2b1e17ff" kindref="member">setEnableSdkWakeup</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableWakeup)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_enableSdkWakeup<sp/>=<sp/>enableWakeup;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0206523f4fd71ef4730b12030dcb7cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0206523f4fd71ef4730b12030dcb7cd1" kindref="member">setClientSecret</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>clientSecret)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_clientSecret<sp/>=<sp/>clientSecret;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a15acf1146e64b5f08d8b0017c07eb09e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a15acf1146e64b5f08d8b0017c07eb09e" kindref="member">getPathToConfig</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_pathToConfig;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0700d03aa8a280cbd5f93ef0e40e55a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0700d03aa8a280cbd5f93ef0e40e55a5" kindref="member">getPathToRuntimeConfig</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_pathToRuntimeConfig;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7d1bced577a3150094f87fd9c39792c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7d1bced577a3150094f87fd9c39792c8" kindref="member">getDeviceId</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_deviceId;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7440f93b6b2f3ad352ebc7cdfee9cf7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7440f93b6b2f3ad352ebc7cdfee9cf7d" kindref="member">getClientSecret</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_clientSecret;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a137453bcd818997f0916d48e60af3523" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a137453bcd818997f0916d48e60af3523" kindref="member">getSpeakMediaPlayer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_speakMediaPlayer;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a778d9c0e35063af224264cb4c2d69b67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a778d9c0e35063af224264cb4c2d69b67" kindref="member">getAudioMediaPlayer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_audioMediaPlayer;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aedb56e9d51342ce49920decb10c4aae3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aedb56e9d51342ce49920decb10c4aae3" kindref="member">getAlertsMediaPlayer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_alertsMediaPlayer;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a20b4b22628b1708787e12f3623082f7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;LocalMediaPlayerInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a20b4b22628b1708787e12f3623082f7b" kindref="member">getLocalMediaPlayer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_localMediaPlayer;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77f1bc5116b53c12cb1d115e35ff7b14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_set&lt;std::shared_ptr&lt;DialogUXStateObserverInterface&gt;&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77f1bc5116b53c12cb1d115e35ff7b14" kindref="member">getDialogStateObservers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_dialogStateObservers;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1adfd39ff4af037a2844d1e977eb00b8c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;sdkInterfaces::ConnectionStatusObserverInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1adfd39ff4af037a2844d1e977eb00b8c5" kindref="member">getConnectionObservers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_connectionObservers;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac6c35ff867585dbfce21418ee200bcb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;sdkInterfaces::ApplicationImplementation&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac6c35ff867585dbfce21418ee200bcb2" kindref="member">getApplicationImplementation</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_applicationImplementation;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1acda5dfd2e1e9a8eb07d0613b61f37642" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1acda5dfd2e1e9a8eb07d0613b61f37642" kindref="member">getLocalTtsMediaPlayer</ref>(){</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_localTtsMediaPlayer;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="450" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeb569e85ff702f3ec9794e99e7e9cab1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeb569e85ff702f3ec9794e99e7e9cab1" kindref="member">getLocalPromptPlayer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_localPromptPlayer;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0622206b1833f62c98e79de840698645" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;&amp;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0622206b1833f62c98e79de840698645" kindref="member">getCustomizeDirective</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_customizeDirective;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a50665d3ef7fcfcfbe08b38cfbf9c26cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;sdkInterfaces::KeyWordObserverInterface&gt;<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a50665d3ef7fcfcfbe08b38cfbf9c26cf" kindref="member">getKeyWordObserverInterface</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_keyWordObserverInterface;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7260bc59f129332b464b8574ca101662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7260bc59f129332b464b8574ca101662" kindref="member">getEnableSdkWakeup</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_enableSdkWakeup;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_pathToConfig;</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_pathToRuntimeConfig;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_deviceId;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>m_speakMediaPlayer;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>m_audioMediaPlayer;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>m_alertsMediaPlayer;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;LocalMediaPlayerInterface&gt;<sp/>m_localMediaPlayer;</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_set&lt;std::shared_ptr&lt;DialogUXStateObserverInterface&gt;&gt;</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_dialogStateObservers;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;sdkInterfaces::ConnectionStatusObserverInterface&gt;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_connectionObservers;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;sdkInterfaces::ApplicationImplementation&gt;</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_applicationImplementation;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>m_localTtsMediaPlayer;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;MediaPlayerInterface&gt;<sp/>m_localPromptPlayer;</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::string&gt;&gt;<sp/>m_customizeDirective;</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;sdkInterfaces::KeyWordObserverInterface&gt;<sp/>m_keyWordObserverInterface;</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_enableSdkWakeup;</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>m_clientSecret;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="643"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sdkInterfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>duerOSDcsSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>DUEROS_DCS_SDK_INCLUDE_DCS_SDK_DCS_SDK_PARAMETERS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h"/>
+  </compounddef>
+</doxygen>

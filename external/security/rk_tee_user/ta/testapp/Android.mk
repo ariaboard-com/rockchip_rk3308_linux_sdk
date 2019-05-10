@@ -1,0 +1,9 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE:= 8cccf200-2450-11e4-abe2-0002a5d5c52c.ta
+LOCAL_SRC_FILES := ./8cccf200-2450-11e4-abe2-0002a5d5c52c.ta
+LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/optee_armtz
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_PREBUILT)

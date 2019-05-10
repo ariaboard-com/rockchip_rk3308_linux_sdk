@@ -1,0 +1,729 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</compoundname>
+    <includes refid="ApplicationImplementation_8h" local="no">ApplicationImplementation.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a676b760481c0ea05cd2a870b6b324ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::~ApplicationImplementation</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ApplicationImplementation</name>
+        <briefdescription>
+<para>析构函数。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a9fb5a1e88b63327a7216335c8668a427" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::setSpeakerVolume</definition>
+        <argsstring>(int64_t volume)=0</argsstring>
+        <name>setSpeakerVolume</name>
+        <param>
+          <type>int64_t</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>设置扬声器的音量。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>音量，取值范围[0 - 100]。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1c0b876db837a498edfd46c07a642b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::setSpeakerMute</definition>
+        <argsstring>(bool isMute)=0</argsstring>
+        <name>setSpeakerMute</name>
+        <param>
+          <type>bool</type>
+          <declname>isMute</declname>
+        </param>
+        <briefdescription>
+<para>取消/设置扬声器为静音状态。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">isMute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否静音，True/False: 静音/取消静音。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="324" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8578e0315740c83868c7d8818ad23023" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::getSpeakerVolume</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSpeakerVolume</name>
+        <briefdescription>
+<para>获取扬声器的音量。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>扬声器的音量，取值范围【0 - 100】。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ae07cada57638548151d4ae53923ffd85" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::getSpeakerMuteStatus</definition>
+        <argsstring>()=0</argsstring>
+        <name>getSpeakerMuteStatus</name>
+        <briefdescription>
+<para>获取扬声器的静音状态。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>扬声器的静音状态，True/False：静音/未静音。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab7c22526b77d47b463d8bfcba5320180" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::setBluetoothStatus</definition>
+        <argsstring>(bool status)=0</argsstring>
+        <name>setBluetoothStatus</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>关闭/开启蓝牙设备。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>打开/关闭蓝牙，True/False：打开蓝牙/关闭蓝牙。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28e429d6ff9ee0f6ba70770b39007ca1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::setBluetoothConnectionStatus</definition>
+        <argsstring>(bool status)</argsstring>
+        <name>setBluetoothConnectionStatus</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>连接蓝牙/断开蓝牙连接。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>连接/断开状态，True/False：连接蓝牙/断开蓝牙。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="368" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="368" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1dc79663449f715e08c35757d11bfab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::setMicrophoneStatus</definition>
+        <argsstring>(bool status)=0</argsstring>
+        <name>setMicrophoneStatus</name>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>关闭/开启麦克风。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>打开/关闭麦克风，True/False：打开麦克风/关闭麦克风。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="379" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab3c134187fc2961692b883f1121516e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::queryCurrentVersion</definition>
+        <argsstring>()</argsstring>
+        <name>queryCurrentVersion</name>
+        <briefdescription>
+<para>查询当前设备的版本号，APP层往往需要播放一段tts来播放当前设备的版本信息，或留空本方法的实现。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="388" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="388" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aacb518c857399cc47c6ad005ebfc00fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::powerSleep</definition>
+        <argsstring>()</argsstring>
+        <name>powerSleep</name>
+        <briefdescription>
+<para>进入休眠模式，APP层往往需要执行休眠动作，或留空本方法的实现。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="397" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="397" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a200b09dedd7dced2e41d8980901226e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::powerShutdown</definition>
+        <argsstring>()</argsstring>
+        <name>powerShutdown</name>
+        <briefdescription>
+<para>关机，APP层往往需要执行关机动作，或留空本方法的实现。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="406" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="406" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28300e1a0c2f3a41461a6d0a03b6299e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::powerReboot</definition>
+        <argsstring>()</argsstring>
+        <name>powerReboot</name>
+        <briefdescription>
+<para>重启，APP层往往需要执行重启动作，或留空本方法的实现。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="415" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="415" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ac839c88ccbafd6fba8e5899bd2f2dd55" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::informSdkConnectionStatus</definition>
+        <argsstring>(SdkConnectionState sdkConnectionState)=0</argsstring>
+        <name>informSdkConnectionStatus</name>
+        <param>
+          <type>SdkConnectionState</type>
+          <declname>sdkConnectionState</declname>
+        </param>
+        <briefdescription>
+<para>通知APP当前SDK网络连接状态。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sdkConnectionState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>登录状态。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="426" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a239692cd30f184acb165447c9484cf9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::informCustomizeDirective</definition>
+        <argsstring>(const std::string &amp;directive)</argsstring>
+        <name>informCustomizeDirective</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>directive</declname>
+        </param>
+        <briefdescription>
+<para>通知app收到云端下发的自定义指令。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">directive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>指令的详细信息（JSON格式）。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="437" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="437" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa4457826018c5fc361b29d141c723925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::linkThirdDevice</definition>
+        <argsstring>(int deviceType, const std::string &amp;clientId, const std::string &amp;message)</argsstring>
+        <name>linkThirdDevice</name>
+        <param>
+          <type>int</type>
+          <declname>deviceType</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>clientId</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：用于音箱连接第三方设备。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">deviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备类型。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备的client id。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送给第三方设备的消息。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="454" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="454" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a18b9694bc2863798907a8572caa1b5da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::unlinkThirdDevice</definition>
+        <argsstring>(int deviceType, const std::string &amp;message)</argsstring>
+        <name>unlinkThirdDevice</name>
+        <param>
+          <type>int</type>
+          <declname>deviceType</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：断开音箱与第三方设备的连接。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">deviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备类型。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送给第三方设备的消息。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="472" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="472" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a86a2762383d248b63f5f815f1fbdc2c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::onThirdDlpMessage</definition>
+        <argsstring>(int deviceType, const std::string &amp;message)</argsstring>
+        <name>onThirdDlpMessage</name>
+        <param>
+          <type>int</type>
+          <declname>deviceType</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：发送DLP消息给第三方设备。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">deviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备类型。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送的消息（JSON字符串） </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="489" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="489" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab5b78477782d2aa18010d4da7cd45ca3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::onThirdPartyMessage</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>onThirdPartyMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：收到小度之家发来的thirdparty指令。。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发送的消息（JSON字符串） </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="504" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="504" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a0e9c517a15e1933d5cb12e8032b34d90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::notifySdkContext</definition>
+        <argsstring>(const std::string &amp;context, int deviceType)</argsstring>
+        <name>notifySdkContext</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>deviceType</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：广播方式发送dlp消息给小度之家APP。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dlp消息(JSON string)。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">deviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备类型。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="521" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a43f7f49462fc094905cf38b69bb4e848" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::notifySdkContextBySessionId</definition>
+        <argsstring>(const std::string &amp;context, unsigned short sessionId, int deviceType)</argsstring>
+        <name>notifySdkContextBySessionId</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>sessionId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>deviceType</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：发送dlp消息给指定的小度之家APP。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dlp消息(JSON string)。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sessionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>session id。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">deviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备类型。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="538" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="538" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aab4fcea97b804159073abf54e25075bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::systemInformationGetStatus</definition>
+        <argsstring>(SystemInformation &amp;systemInformation)</argsstring>
+        <name>systemInformationGetStatus</name>
+        <param>
+          <type><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" kindref="compound">SystemInformation</ref> &amp;</type>
+          <declname>systemInformation</declname>
+        </param>
+        <briefdescription>
+<para>获取设备的系统信息。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">systemInformation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备信息。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="553" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="553" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8ce2c9ad1c35f8c75a0dad0731b8850e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::systemInformationHardReset</definition>
+        <argsstring>()</argsstring>
+        <name>systemInformationHardReset</name>
+        <briefdescription>
+<para>DLP协议：通知APP恢复出厂设置，具体实现由厂家定义。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="566" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="566" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa1f6aab8cf3806120bce89da4f9447d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::systemUpdateGetStatus</definition>
+        <argsstring>(SystemUpdateInformation &amp;systemUpdateInformation)</argsstring>
+        <name>systemUpdateGetStatus</name>
+        <param>
+          <type><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" kindref="compound">SystemUpdateInformation</ref> &amp;</type>
+          <declname>systemUpdateInformation</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：获取系统软件状态信息。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">systemUpdateInformation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>接收APP层传入的系统更新信息。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="581" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="581" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a644e2bfddb8d4a38fadc0acde7d568ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::systemUpdateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>systemUpdateUpdate</name>
+        <briefdescription>
+<para>DLP协议：通知APP进行系统更新。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="594" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="594" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8d12823ee272295a67796f6d39dcddae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::getCurrentConnectedDeviceInfo</definition>
+        <argsstring>(int deviceType, std::string &amp;clientId, std::string &amp;deviceId)</argsstring>
+        <name>getCurrentConnectedDeviceInfo</name>
+        <param>
+          <type>int</type>
+          <declname>deviceType</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>clientId</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>deviceId</declname>
+        </param>
+        <briefdescription>
+<para>DLP协议：根据设备类型获取当前连接设备的client id和device id。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">deviceType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备类型 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">clientId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DuerLink返回的client id。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">deviceId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DuerLink返回的device id。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True/False：调用成功/调用失败。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="613" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="613" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a2f38ee5cb10328c1dde10c8940dd4e8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::getWifiBssid</definition>
+        <argsstring>()</argsstring>
+        <name>getWifiBssid</name>
+        <briefdescription>
+<para>: 获取当前wifi连接的路由器的mac 地址 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="629" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="629" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a852302b46fca3524968580092a9ff5e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::ApplicationImplementation::sendInfraredRayCodeRequest</definition>
+        <argsstring>(int carrierFrequency, const std::string &amp;pattern)</argsstring>
+        <name>sendInfraredRayCodeRequest</name>
+        <param>
+          <type>int</type>
+          <declname>carrierFrequency</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pattern</declname>
+        </param>
+        <briefdescription>
+<para>发射红外控制码 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">carrierFrequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>红外控制码的载波频率，单位是赫兹，取值范围在20000到60000 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>红外控制码是由多组连续的高低电平时间组成的波形，每个数字表示电平信号时间，单位是微秒。 第一个整数表示高电平信号时间，随后是低电平信号时间，随后又是高电平、低电平，如此类推。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="647" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="647" bodyend="650"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>本类里的接口需要由APP层实现，并在APP生存期，由SDK进行调用。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="293" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="293" bodyend="651"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8d12823ee272295a67796f6d39dcddae" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>getCurrentConnectedDeviceInfo</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ae07cada57638548151d4ae53923ffd85" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>getSpeakerMuteStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8578e0315740c83868c7d8818ad23023" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>getSpeakerVolume</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a2f38ee5cb10328c1dde10c8940dd4e8c" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>getWifiBssid</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a239692cd30f184acb165447c9484cf9a" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>informCustomizeDirective</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ac839c88ccbafd6fba8e5899bd2f2dd55" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>informSdkConnectionStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa4457826018c5fc361b29d141c723925" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>linkThirdDevice</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a0e9c517a15e1933d5cb12e8032b34d90" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>notifySdkContext</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a43f7f49462fc094905cf38b69bb4e848" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>notifySdkContextBySessionId</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a86a2762383d248b63f5f815f1fbdc2c5" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>onThirdDlpMessage</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab5b78477782d2aa18010d4da7cd45ca3" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>onThirdPartyMessage</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28300e1a0c2f3a41461a6d0a03b6299e" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>powerReboot</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a200b09dedd7dced2e41d8980901226e3" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>powerShutdown</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aacb518c857399cc47c6ad005ebfc00fd" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>powerSleep</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab3c134187fc2961692b883f1121516e3" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>queryCurrentVersion</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a852302b46fca3524968580092a9ff5e3" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>sendInfraredRayCodeRequest</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28e429d6ff9ee0f6ba70770b39007ca1" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>setBluetoothConnectionStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab7c22526b77d47b463d8bfcba5320180" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>setBluetoothStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1dc79663449f715e08c35757d11bfab" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>setMicrophoneStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1c0b876db837a498edfd46c07a642b0" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>setSpeakerMute</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a9fb5a1e88b63327a7216335c8668a427" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>setSpeakerVolume</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aab4fcea97b804159073abf54e25075bb" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>systemInformationGetStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8ce2c9ad1c35f8c75a0dad0731b8850e" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>systemInformationHardReset</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa1f6aab8cf3806120bce89da4f9447d6" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>systemUpdateGetStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a644e2bfddb8d4a38fadc0acde7d568ac" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>systemUpdateUpdate</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a18b9694bc2863798907a8572caa1b5da" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>unlinkThirdDevice</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a676b760481c0ea05cd2a870b6b324ad7" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</scope><name>~ApplicationImplementation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

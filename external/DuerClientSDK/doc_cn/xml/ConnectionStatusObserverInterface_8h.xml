@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ConnectionStatusObserverInterface_8h" kind="file" language="C++">
+    <compoundname>ConnectionStatusObserverInterface.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="DcsSdkParameters_8h" local="no">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h</label>
+        <link refid="ConnectionStatusObserverInterface_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="14">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h</label>
+        <link refid="ConnectionStatusObserverInterface_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</label>
+        <link refid="DcsSdk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</innerclass>
+    <innernamespace refid="namespaceduerOSDcsSDK">duerOSDcsSDK</innernamespace>
+    <innernamespace refid="namespaceduerOSDcsSDK_1_1sdkInterfaces">duerOSDcsSDK::sdkInterfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>ConnectionStatusObserverInterface.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2016-2017<sp/>Amazon.com,<sp/>Inc.<sp/>or<sp/>its<sp/>affiliates.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>A<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>is<sp/>located<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://aws.amazon.com/apache2.0/</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>or<sp/>in<sp/>the<sp/>&quot;license&quot;<sp/>file<sp/>accompanying<sp/>this<sp/>file.<sp/>This<sp/>file<sp/>is<sp/>distributed</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>express<sp/>or<sp/>implied.<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>permissions<sp/>and<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DUEROS_DCS_SDK_INCLUDE_DCS_SDK_CONNECTION_STATUS_OBSERVER_INTERFACE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUEROS_DCS_SDK_INCLUDE_DCS_SDK_CONNECTION_STATUS_OBSERVER_INTERFACE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceduerOSDcsSDK" kindref="compound">duerOSDcsSDK</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sdkInterfaces<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kindref="compound">ConnectionStatusObserverInterface</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" kindref="member">Status</ref><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3" kindref="member">DISCONNECTED</ref>,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2" kindref="member">PENDING</ref>,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858" kindref="member">CONNECTED</ref>,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" kindref="member">ChangedReason</ref><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1" kindref="member">ACL_CLIENT_REQUEST</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a" kindref="member">ACL_DISABLED</ref>,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6" kindref="member">DNS_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914" kindref="member">CONNECTION_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7" kindref="member">CONNECTION_THROTTLED</ref>,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de" kindref="member">INVALID_AUTH</ref>,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a" kindref="member">PING_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98" kindref="member">WRITE_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0" kindref="member">READ_TIMEDOUT</ref>,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033" kindref="member">FAILURE_PROTOCOL_ERROR</ref>,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee" kindref="member">INTERNAL_ERROR</ref>,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c" kindref="member">SERVER_INTERNAL_ERROR</ref>,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186" kindref="member">SERVER_SIDE_DISCONNECT</ref>,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe" kindref="member">SERVER_ENDPOINT_CHANGED</ref></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a6516004b2e83e23a85b785e9edc6fe13" kindref="member">~ConnectionStatusObserverInterface</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a5184e92a9c0c77dc28a751bc5612b5cc" kindref="member">onConnectionStatusChanged</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" kindref="member">Status</ref><sp/>status,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" kindref="member">ChangedReason</ref><sp/>reason)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>stream,<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" kindref="member">ConnectionStatusObserverInterface::Status</ref><sp/>status)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(status)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3" kindref="member">ConnectionStatusObserverInterface::Status::DISCONNECTED</ref>:</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DISCONNECTED&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2" kindref="member">ConnectionStatusObserverInterface::Status::PENDING</ref>:</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PENDING&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858" kindref="member">ConnectionStatusObserverInterface::Status::CONNECTED</ref>:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;CONNECTED&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*case<sp/>ConnectionStatusObserverInterface::Status::POST_CONNECTED:</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/>&quot;POST_CONNECTED&quot;;</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stream;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/>operator&lt;&lt;(std::ostream&amp;<sp/>stream,<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" kindref="member">ConnectionStatusObserverInterface::ChangedReason</ref><sp/>reason)<sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(reason)<sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1" kindref="member">ConnectionStatusObserverInterface::ChangedReason::ACL_CLIENT_REQUEST</ref>:</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ACL_CLIENT_REQUEST&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a" kindref="member">ConnectionStatusObserverInterface::ChangedReason::ACL_DISABLED</ref>:</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ACL_DISABLED&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6" kindref="member">ConnectionStatusObserverInterface::ChangedReason::DNS_TIMEDOUT</ref>:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DNS_TIMEDOUT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914" kindref="member">ConnectionStatusObserverInterface::ChangedReason::CONNECTION_TIMEDOUT</ref>:</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;CONNECTION_TIMEDOUT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7" kindref="member">ConnectionStatusObserverInterface::ChangedReason::CONNECTION_THROTTLED</ref>:</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;CONNECTION_THROTTLED&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de" kindref="member">ConnectionStatusObserverInterface::ChangedReason::INVALID_AUTH</ref>:</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;INVALID_AUTH&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a" kindref="member">ConnectionStatusObserverInterface::ChangedReason::PING_TIMEDOUT</ref>:</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PING_TIMEDOUT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98" kindref="member">ConnectionStatusObserverInterface::ChangedReason::WRITE_TIMEDOUT</ref>:</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;WRITE_TIMEDOUT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0" kindref="member">ConnectionStatusObserverInterface::ChangedReason::READ_TIMEDOUT</ref>:</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;READ_TIMEDOUT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033" kindref="member">ConnectionStatusObserverInterface::ChangedReason::FAILURE_PROTOCOL_ERROR</ref>:</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;FAILURE_PROTOCOL_ERROR&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee" kindref="member">ConnectionStatusObserverInterface::ChangedReason::INTERNAL_ERROR</ref>:</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;INTERNAL_ERROR&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c" kindref="member">ConnectionStatusObserverInterface::ChangedReason::SERVER_INTERNAL_ERROR</ref>:</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;SERVER_INTERNAL_ERROR&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186" kindref="member">ConnectionStatusObserverInterface::ChangedReason::SERVER_SIDE_DISCONNECT</ref>:</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;SERVER_SIDE_DISCONNECT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe" kindref="member">ConnectionStatusObserverInterface::ChangedReason::SERVER_ENDPOINT_CHANGED</ref>:</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;SERVER_ENDPOINT_CHANGED&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stream;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sdkInterfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>duerOSDcsSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>DUEROS_DCS_SDK_INCLUDE_DCS_SDK_CONNECTION_STATUS_OBSERVER_INTERFACE_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/menglingfeng/dcs-device-app/dcs-device-sdk/Rk3308_32_buildout/third
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.20.1
+Libs: -L${libdir} -lsqlite3
+Libs.private: -ldl -lpthread 
+Cflags: -I${includedir}

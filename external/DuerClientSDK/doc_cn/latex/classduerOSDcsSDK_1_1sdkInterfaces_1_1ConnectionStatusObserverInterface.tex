@@ -1,0 +1,165 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Connection\+Status\+Observer\+Interface Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}
+
+
+stream连接状态通知类  
+
+
+
+
+{\ttfamily \#include $<$Connection\+Status\+Observer\+Interface.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4f}{Status} \{ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3}{Status\+::\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2}{Status\+::\+P\+E\+N\+D\+I\+NG}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858}{Status\+::\+C\+O\+N\+N\+E\+C\+T\+ED}
+ \}
+\begin{DoxyCompactList}\small\item\em 连接状态的枚举值 \end{DoxyCompactList}\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38}{Changed\+Reason} \{ \newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1}{Changed\+Reason\+::\+A\+C\+L\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a}{Changed\+Reason\+::\+A\+C\+L\+\_\+\+D\+I\+S\+A\+B\+L\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6}{Changed\+Reason\+::\+D\+N\+S\+\_\+\+T\+I\+M\+E\+D\+O\+UT}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914}{Changed\+Reason\+::\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+O\+UT}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7}{Changed\+Reason\+::\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+T\+T\+L\+ED}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de}{Changed\+Reason\+::\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+U\+TH}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a}{Changed\+Reason\+::\+P\+I\+N\+G\+\_\+\+T\+I\+M\+E\+D\+O\+UT}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98}{Changed\+Reason\+::\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+D\+O\+UT}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0}{Changed\+Reason\+::\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+D\+O\+UT}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033}{Changed\+Reason\+::\+F\+A\+I\+L\+U\+R\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee}{Changed\+Reason\+::\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c}{Changed\+Reason\+::\+S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186}{Changed\+Reason\+::\+S\+E\+R\+V\+E\+R\+\_\+\+S\+I\+D\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe}{Changed\+Reason\+::\+S\+E\+R\+V\+E\+R\+\_\+\+E\+N\+D\+P\+O\+I\+N\+T\+\_\+\+C\+H\+A\+N\+G\+ED}
+ \}
+\begin{DoxyCompactList}\small\item\em 连接状态变化原因 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a6516004b2e83e23a85b785e9edc6fe13}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a6516004b2e83e23a85b785e9edc6fe13}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a6516004b2e83e23a85b785e9edc6fe13}{$\sim$\+Connection\+Status\+Observer\+Interface} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a5184e92a9c0c77dc28a751bc5612b5cc}{on\+Connection\+Status\+Changed} (const \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4f}{Status} status, const \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38}{Changed\+Reason} reason)=0
+\begin{DoxyCompactList}\small\item\em 通知连接状态变化 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+stream连接状态通知类 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!Changed\+Reason@{Changed\+Reason}}
+\index{Changed\+Reason@{Changed\+Reason}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{Changed\+Reason}{ChangedReason}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface\+::\+Changed\+Reason}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+连接状态变化原因 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+L\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+Q\+U\+E\+ST@{A\+C\+L\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!A\+C\+L\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+Q\+U\+E\+ST@{A\+C\+L\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+Q\+U\+E\+ST}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1}} 
+A\+C\+L\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+R\+E\+Q\+U\+E\+ST&开始新的连接请求 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+C\+L\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{A\+C\+L\+\_\+\+D\+I\+S\+A\+B\+L\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!A\+C\+L\+\_\+\+D\+I\+S\+A\+B\+L\+ED@{A\+C\+L\+\_\+\+D\+I\+S\+A\+B\+L\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a}} 
+A\+C\+L\+\_\+\+D\+I\+S\+A\+B\+L\+ED&连接请求无效 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+N\+S\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{D\+N\+S\+\_\+\+T\+I\+M\+E\+D\+O\+UT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!D\+N\+S\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{D\+N\+S\+\_\+\+T\+I\+M\+E\+D\+O\+UT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6}} 
+D\+N\+S\+\_\+\+T\+I\+M\+E\+D\+O\+UT&D\+N\+S超时 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+O\+UT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+O\+UT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914}} 
+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+D\+O\+UT&连接超时 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+T\+T\+L\+ED@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+T\+T\+L\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+T\+T\+L\+ED@{C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+T\+T\+L\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7}} 
+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+T\+H\+R\+O\+T\+T\+L\+ED&连接受限 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+U\+TH@{I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+U\+TH}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+U\+TH@{I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+U\+TH}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de}} 
+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+U\+TH&access\+\_\+token无效或过期 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+I\+N\+G\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{P\+I\+N\+G\+\_\+\+T\+I\+M\+E\+D\+O\+UT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!P\+I\+N\+G\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{P\+I\+N\+G\+\_\+\+T\+I\+M\+E\+D\+O\+UT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a}} 
+P\+I\+N\+G\+\_\+\+T\+I\+M\+E\+D\+O\+UT&ping超时 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+D\+O\+UT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+D\+O\+UT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98}} 
+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+D\+O\+UT&网路\+I\+O写数据超时 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+D\+O\+UT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+D\+O\+UT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0}} 
+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+D\+O\+UT&网路\+I\+O读数据超时 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+I\+L\+U\+R\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+E\+R\+R\+OR@{F\+A\+I\+L\+U\+R\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+E\+R\+R\+OR}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!F\+A\+I\+L\+U\+R\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+E\+R\+R\+OR@{F\+A\+I\+L\+U\+R\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033}} 
+F\+A\+I\+L\+U\+R\+E\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+E\+R\+R\+OR&protocol协议错误 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR@{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR@{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR&S\+D\+K内部错误 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR@{S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR@{S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c}} 
+S\+E\+R\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+R\+R\+OR&Server内部错误 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+R\+V\+E\+R\+\_\+\+S\+I\+D\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT@{S\+E\+R\+V\+E\+R\+\_\+\+S\+I\+D\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!S\+E\+R\+V\+E\+R\+\_\+\+S\+I\+D\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT@{S\+E\+R\+V\+E\+R\+\_\+\+S\+I\+D\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186}} 
+S\+E\+R\+V\+E\+R\+\_\+\+S\+I\+D\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+CT&Server主动断开连接 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+E\+R\+V\+E\+R\+\_\+\+E\+N\+D\+P\+O\+I\+N\+T\+\_\+\+C\+H\+A\+N\+G\+ED@{S\+E\+R\+V\+E\+R\+\_\+\+E\+N\+D\+P\+O\+I\+N\+T\+\_\+\+C\+H\+A\+N\+G\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!S\+E\+R\+V\+E\+R\+\_\+\+E\+N\+D\+P\+O\+I\+N\+T\+\_\+\+C\+H\+A\+N\+G\+ED@{S\+E\+R\+V\+E\+R\+\_\+\+E\+N\+D\+P\+O\+I\+N\+T\+\_\+\+C\+H\+A\+N\+G\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe}} 
+S\+E\+R\+V\+E\+R\+\_\+\+E\+N\+D\+P\+O\+I\+N\+T\+\_\+\+C\+H\+A\+N\+G\+ED&Server请求地址发生变化 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4f}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4f}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!Status@{Status}}
+\index{Status@{Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4f}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface\+::\+Status}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+连接状态的枚举值 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3}} 
+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED&连接断开 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+E\+N\+D\+I\+NG@{P\+E\+N\+D\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!P\+E\+N\+D\+I\+NG@{P\+E\+N\+D\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2}} 
+P\+E\+N\+D\+I\+NG&正在建立连接 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+O\+N\+N\+E\+C\+T\+ED@{C\+O\+N\+N\+E\+C\+T\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!C\+O\+N\+N\+E\+C\+T\+ED@{C\+O\+N\+N\+E\+C\+T\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858}} 
+C\+O\+N\+N\+E\+C\+T\+ED&连接成功 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a5184e92a9c0c77dc28a751bc5612b5cc}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a5184e92a9c0c77dc28a751bc5612b5cc}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}!on\+Connection\+Status\+Changed@{on\+Connection\+Status\+Changed}}
+\index{on\+Connection\+Status\+Changed@{on\+Connection\+Status\+Changed}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Connection\+Status\+Changed()}{onConnectionStatusChanged()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface\+::on\+Connection\+Status\+Changed (\begin{DoxyParamCaption}\item[{const \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a3e9317c341d07a60d5c5f321495d0b4f}{Status}}]{status,  }\item[{const \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_a532c8f67d5315b6f0bdef01752463a38}{Changed\+Reason}}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+通知连接状态变化 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & 当前连接状态 \\
+\hline
+{\em reason} & 连接状态发生变化的原因 \\
+\hline
+\end{DoxyParams}

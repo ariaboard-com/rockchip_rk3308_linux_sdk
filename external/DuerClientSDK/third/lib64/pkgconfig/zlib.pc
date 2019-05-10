@@ -1,0 +1,13 @@
+prefix=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third
+exec_prefix=${prefix}
+libdir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/lib
+sharedlibdir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/lib
+includedir=/home/menglingfeng/work/rk3308/dcs-device-app/dcs-device-sdk/Rk3308_buildout/third/include/
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</compoundname>
+    <includes refid="MediaPlayerInterface_8h" local="no">MediaPlayerInterface.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1aab7cbf3d5682cc913d065922af17a310" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::~MediaPlayerInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MediaPlayerInterface</name>
+        <briefdescription>
+<para>析构函数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1abcc2b939b8e4549b1e16168d0efe36ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::setSource</definition>
+        <argsstring>(std::shared_ptr&lt; AttachmentReader &gt; attachmentReader)=0</argsstring>
+        <name>setSource</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" kindref="compound">AttachmentReader</ref> &gt;</type>
+          <declname>attachmentReader</declname>
+        </param>
+        <briefdescription>
+<para>设置播放资源。在play或stop调用之前需要设置播放资源，MediaPlayer每次只能播放一个资源。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">attachmentReader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>该对象用于读取音频数据。 <verbatim>@return SUCCESS表示设置成功，反之则FAILURE。</verbatim> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a3061ab7f0867a3c8a38aad71bf06a6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::setSource</definition>
+        <argsstring>(const std::string &amp;url)=0</argsstring>
+        <name>setSource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>设置播放资源。在play或stop调用之前需要设置播放资源，MediaPlayer每次只能播放一个资源。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>音频资源url。 <verbatim>@return SUCCESS表示设置成功，反之则FAILURE。</verbatim> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a0fb29a6364ca2586ea0328f52f19ed1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::setSource</definition>
+        <argsstring>(const std::string &amp;audio_file_path, bool repeat)=0</argsstring>
+        <name>setSource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>audio_file_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+<para>设置播放资源。在play或stop调用之前需要设置播放资源，MediaPlayer每次只能播放一个资源。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">audio_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>音频资源文件路径。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">repeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否循环播放这个资源。 <verbatim>@return SUCCESS表示设置成功，反之则FAILURE。</verbatim> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1aee790a88554e46581e17bcf0e1f8d2ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::setOffset</definition>
+        <argsstring>(std::chrono::milliseconds offset)</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>std::chrono::milliseconds</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>设置播放位置偏移量。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>以毫秒为单位的播放偏移值。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>SUCCESS表示设置成功，FAILURE表示设置失败。</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="166" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a04f45089480e2177b42584ba51a073c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::play</definition>
+        <argsstring>()=0</argsstring>
+        <name>play</name>
+        <briefdescription>
+<para>开始播放。在播放之前需要先设置资源，如果在资源未设置情况下进行播放，将会返回错误。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>SUCCESS表示播放执行成功；FAILURE表示播放执行失败；PENDING表示正在执行，这时播放状态需要通过onPlaybackStarted</computeroutput> 或onPlaybackError来通知。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1ad9ddff784aa732be0a8b11706e3c9b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>stop</name>
+        <briefdescription>
+<para>停止播放。音频播放一旦停止，重新播放将会从头开始。音频资源需要在调用stop之前设置，如果没有设置播放资源就进行stop，将会返回错误。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>SUCCESS表示播放执行成功；FAILURE表示播放执行失败；PENDING表示正在执行，这时播放状态需要通过onPlaybackStarted</computeroutput> 或onPlaybackError来通知。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1abb1516401c99e93714723360ef093ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::pause</definition>
+        <argsstring>()=0</argsstring>
+        <name>pause</name>
+        <briefdescription>
+<para>暂停播放。音频播放一旦暂停，调用resume()将会恢复播放。音频资源需要在调用pause之前设置，如果没有设置播放资源就进行pause，将会返回错误。 只有当音频正在播放过程中调用pause才会起作用，在其它所有状态下调用都会返回FAILURE。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>SUCCESS表示播放执行成功；FAILURE表示播放执行失败；PENDING表示正在执行，这时播放状态需要通过onPlaybackStarted</computeroutput> 或onPlaybackError来通知。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1affeabe3384e46924a96cd146e3c8dba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::resume</definition>
+        <argsstring>()=0</argsstring>
+        <name>resume</name>
+        <briefdescription>
+<para>恢复播放。音频资源需要在调用resume之前设置，如果没有设置播放资源就进行resume，将会返回错误。 只有当音频正在暂停时调用resume才会起作用，在其它所有状态下调用都会返回FAILURE。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>SUCCESS表示播放执行成功；FAILURE表示播放执行失败；PENDING表示正在执行，这时播放状态需要通过onPlaybackResumed</computeroutput> 或onPlaybackError来通知。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a90c26a82b954c116602034368351d05c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>MediaPlayerStatus</type>
+        <definition>virtual MediaPlayerStatus duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::seekTo</definition>
+        <argsstring>(std::chrono::milliseconds offsetInMilliseconds)</argsstring>
+        <name>seekTo</name>
+        <param>
+          <type>std::chrono::milliseconds</type>
+          <declname>offsetInMilliseconds</declname>
+        </param>
+        <briefdescription>
+<para>设置开始播放的位置。只有当播放资源设置成功后，调用seekTo才有意义。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">offsetInMilliseconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>以毫秒为单位的时间偏移量。 <verbatim>@return @c SUCCESS表示播放执行成功；FAILURE表示播放执行失败；PENDING表示正在执行，这时播放状态需要通过onPlaybackStarted
+或onPlaybackError来通知。</verbatim> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="269" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a316fbe22c527b8fcb87abbf1b43dddbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::seekAble</definition>
+        <argsstring>()</argsstring>
+        <name>seekAble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>当前播放曲目是否支持seek操作。 <simplesect kind="return"><para>true/false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="282" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="282" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1adfd47623bde33d1a871eac3c6f0f550b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::chrono::milliseconds</type>
+        <definition>virtual std::chrono::milliseconds duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::getOffset</definition>
+        <argsstring>()=0</argsstring>
+        <name>getOffset</name>
+        <briefdescription>
+<para>返回当前播放时间偏移量，以毫秒为单位。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>当播放器正在播放时，返回当前的播放时间偏移量；如果播放器没有处于播放状态，返回MEDIA_PLAYER_INVALID_OFFSET。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="298" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a4f211597d7bd34dc19df4798c486d1da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::setObserver</definition>
+        <argsstring>(std::shared_ptr&lt; MediaPlayerObserverInterface &gt; playerObserver)=0</argsstring>
+        <name>setObserver</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" kindref="compound">MediaPlayerObserverInterface</ref> &gt;</type>
+          <declname>playerObserver</declname>
+        </param>
+        <briefdescription>
+<para>设置播放器观察者，当播放状态变化时观察者会观察到相关状态变化。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">playerObserver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>监听播放状态变化的观察者对象. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1ae2404d291dd57c667cf0734622db351f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface::setLocalPlayObserver</definition>
+        <argsstring>(std::shared_ptr&lt; LocalSourcePlayerInterface &gt; playerObserver)</argsstring>
+        <name>setLocalPlayObserver</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface" kindref="compound">LocalSourcePlayerInterface</ref> &gt;</type>
+          <declname>playerObserver</declname>
+        </param>
+        <briefdescription>
+<para>设置播放器观察者，当播放状态变化时观察者会观察到相关状态变化。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">playerObserver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>监听播放状态变化的观察者对象. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="325" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="325" bodyend="326"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>播放器接口。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="87" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="87" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1adfd47623bde33d1a871eac3c6f0f550b" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>getOffset</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1abb1516401c99e93714723360ef093ac9" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>pause</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a04f45089480e2177b42584ba51a073c0" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>play</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1affeabe3384e46924a96cd146e3c8dba0" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>resume</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a316fbe22c527b8fcb87abbf1b43dddbf" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>seekAble</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a90c26a82b954c116602034368351d05c" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>seekTo</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1ae2404d291dd57c667cf0734622db351f" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>setLocalPlayObserver</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a4f211597d7bd34dc19df4798c486d1da" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>setObserver</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1aee790a88554e46581e17bcf0e1f8d2ec" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>setOffset</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1abcc2b939b8e4549b1e16168d0efe36ff" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>setSource</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a3061ab7f0867a3c8a38aad71bf06a6d1" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>setSource</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a0fb29a6364ca2586ea0328f52f19ed1a" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>setSource</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1ad9ddff784aa732be0a8b11706e3c9b09" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>stop</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1aab7cbf3d5682cc913d065922af17a310" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</scope><name>~MediaPlayerInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

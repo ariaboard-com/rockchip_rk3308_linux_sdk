@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface</compoundname>
+    <includes refid="LocalMediaPlayerObserverInterface_8h" local="no">LocalMediaPlayerObserverInterface.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1a3f2b7c693e44a830714fea4f809c1fab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface::~LocalMediaPlayerObserverInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LocalMediaPlayerObserverInterface</name>
+        <briefdescription>
+<para>析构函数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1afd784161702cb69aeda0350bd31289a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface::setLocalMediaPlayerPlayInfo</definition>
+        <argsstring>(const LocalMediaPlayerPlayInfo &amp;playInfo)=0</argsstring>
+        <name>setLocalMediaPlayerPlayInfo</name>
+        <param>
+          <type>const <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" kindref="compound">LocalMediaPlayerPlayInfo</ref> &amp;</type>
+          <declname>playInfo</declname>
+        </param>
+        <briefdescription>
+<para>设置本地播放器播放信息接口 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">playInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>播放信息参数 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="289" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LocalMediaPlayerObserverInterface类, 观察者接口回调类 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="269" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="269" bodyend="290"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1afd784161702cb69aeda0350bd31289a5" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface</scope><name>setLocalMediaPlayerPlayInfo</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1a3f2b7c693e44a830714fea4f809c1fab" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface</scope><name>~LocalMediaPlayerObserverInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,301 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Dcs\+Sdk Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+
+
+D\+CS S\+DK A\+P\+I接口入口类。  
+
+
+
+
+{\ttfamily \#include $<$Dcs\+Sdk.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a3ce74d06ba458398b8840c7a97b56f04}{mute\+Changed} (int volume, bool muted)
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K音箱改变了静音状态。 \end{DoxyCompactList}\item 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_af3131a65e142634cb705aecc4527457d}{volume\+Changed} (int volume, bool muted)
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K音箱改变了音量。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a382966d4ac2bc773a829fcbd9457bca2}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a382966d4ac2bc773a829fcbd9457bca2}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a382966d4ac2bc773a829fcbd9457bca2}{issue\+Playback\+Play\+Command} ()
+\begin{DoxyCompactList}\small\item\em 发起playback play事件。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_af6db30b50b9fa6a7e59ab0463fb1d8c1}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_af6db30b50b9fa6a7e59ab0463fb1d8c1}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_af6db30b50b9fa6a7e59ab0463fb1d8c1}{issue\+Playback\+Pause\+Command} ()
+\begin{DoxyCompactList}\small\item\em 发起playback pause事件。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ab73219fd637f89a64d2421cd1355968c}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ab73219fd637f89a64d2421cd1355968c}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ab73219fd637f89a64d2421cd1355968c}{issue\+Playback\+Next\+Command} ()
+\begin{DoxyCompactList}\small\item\em 发起playback 事件next。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ad9b5205e34f0671f00b5f50f197eec5a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ad9b5205e34f0671f00b5f50f197eec5a}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ad9b5205e34f0671f00b5f50f197eec5a}{issue\+Playback\+Previous\+Command} ()
+\begin{DoxyCompactList}\small\item\em 发起playback previous事件。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa36d3354168987e236a4c3afc8188ece}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa36d3354168987e236a4c3afc8188ece}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa36d3354168987e236a4c3afc8188ece}{close\+Local\+Active\+Alert} ()
+\begin{DoxyCompactList}\small\item\em 关闭当前激活状态的闹钟。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ad598a5ca44f3d36851408b37ae1272ef}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ad598a5ca44f3d36851408b37ae1272ef}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ad598a5ca44f3d36851408b37ae1272ef}{cancel\+Music\+Play} ()
+\begin{DoxyCompactList}\small\item\em 取消音乐播放。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a33672ba32700246c037d793aa4db47c1}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a33672ba32700246c037d793aa4db47c1}} 
+void {\bfseries cancel\+Bluetooth\+Play} ()
+\item 
+std\+::future$<$ bool $>$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ab5fc27d96faecbf05ca7942d13c3edde}{notify\+Of\+Wake\+Word} (uint64\+\_\+t begin\+Index, uint64\+\_\+t end\+Index, const std\+::string \&keyword)
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K设备已经被唤醒。 \end{DoxyCompactList}\item 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aeee4eeaa19b3b1d949688ee398aa9115}{notify\+Of\+Tap\+To\+Talk} (uint64\+\_\+t begin\+Index=I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+D\+EX)
+\begin{DoxyCompactList}\small\item\em 通知用户启动了唤醒状态。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a3da5870e20b4cc23bfa5b1b093e4df60}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a3da5870e20b4cc23bfa5b1b093e4df60}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a3da5870e20b4cc23bfa5b1b093e4df60}{$\sim$\+Dcs\+Sdk} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数。 \end{DoxyCompactList}\item 
+bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac2718d2af3100a8468fcbcf3d581d86d}{consume\+Message} (const std\+::string \&message, const std\+::string \&context\+Id=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 接受非云端传入的\+D\+C\+S消息。 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ae5e3764fd3aeb840e70c01bbfc2d08b7}{get\+Client\+Id} ()
+\begin{DoxyCompactList}\small\item\em 获取当前设备的client id。 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac1db2a76291b585655603174cdafdd51}{get\+Device\+Id} ()
+\begin{DoxyCompactList}\small\item\em 获取当前设备的device id。 \end{DoxyCompactList}\item 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a18cc9cd0b63fe44ba3b2799fcf6189a4}{inform\+Online\+Status} (bool status)
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K当前设备的联网状态。 \end{DoxyCompactList}\item 
+Sdk\+Connection\+State \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a14ae84c488947f6ffb189bc2c4f7b405}{get\+Sdk\+Connection\+States} ()
+\begin{DoxyCompactList}\small\item\em 获取当前\+S\+D\+K的状态. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a9948aeb54a57527eb7757ac23ca65dd6}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a9948aeb54a57527eb7757ac23ca65dd6}} 
+bool \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a9948aeb54a57527eb7757ac23ca65dd6}{is\+O\+Auth\+By\+Pass\+Pair} ()
+\begin{DoxyCompactList}\small\item\em 是否通过配对的方式授权过. \end{DoxyCompactList}\item 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_adf2f5c84aeb4651675b4480204fd36c2}{notify\+Network\+Ready} (bool status, const std\+::string \&wifi\+Bssid=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K网络就绪状态。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a9cb59ac83a2b53504384725ecec1df0a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a9cb59ac83a2b53504384725ecec1df0a}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a9cb59ac83a2b53504384725ecec1df0a}{notify\+Reset\+Http2\+Connection} ()
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K重新建立长连接。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_afcd69e9c352d50a969d3951da0fe047f}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_afcd69e9c352d50a969d3951da0fe047f}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_afcd69e9c352d50a969d3951da0fe047f}{enter\+Play\+Music\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Inform S\+DK 进入音乐唤醒场景。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a2d509bd1f83cf770622fd3bd5d8ee2bf}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a2d509bd1f83cf770622fd3bd5d8ee2bf}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a2d509bd1f83cf770622fd3bd5d8ee2bf}{exit\+Play\+Music\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Inform S\+DK 退出音乐唤醒场景。 \end{DoxyCompactList}\item 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa9aba3850ac50a1328290fa93976bf1c}{force\+Hold\+Focus} (bool hold\+Flag)
+\begin{DoxyCompactList}\small\item\em 尝试去获取音频焦点。 \end{DoxyCompactList}\item 
+ssize\+\_\+t \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa84a60e7b59a83730f0c2b1c02b6fb0b}{write\+Audio\+Data} (const void $\ast$buffer, unsigned long num\+Samples)
+\begin{DoxyCompactList}\small\item\em 写入音频数据。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac8ec1f16c059652b63b90a68d2ed2857}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac8ec1f16c059652b63b90a68d2ed2857}} 
+void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac8ec1f16c059652b63b90a68d2ed2857}{notify\+System\+Time\+Ready} ()
+\begin{DoxyCompactList}\small\item\em 通知\+S\+D\+K系统时间正常，\+S\+D\+K里面依赖于时间的模块（比如闹钟）才可以继续执行。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::unique\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk}{Dcs\+Sdk} $>$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a265680194fb7399453e35e8833b1900c}{create} (\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters}{Dcs\+Sdk\+Parameters} \&parameters)
+\begin{DoxyCompactList}\small\item\em 创建并初始化默认的\+D\+CS S\+D\+K实例。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a5e3ba8eeefdeb069de0a614cce3f181e}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a5e3ba8eeefdeb069de0a614cce3f181e}} 
+static const auto {\bfseries I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+N\+D\+EX} = std\+::numeric\+\_\+limits$<$uint64\+\_\+t$>$\+::max()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+CS S\+DK A\+P\+I接口入口类。 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac2718d2af3100a8468fcbcf3d581d86d}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac2718d2af3100a8468fcbcf3d581d86d}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!consume\+Message@{consume\+Message}}
+\index{consume\+Message@{consume\+Message}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{consume\+Message()}{consumeMessage()}}
+{\footnotesize\ttfamily bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::consume\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{context\+Id = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+接受非云端传入的\+D\+C\+S消息。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em message} & D\+C\+S消息内容（\+J\+S\+O\+N字符串）。 \\
+\hline
+\mbox{\tt in}  & {\em context\+Id} & 消息来源标识。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a265680194fb7399453e35e8833b1900c}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a265680194fb7399453e35e8833b1900c}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!create@{create}}
+\index{create@{create}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static std\+::unique\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk}{Dcs\+Sdk}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::create (\begin{DoxyParamCaption}\item[{\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters}{Dcs\+Sdk\+Parameters} \&}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+创建并初始化默认的\+D\+CS S\+D\+K实例。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em parameters} & 用于初始化\+D\+CS S\+D\+K的参数。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dcs\+Sdk实例指针或nullptr。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa9aba3850ac50a1328290fa93976bf1c}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa9aba3850ac50a1328290fa93976bf1c}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!force\+Hold\+Focus@{force\+Hold\+Focus}}
+\index{force\+Hold\+Focus@{force\+Hold\+Focus}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{force\+Hold\+Focus()}{forceHoldFocus()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::force\+Hold\+Focus (\begin{DoxyParamCaption}\item[{bool}]{hold\+Flag }\end{DoxyParamCaption})}
+
+
+
+尝试去获取音频焦点。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hold\+Flag} & 取值为true表示获取焦点，取值为false表示释放焦点。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ae5e3764fd3aeb840e70c01bbfc2d08b7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ae5e3764fd3aeb840e70c01bbfc2d08b7}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!get\+Client\+Id@{get\+Client\+Id}}
+\index{get\+Client\+Id@{get\+Client\+Id}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{get\+Client\+Id()}{getClientId()}}
+{\footnotesize\ttfamily std\+::string duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::get\+Client\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前设备的client id。 
+
+\begin{DoxyReturn}{Returns}
+client id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac1db2a76291b585655603174cdafdd51}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ac1db2a76291b585655603174cdafdd51}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!get\+Device\+Id@{get\+Device\+Id}}
+\index{get\+Device\+Id@{get\+Device\+Id}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{get\+Device\+Id()}{getDeviceId()}}
+{\footnotesize\ttfamily std\+::string duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::get\+Device\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前设备的device id。 
+
+\begin{DoxyReturn}{Returns}
+device id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a14ae84c488947f6ffb189bc2c4f7b405}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a14ae84c488947f6ffb189bc2c4f7b405}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!get\+Sdk\+Connection\+States@{get\+Sdk\+Connection\+States}}
+\index{get\+Sdk\+Connection\+States@{get\+Sdk\+Connection\+States}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{get\+Sdk\+Connection\+States()}{getSdkConnectionStates()}}
+{\footnotesize\ttfamily Sdk\+Connection\+State duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::get\+Sdk\+Connection\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+获取当前\+S\+D\+K的状态. 
+
+\begin{DoxyReturn}{Returns}
+enum Sdk\+Connection\+State \{ 帐号认证失败, 帐号认证成功, 服务器连接失败, 正在连接服务器, 服务器连接成功 \}; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a18cc9cd0b63fe44ba3b2799fcf6189a4}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a18cc9cd0b63fe44ba3b2799fcf6189a4}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!inform\+Online\+Status@{inform\+Online\+Status}}
+\index{inform\+Online\+Status@{inform\+Online\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{inform\+Online\+Status()}{informOnlineStatus()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::inform\+Online\+Status (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+
+
+通知\+S\+D\+K当前设备的联网状态。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em status} & True/\+False：已联网/未联网。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a3ce74d06ba458398b8840c7a97b56f04}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_a3ce74d06ba458398b8840c7a97b56f04}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!mute\+Changed@{mute\+Changed}}
+\index{mute\+Changed@{mute\+Changed}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{mute\+Changed()}{muteChanged()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::mute\+Changed (\begin{DoxyParamCaption}\item[{int}]{volume,  }\item[{bool}]{muted }\end{DoxyParamCaption})}
+
+
+
+通知\+S\+D\+K音箱改变了静音状态。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em volume} & 音量，取值范围\mbox{[}0 -\/ 100\mbox{]}。 \\
+\hline
+\mbox{\tt in}  & {\em muted} & 静音状态，\+True/\+False：静音/非静音。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_adf2f5c84aeb4651675b4480204fd36c2}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_adf2f5c84aeb4651675b4480204fd36c2}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!notify\+Network\+Ready@{notify\+Network\+Ready}}
+\index{notify\+Network\+Ready@{notify\+Network\+Ready}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{notify\+Network\+Ready()}{notifyNetworkReady()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::notify\+Network\+Ready (\begin{DoxyParamCaption}\item[{bool}]{status,  }\item[{const std\+::string \&}]{wifi\+Bssid = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+通知\+S\+D\+K网络就绪状态。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em status} & True/\+False：已联网/未联网。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aeee4eeaa19b3b1d949688ee398aa9115}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aeee4eeaa19b3b1d949688ee398aa9115}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!notify\+Of\+Tap\+To\+Talk@{notify\+Of\+Tap\+To\+Talk}}
+\index{notify\+Of\+Tap\+To\+Talk@{notify\+Of\+Tap\+To\+Talk}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{notify\+Of\+Tap\+To\+Talk()}{notifyOfTapToTalk()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::notify\+Of\+Tap\+To\+Talk (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{begin\+Index = {\ttfamily INVALID\+\_\+INDEX} }\end{DoxyParamCaption})}
+
+
+
+通知用户启动了唤醒状态。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em begin\+Index} & 唤醒词在音频流中的起始位置. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ab5fc27d96faecbf05ca7942d13c3edde}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_ab5fc27d96faecbf05ca7942d13c3edde}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!notify\+Of\+Wake\+Word@{notify\+Of\+Wake\+Word}}
+\index{notify\+Of\+Wake\+Word@{notify\+Of\+Wake\+Word}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{notify\+Of\+Wake\+Word()}{notifyOfWakeWord()}}
+{\footnotesize\ttfamily std\+::future$<$bool$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::notify\+Of\+Wake\+Word (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{begin\+Index,  }\item[{uint64\+\_\+t}]{end\+Index,  }\item[{const std\+::string \&}]{keyword }\end{DoxyParamCaption})}
+
+
+
+通知\+S\+D\+K设备已经被唤醒。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em begin\+Index} & 唤醒词在音频流中的起始位置. \\
+\hline
+\mbox{\tt in}  & {\em end\+Index} & 唤醒词在音频流中的结束位置. \\
+\hline
+\mbox{\tt in}  & {\em keyword} & 检测到的唤醒词. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_af3131a65e142634cb705aecc4527457d}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_af3131a65e142634cb705aecc4527457d}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!volume\+Changed@{volume\+Changed}}
+\index{volume\+Changed@{volume\+Changed}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{volume\+Changed()}{volumeChanged()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::volume\+Changed (\begin{DoxyParamCaption}\item[{int}]{volume,  }\item[{bool}]{muted }\end{DoxyParamCaption})}
+
+
+
+通知\+S\+D\+K音箱改变了音量。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em volume} & 音量，取值范围\mbox{[}0 -\/ 100\mbox{]}。 \\
+\hline
+\mbox{\tt in}  & {\em muted} & 静音状态，\+True/\+False：静音/非静音。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa84a60e7b59a83730f0c2b1c02b6fb0b}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_aa84a60e7b59a83730f0c2b1c02b6fb0b}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}!write\+Audio\+Data@{write\+Audio\+Data}}
+\index{write\+Audio\+Data@{write\+Audio\+Data}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk}}
+\subsubsection{\texorpdfstring{write\+Audio\+Data()}{writeAudioData()}}
+{\footnotesize\ttfamily ssize\+\_\+t duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+::write\+Audio\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{unsigned long}]{num\+Samples }\end{DoxyParamCaption})}
+
+
+
+写入音频数据。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & 音频数据。 \\
+\hline
+\mbox{\tt in}  & {\em num\+Samples} & 音频数据长度。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+实际写入的数据长度。 
+\end{DoxyReturn}

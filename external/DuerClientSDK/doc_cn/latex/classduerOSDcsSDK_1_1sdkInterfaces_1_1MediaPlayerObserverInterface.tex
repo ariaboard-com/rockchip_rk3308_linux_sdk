@@ -1,0 +1,168 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Media\+Player\+Observer\+Interface Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+
+
+播放器状态观察者接口。  
+
+
+
+
+{\ttfamily \#include $<$Media\+Player\+Observer\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_ae2ead9476d1259d8af4b930dd753f542}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_ae2ead9476d1259d8af4b930dd753f542}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_ae2ead9476d1259d8af4b930dd753f542}{$\sim$\+Media\+Player\+Observer\+Interface} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a937a26a85f0be08cca2887aac1b504e5}{on\+Playback\+Started} ()=0
+\begin{DoxyCompactList}\small\item\em 当播放器真正开始播放时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a91a0d0a61da7e59ee2a5206046bd7206}{on\+Playback\+Finished} ()=0
+\begin{DoxyCompactList}\small\item\em 当播放器真正播放结束时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a38aa45e3f2e3f125f6713e26c1bda5f4}{on\+Playback\+Error} (const Error\+Type \&type, std\+::string error)=0
+\begin{DoxyCompactList}\small\item\em 播放器播放遇到错误时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_ae209d280fa356a0beefc5719ee60d283}{on\+Playback\+Paused} ()
+\begin{DoxyCompactList}\small\item\em 当播放器播放暂停时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a45a55d1c8017d1f727a4b44c91b5946a}{on\+Playback\+Resumed} ()
+\begin{DoxyCompactList}\small\item\em 当播放器播放恢复时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a8d1bf84a79d836f81a0271cad45320f7}{on\+Playback\+Stopped} ()
+\begin{DoxyCompactList}\small\item\em 当播放器播放停止时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a658c20b56b62445a8b1f73a05036f7a7}{on\+Buffer\+Underrun} ()
+\begin{DoxyCompactList}\small\item\em 当播放器读不到数据进入缓冲状态时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a608847626ca3d7e1a89d29fe58b1b21c}{on\+Buffer\+Refilled} ()
+\begin{DoxyCompactList}\small\item\em 当播放器缓冲到足够数据时回调此方法。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a1dfdd4526d9fd246e931895a1227d1ad}{on\+Playback\+Nearlyfinished} ()
+\begin{DoxyCompactList}\small\item\em 当播放器播放即将结束时回调此方法。 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a5ad3622df1af84c861fc02ca128e5b18}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a5ad3622df1af84c861fc02ca128e5b18}} 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a5ad3622df1af84c861fc02ca128e5b18}{on\+Recv\+Firstpacket} ()
+\begin{DoxyCompactList}\small\item\em 播放器接收到第一包数据时回调此方法。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+播放器状态观察者接口。 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a608847626ca3d7e1a89d29fe58b1b21c}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a608847626ca3d7e1a89d29fe58b1b21c}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Buffer\+Refilled@{on\+Buffer\+Refilled}}
+\index{on\+Buffer\+Refilled@{on\+Buffer\+Refilled}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Buffer\+Refilled()}{onBufferRefilled()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Buffer\+Refilled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+当播放器缓冲到足够数据时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放器缓冲到足够数据时尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a658c20b56b62445a8b1f73a05036f7a7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a658c20b56b62445a8b1f73a05036f7a7}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Buffer\+Underrun@{on\+Buffer\+Underrun}}
+\index{on\+Buffer\+Underrun@{on\+Buffer\+Underrun}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Buffer\+Underrun()}{onBufferUnderrun()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Buffer\+Underrun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+当播放器读不到数据进入缓冲状态时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放进入缓冲状态时尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a38aa45e3f2e3f125f6713e26c1bda5f4}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a38aa45e3f2e3f125f6713e26c1bda5f4}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Error@{on\+Playback\+Error}}
+\index{on\+Playback\+Error@{on\+Playback\+Error}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Error()}{onPlaybackError()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Error (\begin{DoxyParamCaption}\item[{const Error\+Type \&}]{type,  }\item[{std\+::string}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+播放器播放遇到错误时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放遇到错误时尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em type} & 错误消息类型 \\
+\hline
+\mbox{\tt in}  & {\em error} & 错误消息内容 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a91a0d0a61da7e59ee2a5206046bd7206}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a91a0d0a61da7e59ee2a5206046bd7206}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Finished@{on\+Playback\+Finished}}
+\index{on\+Playback\+Finished@{on\+Playback\+Finished}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Finished()}{onPlaybackFinished()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+当播放器真正播放结束时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放结束后尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a1dfdd4526d9fd246e931895a1227d1ad}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a1dfdd4526d9fd246e931895a1227d1ad}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Nearlyfinished@{on\+Playback\+Nearlyfinished}}
+\index{on\+Playback\+Nearlyfinished@{on\+Playback\+Nearlyfinished}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Nearlyfinished()}{onPlaybackNearlyfinished()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Nearlyfinished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+当播放器播放即将结束时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放即将结束时尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_ae209d280fa356a0beefc5719ee60d283}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_ae209d280fa356a0beefc5719ee60d283}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Paused@{on\+Playback\+Paused}}
+\index{on\+Playback\+Paused@{on\+Playback\+Paused}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Paused()}{onPlaybackPaused()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+当播放器播放暂停时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放暂停后尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a45a55d1c8017d1f727a4b44c91b5946a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a45a55d1c8017d1f727a4b44c91b5946a}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Resumed@{on\+Playback\+Resumed}}
+\index{on\+Playback\+Resumed@{on\+Playback\+Resumed}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Resumed()}{onPlaybackResumed()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Resumed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+当播放器播放恢复时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放恢复后尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a937a26a85f0be08cca2887aac1b504e5}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a937a26a85f0be08cca2887aac1b504e5}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Started@{on\+Playback\+Started}}
+\index{on\+Playback\+Started@{on\+Playback\+Started}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Started()}{onPlaybackStarted()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+当播放器真正开始播放时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在play执行后尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a8d1bf84a79d836f81a0271cad45320f7}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_a8d1bf84a79d836f81a0271cad45320f7}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}!on\+Playback\+Stopped@{on\+Playback\+Stopped}}
+\index{on\+Playback\+Stopped@{on\+Playback\+Stopped}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Playback\+Stopped()}{onPlaybackStopped()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Media\+Player\+Observer\+Interface\+::on\+Playback\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+当播放器播放停止时回调此方法。 
+
+\begin{DoxyNote}{Note}
+这个方法需要在播放停止时尽快回调，否则可能会影响\+Media\+Player对其它消息的处理。 
+\end{DoxyNote}

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>DCS SDK（Linux版）接口文档</title>
+    <detaileddescription>
+<sect1 id="index_1缩略语">
+<title>缩略语</title>
+<para><itemizedlist>
+<listitem><para>DuerOS：DuerOS 开放平台主要面向企业级用户及个人开发者，提供对话式操作系统能力的输出（DuerOS智能设备开放平台）及输入（DuerOS技能开放平台）。(<ulink url="https://dueros.baidu.com/didp/doc/overall/open-platform-intro_markdown">https://dueros.baidu.com/didp/doc/overall/open-platform-intro_markdown</ulink>) </para></listitem>
+<listitem><para>DCS：DCS协议是DuerOS服务端与设备端之间的通讯协议，是一套把DuerOS的智能语音交互能力向所有设备开放的API。 </para></listitem>
+<listitem><para>DCS SDK（Linux）：封装了DCS协议与DuerOS开放平台交互的细节，实现了DCS对外开放的大部分协议，并支持第三方bot的自定义指令，可用于第三方开发者在Linux平台中基于DuerOS平台快速建立自己的语音交互应用。 </para></listitem>
+</itemizedlist>
+</para></sect1>
+<sect1 id="index_1概述">
+<title>概述</title>
+<para>本文档用于描述DCS SDK（Linux版本）对外的主要接口说明。 </para><para>APP开发者可以通过DcsSdk::create函数创建一个DCS SDK实例，并实现必要的观察类接口，应用层设备调用接口来实现与DuerOS的交互，通信，以及TTS、Audio的播放。 </para><para>目前DCS SDK（Linux）支持的DCS协议有： <itemizedlist>
+<listitem><para>语音输入 </para></listitem>
+<listitem><para>语音输出 </para></listitem>
+<listitem><para>扬声器控制 </para></listitem>
+<listitem><para>音频播放器 </para></listitem>
+<listitem><para>播放控制 </para></listitem>
+<listitem><para>闹钟 </para></listitem>
+<listitem><para>屏幕展示 </para></listitem>
+<listitem><para>系统 </para></listitem>
+</itemizedlist>
+</para><para>并支持通过小度之家与SDK之间进行交互，并控制音箱。 <programlisting></programlisting> </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

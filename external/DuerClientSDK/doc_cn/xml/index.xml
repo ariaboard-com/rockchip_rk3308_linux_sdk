@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kind="class"><name>duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a676b760481c0ea05cd2a870b6b324ad7" kind="function"><name>~ApplicationImplementation</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a9fb5a1e88b63327a7216335c8668a427" kind="function"><name>setSpeakerVolume</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1c0b876db837a498edfd46c07a642b0" kind="function"><name>setSpeakerMute</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8578e0315740c83868c7d8818ad23023" kind="function"><name>getSpeakerVolume</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ae07cada57638548151d4ae53923ffd85" kind="function"><name>getSpeakerMuteStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab7c22526b77d47b463d8bfcba5320180" kind="function"><name>setBluetoothStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28e429d6ff9ee0f6ba70770b39007ca1" kind="function"><name>setBluetoothConnectionStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1dc79663449f715e08c35757d11bfab" kind="function"><name>setMicrophoneStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab3c134187fc2961692b883f1121516e3" kind="function"><name>queryCurrentVersion</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aacb518c857399cc47c6ad005ebfc00fd" kind="function"><name>powerSleep</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a200b09dedd7dced2e41d8980901226e3" kind="function"><name>powerShutdown</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28300e1a0c2f3a41461a6d0a03b6299e" kind="function"><name>powerReboot</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ac839c88ccbafd6fba8e5899bd2f2dd55" kind="function"><name>informSdkConnectionStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a239692cd30f184acb165447c9484cf9a" kind="function"><name>informCustomizeDirective</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa4457826018c5fc361b29d141c723925" kind="function"><name>linkThirdDevice</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a18b9694bc2863798907a8572caa1b5da" kind="function"><name>unlinkThirdDevice</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a86a2762383d248b63f5f815f1fbdc2c5" kind="function"><name>onThirdDlpMessage</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab5b78477782d2aa18010d4da7cd45ca3" kind="function"><name>onThirdPartyMessage</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a0e9c517a15e1933d5cb12e8032b34d90" kind="function"><name>notifySdkContext</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a43f7f49462fc094905cf38b69bb4e848" kind="function"><name>notifySdkContextBySessionId</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aab4fcea97b804159073abf54e25075bb" kind="function"><name>systemInformationGetStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8ce2c9ad1c35f8c75a0dad0731b8850e" kind="function"><name>systemInformationHardReset</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa1f6aab8cf3806120bce89da4f9447d6" kind="function"><name>systemUpdateGetStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a644e2bfddb8d4a38fadc0acde7d568ac" kind="function"><name>systemUpdateUpdate</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8d12823ee272295a67796f6d39dcddae" kind="function"><name>getCurrentConnectedDeviceInfo</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a2f38ee5cb10328c1dde10c8940dd4e8c" kind="function"><name>getWifiBssid</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a852302b46fca3524968580092a9ff5e3" kind="function"><name>sendInfraredRayCodeRequest</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" kind="class"><name>duerOSDcsSDK::sdkInterfaces::AttachmentReader</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8" kind="enum"><name>Policy</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8a72323e5457d8fb855145bfee934aa415" kind="enumvalue"><name>BLOCKING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8a71fed0a1fc7faaeab0a56a76799e5ad3" kind="enumvalue"><name>NON_BLOCKING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" kind="enum"><name>ReadStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abae0aa021e21dddbd6d8cecec71e9cf564" kind="enumvalue"><name>OK</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba787bd2f5224b6b864eea398349436849" kind="enumvalue"><name>OK_WOULDBLOCK</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abadb301c3410dd8d428a7f17043740bb14" kind="enumvalue"><name>OK_TIMEDOUT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba110ccf2f5d2ff4eda1fd1a494293467d" kind="enumvalue"><name>CLOSED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba6473b0b6f8e61be94630555e2d4a9baa" kind="enumvalue"><name>ERROR_OVERRUN</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abaa1238e1a739964feb62763f7bf0875f0" kind="enumvalue"><name>ERROR_BYTES_LESS_THAN_WORD_SIZE</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba7b6311615dfbbaccec8279677f19feea" kind="enumvalue"><name>ERROR_INTERNAL</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" kind="enum"><name>ClosePoint</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ad051319484a869ba5244878e7ed93b8d" kind="enumvalue"><name>IMMEDIATELY</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79" kind="enumvalue"><name>AFTER_DRAINING_CURRENT_BUFFER</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a0524e068572417466c220cb44c27fd9a" kind="function"><name>~AttachmentReader</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a8e3e1a18275e89086c1b972401a98e38" kind="function"><name>read</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a9660710b89712142a451236144968acc" kind="function"><name>close</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" kind="enum"><name>Status</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3" kind="enumvalue"><name>DISCONNECTED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2" kind="enumvalue"><name>PENDING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858" kind="enumvalue"><name>CONNECTED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" kind="enum"><name>ChangedReason</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1" kind="enumvalue"><name>ACL_CLIENT_REQUEST</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a" kind="enumvalue"><name>ACL_DISABLED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6" kind="enumvalue"><name>DNS_TIMEDOUT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914" kind="enumvalue"><name>CONNECTION_TIMEDOUT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7" kind="enumvalue"><name>CONNECTION_THROTTLED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de" kind="enumvalue"><name>INVALID_AUTH</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a" kind="enumvalue"><name>PING_TIMEDOUT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98" kind="enumvalue"><name>WRITE_TIMEDOUT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0" kind="enumvalue"><name>READ_TIMEDOUT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033" kind="enumvalue"><name>FAILURE_PROTOCOL_ERROR</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee" kind="enumvalue"><name>INTERNAL_ERROR</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c" kind="enumvalue"><name>SERVER_INTERNAL_ERROR</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186" kind="enumvalue"><name>SERVER_SIDE_DISCONNECT</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe" kind="enumvalue"><name>SERVER_ENDPOINT_CHANGED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a6516004b2e83e23a85b785e9edc6fe13" kind="function"><name>~ConnectionStatusObserverInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a5184e92a9c0c77dc28a751bc5612b5cc" kind="function"><name>onConnectionStatusChanged</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk" kind="class"><name>duerOSDcsSDK::sdkInterfaces::DcsSdk</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a5e3ba8eeefdeb069de0a614cce3f181e" kind="variable"><name>INVALID_INDEX</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a91c5f43d8fa59368f1d2346c0f580b92" kind="variable"><name>m_dcsClient</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a265680194fb7399453e35e8833b1900c" kind="function"><name>create</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a3ce74d06ba458398b8840c7a97b56f04" kind="function"><name>muteChanged</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1af3131a65e142634cb705aecc4527457d" kind="function"><name>volumeChanged</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a382966d4ac2bc773a829fcbd9457bca2" kind="function"><name>issuePlaybackPlayCommand</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1af6db30b50b9fa6a7e59ab0463fb1d8c1" kind="function"><name>issuePlaybackPauseCommand</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ab73219fd637f89a64d2421cd1355968c" kind="function"><name>issuePlaybackNextCommand</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ad9b5205e34f0671f00b5f50f197eec5a" kind="function"><name>issuePlaybackPreviousCommand</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1aa36d3354168987e236a4c3afc8188ece" kind="function"><name>closeLocalActiveAlert</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ad598a5ca44f3d36851408b37ae1272ef" kind="function"><name>cancelMusicPlay</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a33672ba32700246c037d793aa4db47c1" kind="function"><name>cancelBluetoothPlay</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ab5fc27d96faecbf05ca7942d13c3edde" kind="function"><name>notifyOfWakeWord</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1aeee4eeaa19b3b1d949688ee398aa9115" kind="function"><name>notifyOfTapToTalk</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a3da5870e20b4cc23bfa5b1b093e4df60" kind="function"><name>~DcsSdk</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ac2718d2af3100a8468fcbcf3d581d86d" kind="function"><name>consumeMessage</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ae5e3764fd3aeb840e70c01bbfc2d08b7" kind="function"><name>getClientId</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ac1db2a76291b585655603174cdafdd51" kind="function"><name>getDeviceId</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a18cc9cd0b63fe44ba3b2799fcf6189a4" kind="function"><name>informOnlineStatus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a14ae84c488947f6ffb189bc2c4f7b405" kind="function"><name>getSdkConnectionStates</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a9948aeb54a57527eb7757ac23ca65dd6" kind="function"><name>isOAuthByPassPair</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1adf2f5c84aeb4651675b4480204fd36c2" kind="function"><name>notifyNetworkReady</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a9cb59ac83a2b53504384725ecec1df0a" kind="function"><name>notifyResetHttp2Connection</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1afcd69e9c352d50a969d3951da0fe047f" kind="function"><name>enterPlayMusicScene</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a2d509bd1f83cf770622fd3bd5d8ee2bf" kind="function"><name>exitPlayMusicScene</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1aa9aba3850ac50a1328290fa93976bf1c" kind="function"><name>forceHoldFocus</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1aa84a60e7b59a83730f0c2b1c02b6fb0b" kind="function"><name>writeAudioData</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ac8ec1f16c059652b63b90a68d2ed2857" kind="function"><name>notifySystemTimeReady</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1ac9c703cdd545cc6f7787a4fd6e2a2f9b" kind="function"><name>DcsSdk</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk_1a96db60431e5bc900c740f5e66ed290fd" kind="function"><name>initialize</name></member>
+  </compound>
+  <compound refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters" kind="struct"><name>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</name>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a3ea1682c3f53008826f7a8052a0d6928" kind="variable"><name>m_pathToConfig</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a81ea7a2b19677dc1b7fa6a2e0a3a5cb1" kind="variable"><name>m_pathToRuntimeConfig</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad04728326ee78e7ed23d38d653f433cf" kind="variable"><name>m_deviceId</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a24e3ebbe6cd5f4dced011396a2eee730" kind="variable"><name>m_speakMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a942f8ba8164cbbb4a4142d8c0cad9c56" kind="variable"><name>m_audioMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a9a524a3548c1358fec095248bb810543" kind="variable"><name>m_alertsMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a831ec4dd4c4d6550d859aa9da8dd2b07" kind="variable"><name>m_localMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a744bb0199689f9ad3618236ee76c2005" kind="variable"><name>m_dialogStateObservers</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a103a5300a0efb80ba3416ecdf9d00bea" kind="variable"><name>m_connectionObservers</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1af431364cf9b33e739738febd9db27612" kind="variable"><name>m_applicationImplementation</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7051a81f2907c90f90f80391a713b6fb" kind="variable"><name>m_localTtsMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0199d040c9524710741f0851046ffce2" kind="variable"><name>m_localPromptPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aa515cfbb4e89bc37f541ef04fbfec27a" kind="variable"><name>m_customizeDirective</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad0e970981e1932bf8165679c9fd3953e" kind="variable"><name>m_keyWordObserverInterface</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ae80d43f8e0f5f9a887f056cbcd280a26" kind="variable"><name>m_enableSdkWakeup</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeea15d42773a44f528c7fa1346d09ac9" kind="variable"><name>m_clientSecret</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4f7783b647c950318c10ba951f1a99e9" kind="function"><name>DcsSdkParameters</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a95c8300f4163e33cc6d639900afe1a6d" kind="function"><name>setPathToConfig</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab62fb7501f438a401592b2a1c4ef1548" kind="function"><name>setPathToRuntimeConfig</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a560bb54f6250f35c976d32abc69f8879" kind="function"><name>setDeviceId</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a5f35981ec0f7f048c658dd5778c877af" kind="function"><name>setSpeakMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac9b35322064082a043a10c50631dfbab" kind="function"><name>setAudioMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a08fd79d632571c5e943fd85196ba0411" kind="function"><name>setAlertsMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a02a6263c432994bf0acb036e4ed6d7c7" kind="function"><name>setLocalMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad2b64e3b8c64580ea28c7699e6fa7d74" kind="function"><name>setDialogStateObservers</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a82391d394920edd2cdce280c111021b4" kind="function"><name>setConnectionObservers</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4560432cd5e52eb3aed9f40dba480ac3" kind="function"><name>setApplicationImplementation</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77608e2433a08f05eb6f4ab86ff44950" kind="function"><name>setLocalTtsMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab6583b5f18881e63eab064be6c006b35" kind="function"><name>setLocalPromptPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad1c083f3e2cd3c5be0e8cb96625bb5a0" kind="function"><name>setCustomizeDirectives</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a681260954fd2cd2d198eebe4dff45603" kind="function"><name>setKeyWordObserverInterface</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a146e85296deb8442956997bf2b1e17ff" kind="function"><name>setEnableSdkWakeup</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0206523f4fd71ef4730b12030dcb7cd1" kind="function"><name>setClientSecret</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a15acf1146e64b5f08d8b0017c07eb09e" kind="function"><name>getPathToConfig</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0700d03aa8a280cbd5f93ef0e40e55a5" kind="function"><name>getPathToRuntimeConfig</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7d1bced577a3150094f87fd9c39792c8" kind="function"><name>getDeviceId</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7440f93b6b2f3ad352ebc7cdfee9cf7d" kind="function"><name>getClientSecret</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a137453bcd818997f0916d48e60af3523" kind="function"><name>getSpeakMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a778d9c0e35063af224264cb4c2d69b67" kind="function"><name>getAudioMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aedb56e9d51342ce49920decb10c4aae3" kind="function"><name>getAlertsMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a20b4b22628b1708787e12f3623082f7b" kind="function"><name>getLocalMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77f1bc5116b53c12cb1d115e35ff7b14" kind="function"><name>getDialogStateObservers</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1adfd39ff4af037a2844d1e977eb00b8c5" kind="function"><name>getConnectionObservers</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac6c35ff867585dbfce21418ee200bcb2" kind="function"><name>getApplicationImplementation</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1acda5dfd2e1e9a8eb07d0613b61f37642" kind="function"><name>getLocalTtsMediaPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeb569e85ff702f3ec9794e99e7e9cab1" kind="function"><name>getLocalPromptPlayer</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0622206b1833f62c98e79de840698645" kind="function"><name>getCustomizeDirective</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a50665d3ef7fcfcfbe08b38cfbf9c26cf" kind="function"><name>getKeyWordObserverInterface</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7260bc59f129332b464b8574ca101662" kind="function"><name>getEnableSdkWakeup</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cd" kind="enum"><name>DialogUXState</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdaa5daf7f2ebbba4975d61dab1c40188c7" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdac0ff938e396e72c225bd66562b80a77e" kind="enumvalue"><name>LISTENING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda18004389aa6f827c608aad2441a2bc53" kind="enumvalue"><name>THINKING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdaddee564b336f5de690b746eb04e62114" kind="enumvalue"><name>SPEAKING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda2c616b2713e2e0aed04b4c4752c88133" kind="enumvalue"><name>FINISHED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdad91f1c898ec44b2a141bcd5c214bae42" kind="enumvalue"><name>MEDIA_PLAYING</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda0dd094bc11dfac6f035f22c4740ae0fc" kind="enumvalue"><name>MEDIA_STOPPED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda07cd4dc17fafe8ec3c4eb3f8d384c947" kind="enumvalue"><name>MEDIA_FINISHED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46" kind="enum"><name>AlertState</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a2baa69eafc7204f3bd8648eba580c489" kind="enumvalue"><name>READY</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a17130e6c806885e23770df1519b18eb7" kind="enumvalue"><name>STARTED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a09d4d696b4e935115b9313e3c412509a" kind="enumvalue"><name>STOPPED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46adbd414f9aaabb67e8430e9520f604a79" kind="enumvalue"><name>SNOOZED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a8f7afecbc8fbc4cd0f50a57d1172482e" kind="enumvalue"><name>COMPLETED</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a560bb2d9ea9002aa8c70a4462ca6c304" kind="enumvalue"><name>PAST_DUE</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46aa72d9c6d4fab6a8bb2fcc8fe3f7dff13" kind="enumvalue"><name>FOCUS_ENTERED_FOREGROUND</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a8f2c39a6e3871da5c682a37a792a6b05" kind="enumvalue"><name>FOCUS_ENTERED_BACKGROUND</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46abb1ca97ec761fc37101737ba0aa2e7c5" kind="enumvalue"><name>ERROR</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a35c278a6bbec5a99f727adf843b1f6ca" kind="function"><name>~DialogUXStateObserverInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a637d0af6797816b4e5cd72198e3f3781" kind="function"><name>onDialogUXStateChanged</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ae7aeb5e14429beb2de4f39343e212454" kind="function"><name>onMessageSendComplete</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a444993d3b7cf37527bb2201659215094" kind="function"><name>onHttp2NotConnected</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aa2696e09b8315aebb1a5a22a954c0131" kind="function"><name>onListenStarted</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a4449d08c2a37dab840892f81e4aef8b2" kind="function"><name>onStopListen</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a1d2558050e701fd223c5f71d41e6042a" kind="function"><name>onReceivedDirective</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aad6473c61fe192e97afa9a2b79aad7cc" kind="function"><name>onAlertStateChange</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ad64bcd73399ce997208ff0eb438b9ca7" kind="function"><name>onExpectSpeech</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac705edbf0fe9a07e4f72ecd4c911e779" kind="function"><name>onSpeechFinished</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a92870093ce3de85233e4e7b098c94185" kind="function"><name>stateToString</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aa80a09873abe1e5f805594deb2a38afa" kind="function"><name>stateToString</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a11ee242b3d72866143211ed5526953c1" kind="variable"><name>UNSPECIFIED_INDEX</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a4c45583ddde82010ad7f6399af45feb2" kind="function"><name>~KeyWordObserverInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1af2a248b56dd4977e02cfdcfffa9047bf" kind="function"><name>onKeyWordDetected</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1af9761f288afcba9866dad714e690501b" kind="function"><name>~LocalMediaPlayerInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1aab502afd0db0728b813a8b85d915c1c5" kind="function"><name>play</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1a562eaa0a0448c10031296f72c1362ec6" kind="function"><name>stop</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1ac134ae6ae0862f930c7eb728ae58706a" kind="function"><name>pause</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1a960a77263704220915e58df376e72498" kind="function"><name>resume</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1a539d83dcddade8c758371b708bd03dad" kind="function"><name>playNext</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1a15217d174ee9c7a6d278823aa1ef8d01" kind="function"><name>playPrevious</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface_1aaf5ec74c15c0f2910d390e38b502ddec" kind="function"><name>setObserver</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1a3f2b7c693e44a830714fea4f809c1fab" kind="function"><name>~LocalMediaPlayerObserverInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface_1afd784161702cb69aeda0350bd31289a5" kind="function"><name>setLocalMediaPlayerPlayInfo</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" kind="class"><name>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a50478449b67a6fe841f1f568ea125ac2" kind="variable"><name>m_playerActivity</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a17da3f1a2f0f61df1241f91b0e7e4cce" kind="variable"><name>m_status</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a8838f186d30e5878010c50019bda9c17" kind="variable"><name>m_playerName</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1acfafdcdfad0dd820068b05ca07b511f8" kind="variable"><name>m_audioId</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1ae2e0b63af38f5d1b1bb96b960f3dcd2a" kind="variable"><name>m_title</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a142a0a14dbb28c0f9d3127bdd5cd92ad" kind="variable"><name>m_artist</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a22393f1fb99c6d3c3f66461fa24650e7" kind="variable"><name>m_album</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a0ae7b7047fe5ceadf7fcdd4db0556cbe" kind="variable"><name>m_year</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a330b7580750ad5d327151f0bfb96953a" kind="variable"><name>m_genre</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_1a431411441e84ce2cf6e1beb3a1e9b92e" kind="function"><name>playLocalSource</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_1add348d72e87c2bcb4c7fbdd91fc4f590" kind="function"><name>playTts</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1aab7cbf3d5682cc913d065922af17a310" kind="function"><name>~MediaPlayerInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1abcc2b939b8e4549b1e16168d0efe36ff" kind="function"><name>setSource</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a3061ab7f0867a3c8a38aad71bf06a6d1" kind="function"><name>setSource</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a0fb29a6364ca2586ea0328f52f19ed1a" kind="function"><name>setSource</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1aee790a88554e46581e17bcf0e1f8d2ec" kind="function"><name>setOffset</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a04f45089480e2177b42584ba51a073c0" kind="function"><name>play</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1ad9ddff784aa732be0a8b11706e3c9b09" kind="function"><name>stop</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1abb1516401c99e93714723360ef093ac9" kind="function"><name>pause</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1affeabe3384e46924a96cd146e3c8dba0" kind="function"><name>resume</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a90c26a82b954c116602034368351d05c" kind="function"><name>seekTo</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a316fbe22c527b8fcb87abbf1b43dddbf" kind="function"><name>seekAble</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1adfd47623bde33d1a871eac3c6f0f550b" kind="function"><name>getOffset</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1a4f211597d7bd34dc19df4798c486d1da" kind="function"><name>setObserver</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface_1ae2404d291dd57c667cf0734622db351f" kind="function"><name>setLocalPlayObserver</name></member>
+  </compound>
+  <compound refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" kind="class"><name>duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</name>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae2ead9476d1259d8af4b930dd753f542" kind="function"><name>~MediaPlayerObserverInterface</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a937a26a85f0be08cca2887aac1b504e5" kind="function"><name>onPlaybackStarted</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a91a0d0a61da7e59ee2a5206046bd7206" kind="function"><name>onPlaybackFinished</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a38aa45e3f2e3f125f6713e26c1bda5f4" kind="function"><name>onPlaybackError</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1ae209d280fa356a0beefc5719ee60d283" kind="function"><name>onPlaybackPaused</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a45a55d1c8017d1f727a4b44c91b5946a" kind="function"><name>onPlaybackResumed</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a8d1bf84a79d836f81a0271cad45320f7" kind="function"><name>onPlaybackStopped</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a658c20b56b62445a8b1f73a05036f7a7" kind="function"><name>onBufferUnderrun</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a608847626ca3d7e1a89d29fe58b1b21c" kind="function"><name>onBufferRefilled</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a1dfdd4526d9fd246e931895a1227d1ad" kind="function"><name>onPlaybackNearlyfinished</name></member>
+    <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface_1a5ad3622df1af84c861fc02ca128e5b18" kind="function"><name>onRecvFirstpacket</name></member>
+  </compound>
+  <compound refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" kind="struct"><name>duerOSDcsSDK::sdkInterfaces::SystemInformation</name>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0aa3bae54c13fff6792d94dc275f3f27" kind="variable"><name>ssid</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ad9caf013cb012f387190640ef15fe08e" kind="variable"><name>mac</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a6134155a23d32e00714203c37c7a1884" kind="variable"><name>ip</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1acddeebe9ffd3da5263d9425a08b7a3c3" kind="variable"><name>clientId</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a03f96e89d9a32cd3cb1f3b9f1bafbfe4" kind="variable"><name>deviceId</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ab48bf926c5ada4bdd111c66068c9089f" kind="variable"><name>sn</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ac15ee05a69a139e4bd1a45b42d772109" kind="variable"><name>bluetoothMac</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0e2db377bf9f20f232683718dd27903e" kind="variable"><name>deviceVersion</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a288693ee6a8001b336b01c90dec17690" kind="variable"><name>softwareVersion</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a7a2868fa576db14d7974e083edebf6a4" kind="variable"><name>protocolVersion</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a44564c64df820891fde2623e37fa8957" kind="variable"><name>onlineStatus</name></member>
+  </compound>
+  <compound refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" kind="struct"><name>duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</name>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ad995326d15f1da8af0c1da21a2095d5e" kind="variable"><name>currentVersion</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a04c8fbb651fc3d91320ab35cbd2b0e8c" kind="variable"><name>currentVersionDesc</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a50f921375b90b84c8a2f03ddc07d0b1e" kind="variable"><name>targetVersion</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a33eb6b7623da36d78be04d7fa5f26c8e" kind="variable"><name>targetVersionDesc</name></member>
+    <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ab930a589e79a54318a0b2f4c0e74d2d9" kind="variable"><name>state</name></member>
+  </compound>
+  <compound refid="namespaceduerOSDcsSDK" kind="namespace"><name>duerOSDcsSDK</name>
+  </compound>
+  <compound refid="namespaceduerOSDcsSDK_1_1dcsClient" kind="namespace"><name>duerOSDcsSDK::dcsClient</name>
+  </compound>
+  <compound refid="namespaceduerOSDcsSDK_1_1sdkInterfaces" kind="namespace"><name>duerOSDcsSDK::sdkInterfaces</name>
+    <member refid="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0e" kind="enum"><name>SystemUpdateState</name></member>
+    <member refid="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0ea0c32f1ab4fdb8e1f074758f762db44ef" kind="enumvalue"><name>NOT_UPDATABLE</name></member>
+    <member refid="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0ea536d35c5e0c653a259fb56e190bc2741" kind="enumvalue"><name>UPDATABLE</name></member>
+    <member refid="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0ea4cc8dfdc76b1ecc5d8f62d660654a742" kind="enumvalue"><name>UPDATING</name></member>
+    <member refid="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3a" kind="enum"><name>SdkConnectionState</name></member>
+    <member refid="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa59b15df5bdbc6ea3fd43264e2a5c1130" kind="enumvalue"><name>SDK_AUTH_FAILED</name></member>
+    <member refid="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa079bcb5476ca0345d26931c3b632fd83" kind="enumvalue"><name>SDK_AUTH_SUCCEED</name></member>
+    <member refid="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa3cb8d7e316f280202a7ece78aafa2c7c" kind="enumvalue"><name>SDK_CONNECT_FAILED</name></member>
+    <member refid="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa267f4963822f12ba4859dafe930aa5ed" kind="enumvalue"><name>SDK_CONNECTING</name></member>
+    <member refid="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa5ac34ebfcafb51c7f3155d52dfa231ba" kind="enumvalue"><name>SDK_CONNECT_SUCCEED</name></member>
+    <member refid="ErrorTypes_8h_1adfb493b25fb2ed8ba711b0e8b56e1604" kind="enum"><name>ErrorType</name></member>
+    <member refid="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604a8a46c6871379464dbd33be70a24cfba3" kind="enumvalue"><name>MEDIA_ERROR_UNKNOWN</name></member>
+    <member refid="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604af0506be275f28c97934bda2659eb4367" kind="enumvalue"><name>MEDIA_ERROR_INVALID_REQUEST</name></member>
+    <member refid="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604a71091367e6d03f68244823010b052a51" kind="enumvalue"><name>MEDIA_ERROR_SERVICE_UNAVAILABLE</name></member>
+    <member refid="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604ab1f98ed35decb700504a4a434fe5056e" kind="enumvalue"><name>MEDIA_ERROR_INTERNAL_SERVER_ERROR</name></member>
+    <member refid="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604a5183b820e865ed35bcd230a8be0140fa" kind="enumvalue"><name>MEDIA_ERROR_INTERNAL_DEVICE_ERROR</name></member>
+    <member refid="LocalMediaPlayerInterface_8h_1a84139ee3f1740fc5f035bc78cb8c0ccf" kind="enum"><name>LocalMediaPlayerStatus</name></member>
+    <member refid="dummy_1a84139ee3f1740fc5f035bc78cb8c0ccfa76e2fe9a413ff88132a4914e4e8abd77" kind="enumvalue"><name>LOCAL_MEDIA_PLAYER_SUCCESS</name></member>
+    <member refid="dummy_1a84139ee3f1740fc5f035bc78cb8c0ccfa910d621e5d4720435e3ac04debca1ee9" kind="enumvalue"><name>LOCAL_MEDIA_PLAYER_PENDING</name></member>
+    <member refid="dummy_1a84139ee3f1740fc5f035bc78cb8c0ccfab0786040f43b09bb14b3e5a882a1982b" kind="enumvalue"><name>LOCAL_MEDIA_PLAYER_FAILURE</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0" kind="enum"><name>LocalMediaPlayerPlayActivity</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0aeb509a0770f0db4d8d02f6e92607d003" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0a6c08c57155c7373cd20acfd34477d16c" kind="enumvalue"><name>PAUSED</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0aa35cbed6d00b1ad31c304dcefcf11750" kind="enumvalue"><name>PLAYING</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0a43376e155d1c85f4ae737605d417b821" kind="enumvalue"><name>STOPPED</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1b" kind="enum"><name>LocalMediaPlayerPlayStatus</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1bab43b72c7c001149cc0c18a1791c2c89b" kind="enumvalue"><name>FOREGROUND</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1ba4bdc96ca290e007268dd181c4b7d5152" kind="enumvalue"><name>BACKGROUND</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1bac0fb50dec83935096da665e5b6457547" kind="enumvalue"><name>CLOSED</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2" kind="enum"><name>LocalMediaPlayerName</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a612913ecbd41e018155007077ea4ed01" kind="enumvalue"><name>BLUETOOTH</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2ad01c3ac146ce08ac8160814bf9e9d72a" kind="enumvalue"><name>QQ</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2af21b4ead4f031fe7698c7962f1ec7e04" kind="enumvalue"><name>BAIDU</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a015a0a32337733e80c7cfeb89644d599" kind="enumvalue"><name>XIAMI</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a9de25fa44ff3560c655e3798a63af316" kind="enumvalue"><name>NETEASE</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a491cd9519d401ed54f05ed0539a399c6" kind="enumvalue"><name>KUWO</name></member>
+    <member refid="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a56093123494ffde32f31ecbc79316cd0" kind="enumvalue"><name>KUGOU</name></member>
+    <member refid="MediaPlayerInterface_8h_1ac060779e85f450f00143f4ab2f0ceae1" kind="enum"><name>MediaPlayerStatus</name></member>
+    <member refid="dummy_1ac060779e85f450f00143f4ab2f0ceae1ad0749aaba8b833466dfcbb0428e4f89c" kind="enumvalue"><name>SUCCESS</name></member>
+    <member refid="dummy_1ac060779e85f450f00143f4ab2f0ceae1ac69f06e1a9b016d133907b4e5f5864d2" kind="enumvalue"><name>PENDING</name></member>
+    <member refid="dummy_1ac060779e85f450f00143f4ab2f0ceae1a36fc6065a3e970bc3e6b2e59da52bf2a" kind="enumvalue"><name>FAILURE</name></member>
+    <member refid="MediaPlayerInterface_8h_1ae8de57fa3d770a99fe58f704a523816d" kind="variable"><name>MEDIA_PLAYER_INVALID_OFFSET</name></member>
+    <member refid="ConnectionStatusObserverInterface_8h_1a28fbb2852122f035a850d29d66a5e955" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="ConnectionStatusObserverInterface_8h_1a095ff5b13ff7b74a74f8796c687ffb1b" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="DialogUXStateObserverInterface_8h_1a1d637d844dd8e5e1cff1d493bff4593a" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="DialogUXStateObserverInterface_8h_1a9ee43d45fbb1d6e2990ed7f1882729b0" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="ErrorTypes_8h_1a0b01caef8edae20e87388b3849029e47" kind="function"><name>errorTypeToString</name></member>
+    <member refid="ErrorTypes_8h_1a32c40db44b295f709fe2212f97daca06" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="ApplicationImplementation_8h" kind="file"><name>ApplicationImplementation.h</name>
+  </compound>
+  <compound refid="AttachmentReader_8h" kind="file"><name>AttachmentReader.h</name>
+  </compound>
+  <compound refid="ConnectionStatusObserverInterface_8h" kind="file"><name>ConnectionStatusObserverInterface.h</name>
+  </compound>
+  <compound refid="DcsSdk_8h" kind="file"><name>DcsSdk.h</name>
+  </compound>
+  <compound refid="DcsSdkParameters_8h" kind="file"><name>DcsSdkParameters.h</name>
+  </compound>
+  <compound refid="DialogUXStateObserverInterface_8h" kind="file"><name>DialogUXStateObserverInterface.h</name>
+  </compound>
+  <compound refid="ErrorTypes_8h" kind="file"><name>ErrorTypes.h</name>
+  </compound>
+  <compound refid="KeyWordObserverInterface_8h" kind="file"><name>KeyWordObserverInterface.h</name>
+  </compound>
+  <compound refid="LocalMediaPlayerInterface_8h" kind="file"><name>LocalMediaPlayerInterface.h</name>
+  </compound>
+  <compound refid="LocalMediaPlayerObserverInterface_8h" kind="file"><name>LocalMediaPlayerObserverInterface.h</name>
+  </compound>
+  <compound refid="LocalSourcePlayerInterface_8h" kind="file"><name>LocalSourcePlayerInterface.h</name>
+  </compound>
+  <compound refid="MediaPlayerInterface_8h" kind="file"><name>MediaPlayerInterface.h</name>
+  </compound>
+  <compound refid="MediaPlayerObserverInterface_8h" kind="file"><name>MediaPlayerObserverInterface.h</name>
+  </compound>
+  <compound refid="dir_748b5abbb33df61eda67007924a1a0cb" kind="dir"><name>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities</name>
+  </compound>
+  <compound refid="dir_74030c38a0a21e244adf73a03157c797" kind="dir"><name>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk</name>
+  </compound>
+  <compound refid="dir_168a8188d71c1f0ae121c89391738129" kind="dir"><name>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk</name>
+  </compound>
+  <compound refid="dir_61a60f3ff97585fd20918bc1ef47ec57" kind="dir"><name>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

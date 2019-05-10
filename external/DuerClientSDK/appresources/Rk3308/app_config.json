@@ -1,0 +1,12 @@
+{
+    "record_audio_path": "",
+    "ssid_prefix": "DuerOS_",
+    "info_playback_device": "default",
+    "tts_playback_device": "default",
+    "music_playback_device": "default",
+    "alert_playback_device": "default",
+    "rapid_playback_device": "default",
+    "natts_playback_device": "default",
+    "audio_lib_name":"/usr/lib64/libAlsaAudioMicrophoneWrapper.so",
+    "debug": true
+}

@@ -1,0 +1,67 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Key\+Word\+Observer\+Interface Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface}}
+
+
+接口类,用于客户端监听唤醒的检测。  
+
+
+
+
+{\ttfamily \#include $<$Key\+Word\+Observer\+Interface.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a4c45583ddde82010ad7f6399af45feb2}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a4c45583ddde82010ad7f6399af45feb2}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a4c45583ddde82010ad7f6399af45feb2}{$\sim$\+Key\+Word\+Observer\+Interface} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_af2a248b56dd4977e02cfdcfffa9047bf}{on\+Key\+Word\+Detected} (std\+::string keyword, uint64\+\_\+t begin\+Index=\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}, uint64\+\_\+t=\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX})=0
+\begin{DoxyCompactList}\small\item\em 用于通知唤醒词检测的observer, 一旦调用,客户端应该尽快返回. 如果不这样做,可能会阻塞唤醒引擎继续处理音频数据, 任何额外的工作应该在分开的线程或唤醒后进行. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr uint64\+\_\+t \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}
+\begin{DoxyCompactList}\small\item\em 这是默认的index,如果在on\+Key\+Word\+Detected()参数里有设置,可以忽略它 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+接口类,用于客户端监听唤醒的检测。 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_af2a248b56dd4977e02cfdcfffa9047bf}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_af2a248b56dd4977e02cfdcfffa9047bf}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface}!on\+Key\+Word\+Detected@{on\+Key\+Word\+Detected}}
+\index{on\+Key\+Word\+Detected@{on\+Key\+Word\+Detected}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{on\+Key\+Word\+Detected()}{onKeyWordDetected()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface\+::on\+Key\+Word\+Detected (\begin{DoxyParamCaption}\item[{std\+::string}]{keyword,  }\item[{uint64\+\_\+t}]{begin\+Index = {\ttfamily \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}},  }\item[{uint64\+\_\+t}]{ = {\ttfamily \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+用于通知唤醒词检测的observer, 一旦调用,客户端应该尽快返回. 如果不这样做,可能会阻塞唤醒引擎继续处理音频数据, 任何额外的工作应该在分开的线程或唤醒后进行. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em keyword} & 检测到的唤醒词. \\
+\hline
+\mbox{\tt in}  & {\em begin\+Index} & 检测到的唤醒词的开始位置,如果设置为\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX,可以被忽略. \\
+\hline
+\mbox{\tt in}  & {\em end\+Index} & 检测到的唤醒词的结束位置,如果设置为\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX,可以被忽略. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_a11ee242b3d72866143211ed5526953c1}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface}!U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX@{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}}
+\index{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX@{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface}}
+\subsubsection{\texorpdfstring{U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX}{UNSPECIFIED\_INDEX}}
+{\footnotesize\ttfamily constexpr uint64\+\_\+t duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface\+::\+U\+N\+S\+P\+E\+C\+I\+F\+I\+E\+D\+\_\+\+I\+N\+D\+EX\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        std::numeric\_limits<uint64\_t>::max()
+\end{DoxyCode}
+
+
+这是默认的index,如果在on\+Key\+Word\+Detected()参数里有设置,可以忽略它 
+

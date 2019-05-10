@@ -1,0 +1,535 @@
+\hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Dcs\+Sdk\+Parameters Struct Reference}
+\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+
+
+S\+D\+K初始化参数。  
+
+
+
+
+{\ttfamily \#include $<$Dcs\+Sdk\+Parameters.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a4f7783b647c950318c10ba951f1a99e9}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a4f7783b647c950318c10ba951f1a99e9}} 
+\hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a4f7783b647c950318c10ba951f1a99e9}{Dcs\+Sdk\+Parameters} ()
+\begin{DoxyCompactList}\small\item\em 构造函数。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a95c8300f4163e33cc6d639900afe1a6d}{set\+Path\+To\+Config} (const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em 设置\+S\+D\+K配置文件全路径名（只读配置）。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ab62fb7501f438a401592b2a1c4ef1548}{set\+Path\+To\+Runtime\+Config} (const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em 设置\+S\+D\+K配置文件全路径名（可变配置）。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a560bb54f6250f35c976d32abc69f8879}{set\+Device\+Id} (const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em 设置设备的device id。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a5f35981ec0f7f048c658dd5778c877af}{set\+Speak\+Media\+Player} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+T\+TS player的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ac9b35322064082a043a10c50631dfbab}{set\+Audio\+Media\+Player} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+Audio player的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a08fd79d632571c5e943fd85196ba0411}{set\+Alerts\+Media\+Player} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+Alerts player的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a02a6263c432994bf0acb036e4ed6d7c7}{set\+Local\+Media\+Player} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface}{Local\+Media\+Player\+Interface} $>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+Local player的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ad2b64e3b8c64580ea28c7699e6fa7d74}{set\+Dialog\+State\+Observers} (std\+::unordered\+\_\+set$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}{Dialog\+U\+X\+State\+Observer\+Interface} $>$$>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+Dialog\+U\+X\+State\+Observer\+Interface实例指针set。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a82391d394920edd2cdce280c111021b4}{set\+Connection\+Observers} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}{sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface} $>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+Connection\+Status\+Observer\+Interface的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a4560432cd5e52eb3aed9f40dba480ac3}{set\+Application\+Implementation} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}{sdk\+Interfaces\+::\+Application\+Implementation} $>$ value)
+\begin{DoxyCompactList}\small\item\em 设置\+Application\+Implementation的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a77608e2433a08f05eb6f4ab86ff44950}{set\+Local\+Tts\+Media\+Player} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ player)
+\begin{DoxyCompactList}\small\item\em 设置\+Local tts player的实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ab6583b5f18881e63eab064be6c006b35}{set\+Local\+Prompt\+Player} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ player)
+\begin{DoxyCompactList}\small\item\em 设置\+Prompt player实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ad1c083f3e2cd3c5be0e8cb96625bb5a0}{set\+Customize\+Directives} (std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&customize\+Directive)
+\begin{DoxyCompactList}\small\item\em 设置\+A\+P\+P支持的个性化指令集。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a681260954fd2cd2d198eebe4dff45603}{set\+Key\+Word\+Observer\+Interface} (std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}{sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface} $>$ key\+Word\+Observer\+Interface)
+\begin{DoxyCompactList}\small\item\em 设置\+Key\+Word\+Observer\+Interface实例指针。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a146e85296deb8442956997bf2b1e17ff}{set\+Enable\+Sdk\+Wakeup} (const bool enable\+Wakeup)
+\begin{DoxyCompactList}\small\item\em 设置是否使用百度的唤醒库。 \end{DoxyCompactList}\item 
+void \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0206523f4fd71ef4730b12030dcb7cd1}{set\+Client\+Secret} (const std\+::string client\+Secret)
+\begin{DoxyCompactList}\small\item\em 设置client\+Secret。 \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a15acf1146e64b5f08d8b0017c07eb09e}{get\+Path\+To\+Config} ()
+\begin{DoxyCompactList}\small\item\em 获取\+S\+D\+K配置文件的全路径名。 \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0700d03aa8a280cbd5f93ef0e40e55a5}{get\+Path\+To\+Runtime\+Config} ()
+\begin{DoxyCompactList}\small\item\em 获取\+S\+D\+K配置文件的全路径名（可变配置）。 \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7d1bced577a3150094f87fd9c39792c8}{get\+Device\+Id} ()
+\begin{DoxyCompactList}\small\item\em 获取设备的device id。 \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7440f93b6b2f3ad352ebc7cdfee9cf7d}{get\+Client\+Secret} ()
+\begin{DoxyCompactList}\small\item\em 获取\+S\+D\+K配置文件的全路径名（可变配置）。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a137453bcd818997f0916d48e60af3523}{get\+Speak\+Media\+Player} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Tts player handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a778d9c0e35063af224264cb4c2d69b67}{get\+Audio\+Media\+Player} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Audio player handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_aedb56e9d51342ce49920decb10c4aae3}{get\+Alerts\+Media\+Player} ()
+\begin{DoxyCompactList}\small\item\em 获取alerts player handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface}{Local\+Media\+Player\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a20b4b22628b1708787e12f3623082f7b}{get\+Local\+Media\+Player} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Local player handler。 \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}{Dialog\+U\+X\+State\+Observer\+Interface} $>$ $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a77f1bc5116b53c12cb1d115e35ff7b14}{get\+Dialog\+State\+Observers} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Dialog\+U\+X\+State\+Observer\+Interface handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}{sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_adfd39ff4af037a2844d1e977eb00b8c5}{get\+Connection\+Observers} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Connection\+Status\+Observer\+Interface handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}{sdk\+Interfaces\+::\+Application\+Implementation} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ac6c35ff867585dbfce21418ee200bcb2}{get\+Application\+Implementation} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Application\+Implementation handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_acda5dfd2e1e9a8eb07d0613b61f37642}{get\+Local\+Tts\+Media\+Player} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Local tts player handler。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_aeb569e85ff702f3ec9794e99e7e9cab1}{get\+Local\+Prompt\+Player} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Prompt player handler。 \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \& \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0622206b1833f62c98e79de840698645}{get\+Customize\+Directive} ()
+\begin{DoxyCompactList}\small\item\em 获取自定义指令集。 \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}{sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface} $>$ \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a50665d3ef7fcfcfbe08b38cfbf9c26cf}{get\+Key\+Word\+Observer\+Interface} ()
+\begin{DoxyCompactList}\small\item\em 获取\+Key\+Word\+Observer\+Interface handler。 \end{DoxyCompactList}\item 
+bool \hyperlink{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7260bc59f129332b464b8574ca101662}{get\+Enable\+Sdk\+Wakeup} ()
+\begin{DoxyCompactList}\small\item\em 获取是否使用百度唤醒库的配置。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+D\+K初始化参数。 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_aedb56e9d51342ce49920decb10c4aae3}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_aedb56e9d51342ce49920decb10c4aae3}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Alerts\+Media\+Player@{get\+Alerts\+Media\+Player}}
+\index{get\+Alerts\+Media\+Player@{get\+Alerts\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Alerts\+Media\+Player()}{getAlertsMediaPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Alerts\+Media\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取alerts player handler。 
+
+\begin{DoxyReturn}{Returns}
+Alerts player handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ac6c35ff867585dbfce21418ee200bcb2}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ac6c35ff867585dbfce21418ee200bcb2}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Application\+Implementation@{get\+Application\+Implementation}}
+\index{get\+Application\+Implementation@{get\+Application\+Implementation}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Application\+Implementation()}{getApplicationImplementation()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}{sdk\+Interfaces\+::\+Application\+Implementation}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Application\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Application\+Implementation handler。 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}{Application\+Implementation} handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a778d9c0e35063af224264cb4c2d69b67}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a778d9c0e35063af224264cb4c2d69b67}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Audio\+Media\+Player@{get\+Audio\+Media\+Player}}
+\index{get\+Audio\+Media\+Player@{get\+Audio\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Audio\+Media\+Player()}{getAudioMediaPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Audio\+Media\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Audio player handler。 
+
+\begin{DoxyReturn}{Returns}
+Audio player handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7440f93b6b2f3ad352ebc7cdfee9cf7d}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7440f93b6b2f3ad352ebc7cdfee9cf7d}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Client\+Secret@{get\+Client\+Secret}}
+\index{get\+Client\+Secret@{get\+Client\+Secret}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Client\+Secret()}{getClientSecret()}}
+{\footnotesize\ttfamily const std\+::string\& duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Client\+Secret (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+S\+D\+K配置文件的全路径名（可变配置）。 
+
+\begin{DoxyReturn}{Returns}
+S\+D\+K配置文件的全路径名（可变配置）。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_adfd39ff4af037a2844d1e977eb00b8c5}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_adfd39ff4af037a2844d1e977eb00b8c5}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Connection\+Observers@{get\+Connection\+Observers}}
+\index{get\+Connection\+Observers@{get\+Connection\+Observers}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Connection\+Observers()}{getConnectionObservers()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}{sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Connection\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Connection\+Status\+Observer\+Interface handler。 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}{Connection\+Status\+Observer\+Interface} handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0622206b1833f62c98e79de840698645}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0622206b1833f62c98e79de840698645}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Customize\+Directive@{get\+Customize\+Directive}}
+\index{get\+Customize\+Directive@{get\+Customize\+Directive}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Customize\+Directive()}{getCustomizeDirective()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$std\+::string, std\+::string$>$ $>$\& duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Customize\+Directive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取自定义指令集。 
+
+\begin{DoxyReturn}{Returns}
+自定义指令集。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7d1bced577a3150094f87fd9c39792c8}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7d1bced577a3150094f87fd9c39792c8}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Device\+Id@{get\+Device\+Id}}
+\index{get\+Device\+Id@{get\+Device\+Id}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Device\+Id()}{getDeviceId()}}
+{\footnotesize\ttfamily std\+::string duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Device\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取设备的device id。 
+
+\begin{DoxyReturn}{Returns}
+设备的device id。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a77f1bc5116b53c12cb1d115e35ff7b14}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a77f1bc5116b53c12cb1d115e35ff7b14}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Dialog\+State\+Observers@{get\+Dialog\+State\+Observers}}
+\index{get\+Dialog\+State\+Observers@{get\+Dialog\+State\+Observers}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Dialog\+State\+Observers()}{getDialogStateObservers()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}{Dialog\+U\+X\+State\+Observer\+Interface}$>$ $>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Dialog\+State\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Dialog\+U\+X\+State\+Observer\+Interface handler。 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}{Dialog\+U\+X\+State\+Observer\+Interface} handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7260bc59f129332b464b8574ca101662}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a7260bc59f129332b464b8574ca101662}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Enable\+Sdk\+Wakeup@{get\+Enable\+Sdk\+Wakeup}}
+\index{get\+Enable\+Sdk\+Wakeup@{get\+Enable\+Sdk\+Wakeup}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Enable\+Sdk\+Wakeup()}{getEnableSdkWakeup()}}
+{\footnotesize\ttfamily bool duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Enable\+Sdk\+Wakeup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取是否使用百度唤醒库的配置。 
+
+\begin{DoxyReturn}{Returns}
+True/\+False：使用/不使用百度唤醒库。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a50665d3ef7fcfcfbe08b38cfbf9c26cf}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a50665d3ef7fcfcfbe08b38cfbf9c26cf}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Key\+Word\+Observer\+Interface@{get\+Key\+Word\+Observer\+Interface}}
+\index{get\+Key\+Word\+Observer\+Interface@{get\+Key\+Word\+Observer\+Interface}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Key\+Word\+Observer\+Interface()}{getKeyWordObserverInterface()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}{sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Key\+Word\+Observer\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Key\+Word\+Observer\+Interface handler。 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}{Key\+Word\+Observer\+Interface} handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a20b4b22628b1708787e12f3623082f7b}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a20b4b22628b1708787e12f3623082f7b}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Local\+Media\+Player@{get\+Local\+Media\+Player}}
+\index{get\+Local\+Media\+Player@{get\+Local\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Local\+Media\+Player()}{getLocalMediaPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface}{Local\+Media\+Player\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Local\+Media\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Local player handler。 
+
+\begin{DoxyReturn}{Returns}
+Local player handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_aeb569e85ff702f3ec9794e99e7e9cab1}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_aeb569e85ff702f3ec9794e99e7e9cab1}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Local\+Prompt\+Player@{get\+Local\+Prompt\+Player}}
+\index{get\+Local\+Prompt\+Player@{get\+Local\+Prompt\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Local\+Prompt\+Player()}{getLocalPromptPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Local\+Prompt\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Prompt player handler。 
+
+\begin{DoxyReturn}{Returns}
+Prompt player handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_acda5dfd2e1e9a8eb07d0613b61f37642}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_acda5dfd2e1e9a8eb07d0613b61f37642}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Local\+Tts\+Media\+Player@{get\+Local\+Tts\+Media\+Player}}
+\index{get\+Local\+Tts\+Media\+Player@{get\+Local\+Tts\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Local\+Tts\+Media\+Player()}{getLocalTtsMediaPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Local\+Tts\+Media\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Local tts player handler。 
+
+\begin{DoxyReturn}{Returns}
+Local tts player handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a15acf1146e64b5f08d8b0017c07eb09e}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a15acf1146e64b5f08d8b0017c07eb09e}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Path\+To\+Config@{get\+Path\+To\+Config}}
+\index{get\+Path\+To\+Config@{get\+Path\+To\+Config}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Path\+To\+Config()}{getPathToConfig()}}
+{\footnotesize\ttfamily const std\+::string\& duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Path\+To\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+S\+D\+K配置文件的全路径名。 
+
+\begin{DoxyReturn}{Returns}
+S\+D\+K配置文件的全路径名。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0700d03aa8a280cbd5f93ef0e40e55a5}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0700d03aa8a280cbd5f93ef0e40e55a5}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Path\+To\+Runtime\+Config@{get\+Path\+To\+Runtime\+Config}}
+\index{get\+Path\+To\+Runtime\+Config@{get\+Path\+To\+Runtime\+Config}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Path\+To\+Runtime\+Config()}{getPathToRuntimeConfig()}}
+{\footnotesize\ttfamily const std\+::string\& duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Path\+To\+Runtime\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+S\+D\+K配置文件的全路径名（可变配置）。 
+
+\begin{DoxyReturn}{Returns}
+S\+D\+K配置文件的全路径名（可变配置）。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a137453bcd818997f0916d48e60af3523}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a137453bcd818997f0916d48e60af3523}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!get\+Speak\+Media\+Player@{get\+Speak\+Media\+Player}}
+\index{get\+Speak\+Media\+Player@{get\+Speak\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{get\+Speak\+Media\+Player()}{getSpeakMediaPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface}$>$ duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::get\+Speak\+Media\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取\+Tts player handler。 
+
+\begin{DoxyReturn}{Returns}
+Tts player handler。 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a08fd79d632571c5e943fd85196ba0411}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a08fd79d632571c5e943fd85196ba0411}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Alerts\+Media\+Player@{set\+Alerts\+Media\+Player}}
+\index{set\+Alerts\+Media\+Player@{set\+Alerts\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Alerts\+Media\+Player()}{setAlertsMediaPlayer()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Alerts\+Media\+Player (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Alerts player的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Alerts player的实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a4560432cd5e52eb3aed9f40dba480ac3}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a4560432cd5e52eb3aed9f40dba480ac3}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Application\+Implementation@{set\+Application\+Implementation}}
+\index{set\+Application\+Implementation@{set\+Application\+Implementation}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Application\+Implementation()}{setApplicationImplementation()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Application\+Implementation (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation}{sdk\+Interfaces\+::\+Application\+Implementation} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Application\+Implementation的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Application\+Implementation实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ac9b35322064082a043a10c50631dfbab}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ac9b35322064082a043a10c50631dfbab}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Audio\+Media\+Player@{set\+Audio\+Media\+Player}}
+\index{set\+Audio\+Media\+Player@{set\+Audio\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Audio\+Media\+Player()}{setAudioMediaPlayer()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Audio\+Media\+Player (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Audio player的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Audio player的实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0206523f4fd71ef4730b12030dcb7cd1}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a0206523f4fd71ef4730b12030dcb7cd1}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Client\+Secret@{set\+Client\+Secret}}
+\index{set\+Client\+Secret@{set\+Client\+Secret}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Client\+Secret()}{setClientSecret()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Client\+Secret (\begin{DoxyParamCaption}\item[{const std\+::string}]{client\+Secret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置client\+Secret。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em client\+Secret。} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a82391d394920edd2cdce280c111021b4}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a82391d394920edd2cdce280c111021b4}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Connection\+Observers@{set\+Connection\+Observers}}
+\index{set\+Connection\+Observers@{set\+Connection\+Observers}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Connection\+Observers()}{setConnectionObservers()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Connection\+Observers (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface}{sdk\+Interfaces\+::\+Connection\+Status\+Observer\+Interface} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Connection\+Status\+Observer\+Interface的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Connection\+Status\+Observer\+Interface实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ad1c083f3e2cd3c5be0e8cb96625bb5a0}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ad1c083f3e2cd3c5be0e8cb96625bb5a0}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Customize\+Directives@{set\+Customize\+Directives}}
+\index{set\+Customize\+Directives@{set\+Customize\+Directives}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Customize\+Directives()}{setCustomizeDirectives()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Customize\+Directives (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&}]{customize\+Directive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+A\+P\+P支持的个性化指令集。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & 个性化指令集。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a560bb54f6250f35c976d32abc69f8879}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a560bb54f6250f35c976d32abc69f8879}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Device\+Id@{set\+Device\+Id}}
+\index{set\+Device\+Id@{set\+Device\+Id}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Device\+Id()}{setDeviceId()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Device\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置设备的device id。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & 设备的device id。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ad2b64e3b8c64580ea28c7699e6fa7d74}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ad2b64e3b8c64580ea28c7699e6fa7d74}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Dialog\+State\+Observers@{set\+Dialog\+State\+Observers}}
+\index{set\+Dialog\+State\+Observers@{set\+Dialog\+State\+Observers}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Dialog\+State\+Observers()}{setDialogStateObservers()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Dialog\+State\+Observers (\begin{DoxyParamCaption}\item[{std\+::unordered\+\_\+set$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface}{Dialog\+U\+X\+State\+Observer\+Interface} $>$$>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Dialog\+U\+X\+State\+Observer\+Interface实例指针set。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Dialog\+U\+X\+State\+Observer\+Interface的实例指针set。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a146e85296deb8442956997bf2b1e17ff}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a146e85296deb8442956997bf2b1e17ff}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Enable\+Sdk\+Wakeup@{set\+Enable\+Sdk\+Wakeup}}
+\index{set\+Enable\+Sdk\+Wakeup@{set\+Enable\+Sdk\+Wakeup}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Enable\+Sdk\+Wakeup()}{setEnableSdkWakeup()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Enable\+Sdk\+Wakeup (\begin{DoxyParamCaption}\item[{const bool}]{enable\+Wakeup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置是否使用百度的唤醒库。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & True/\+False：使用/不使用百度的唤醒库。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a681260954fd2cd2d198eebe4dff45603}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a681260954fd2cd2d198eebe4dff45603}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Key\+Word\+Observer\+Interface@{set\+Key\+Word\+Observer\+Interface}}
+\index{set\+Key\+Word\+Observer\+Interface@{set\+Key\+Word\+Observer\+Interface}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Key\+Word\+Observer\+Interface()}{setKeyWordObserverInterface()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Key\+Word\+Observer\+Interface (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface}{sdk\+Interfaces\+::\+Key\+Word\+Observer\+Interface} $>$}]{key\+Word\+Observer\+Interface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Key\+Word\+Observer\+Interface实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Key\+Word\+Observer\+Interface实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a02a6263c432994bf0acb036e4ed6d7c7}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a02a6263c432994bf0acb036e4ed6d7c7}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Local\+Media\+Player@{set\+Local\+Media\+Player}}
+\index{set\+Local\+Media\+Player@{set\+Local\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Local\+Media\+Player()}{setLocalMediaPlayer()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Local\+Media\+Player (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface}{Local\+Media\+Player\+Interface} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Local player的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Local player的实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ab6583b5f18881e63eab064be6c006b35}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ab6583b5f18881e63eab064be6c006b35}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Local\+Prompt\+Player@{set\+Local\+Prompt\+Player}}
+\index{set\+Local\+Prompt\+Player@{set\+Local\+Prompt\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Local\+Prompt\+Player()}{setLocalPromptPlayer()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Local\+Prompt\+Player (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Prompt player实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Prompt player的实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a77608e2433a08f05eb6f4ab86ff44950}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a77608e2433a08f05eb6f4ab86ff44950}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Local\+Tts\+Media\+Player@{set\+Local\+Tts\+Media\+Player}}
+\index{set\+Local\+Tts\+Media\+Player@{set\+Local\+Tts\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Local\+Tts\+Media\+Player()}{setLocalTtsMediaPlayer()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Local\+Tts\+Media\+Player (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+Local tts player的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Local tts player的实例指针。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a95c8300f4163e33cc6d639900afe1a6d}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a95c8300f4163e33cc6d639900afe1a6d}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Path\+To\+Config@{set\+Path\+To\+Config}}
+\index{set\+Path\+To\+Config@{set\+Path\+To\+Config}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Path\+To\+Config()}{setPathToConfig()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Path\+To\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+S\+D\+K配置文件全路径名（只读配置）。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & S\+D\+K配置文件的全路径名（只读配置）。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ab62fb7501f438a401592b2a1c4ef1548}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_ab62fb7501f438a401592b2a1c4ef1548}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Path\+To\+Runtime\+Config@{set\+Path\+To\+Runtime\+Config}}
+\index{set\+Path\+To\+Runtime\+Config@{set\+Path\+To\+Runtime\+Config}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Path\+To\+Runtime\+Config()}{setPathToRuntimeConfig()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Path\+To\+Runtime\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+S\+D\+K配置文件全路径名（可变配置）。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & S\+D\+K配置文件的全路径名（可变配置）。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a5f35981ec0f7f048c658dd5778c877af}\label{structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_a5f35981ec0f7f048c658dd5778c877af}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}!set\+Speak\+Media\+Player@{set\+Speak\+Media\+Player}}
+\index{set\+Speak\+Media\+Player@{set\+Speak\+Media\+Player}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters}}
+\subsubsection{\texorpdfstring{set\+Speak\+Media\+Player()}{setSpeakMediaPlayer()}}
+{\footnotesize\ttfamily void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Dcs\+Sdk\+Parameters\+::set\+Speak\+Media\+Player (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface}{Media\+Player\+Interface} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置\+T\+TS player的实例指针。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & Tts player实例指针。 \\
+\hline
+\end{DoxyParams}

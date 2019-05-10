@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/menglingfeng/baidu/duer/dcs-device-app/dcs-device-sdk/Rk3308_32_buildout/third/lib
+includedir=/home/menglingfeng/baidu/duer/dcs-device-app/dcs-device-sdk/Rk3308_32_buildout/third/include/
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.3.100
+Requires: 
+Requires.private: libavutil >= 55.34.101
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}

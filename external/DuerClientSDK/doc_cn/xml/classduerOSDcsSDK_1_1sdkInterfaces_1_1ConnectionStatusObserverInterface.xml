@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</compoundname>
+    <includes refid="ConnectionStatusObserverInterface_8h" local="no">ConnectionStatusObserverInterface.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" prot="public" static="no">
+        <name>Status</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fa99c8ce56e7ab246445d3b134724428f3" prot="public">
+          <name>DISCONNECTED</name>
+          <briefdescription>
+<para>连接断开 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4fac69f06e1a9b016d133907b4e5f5864d2" prot="public">
+          <name>PENDING</name>
+          <briefdescription>
+<para>正在建立连接 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4faa5afd6edd5336d91316964e493936858" prot="public">
+          <name>CONNECTED</name>
+          <briefdescription>
+<para>连接成功 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>连接状态的枚举值 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="42" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" bodystart="42" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" prot="public" static="no">
+        <name>ChangedReason</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a5cd351b726751149c0464e3d9c23dcf1" prot="public">
+          <name>ACL_CLIENT_REQUEST</name>
+          <briefdescription>
+<para>开始新的连接请求 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aa81589ff9e0102b95f3eafce18463d1a" prot="public">
+          <name>ACL_DISABLED</name>
+          <briefdescription>
+<para>连接请求无效 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aff2281b1a4e2df717c0cc8019eacfab6" prot="public">
+          <name>DNS_TIMEDOUT</name>
+          <briefdescription>
+<para>DNS超时 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a1e5d3c84593c457cee72e18634f28914" prot="public">
+          <name>CONNECTION_TIMEDOUT</name>
+          <briefdescription>
+<para>连接超时 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a8ca1e58168f20f0b69f8ae91fd3426f7" prot="public">
+          <name>CONNECTION_THROTTLED</name>
+          <briefdescription>
+<para>连接受限 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aabd298f8599f681c645d152c354f24de" prot="public">
+          <name>INVALID_AUTH</name>
+          <briefdescription>
+<para>access_token无效或过期 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a2e03079aa2f230632487842f6cce997a" prot="public">
+          <name>PING_TIMEDOUT</name>
+          <briefdescription>
+<para>ping超时 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a97af85d432104a37a1d183a76f05ad98" prot="public">
+          <name>WRITE_TIMEDOUT</name>
+          <briefdescription>
+<para>网路IO写数据超时 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acc3d4fecdd44cc6a7090ead5bcdc89a0" prot="public">
+          <name>READ_TIMEDOUT</name>
+          <briefdescription>
+<para>网路IO读数据超时 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38aafb0ae7bf77c6f70390d3658d3e12033" prot="public">
+          <name>FAILURE_PROTOCOL_ERROR</name>
+          <briefdescription>
+<para>protocol协议错误 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ae8c0c70879b5895c615677261d64a1ee" prot="public">
+          <name>INTERNAL_ERROR</name>
+          <briefdescription>
+<para>SDK内部错误 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38a6a701b3f16c45b9d96fec4ac97805d9c" prot="public">
+          <name>SERVER_INTERNAL_ERROR</name>
+          <briefdescription>
+<para>Server内部错误 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38ac15c6f3c089148a1bfa565ab4efea186" prot="public">
+          <name>SERVER_SIDE_DISCONNECT</name>
+          <briefdescription>
+<para>Server主动断开连接 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38acb2bd81ff7f58b2c6782fe390a723bbe" prot="public">
+          <name>SERVER_ENDPOINT_CHANGED</name>
+          <briefdescription>
+<para>Server请求地址发生变化 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>连接状态变化原因 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="81" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" bodystart="81" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a6516004b2e83e23a85b785e9edc6fe13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface::~ConnectionStatusObserverInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ConnectionStatusObserverInterface</name>
+        <briefdescription>
+<para>析构函数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a5184e92a9c0c77dc28a751bc5612b5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface::onConnectionStatusChanged</definition>
+        <argsstring>(const Status status, const ChangedReason reason)=0</argsstring>
+        <name>onConnectionStatusChanged</name>
+        <param>
+          <type>const <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" kindref="member">Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" kindref="member">ChangedReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>通知连接状态变化 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>当前连接状态 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>连接状态发生变化的原因 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="229" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>stream连接状态通知类 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="33" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" bodystart="33" bodyend="230"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</scope><name>ChangedReason</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a5184e92a9c0c77dc28a751bc5612b5cc" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</scope><name>onConnectionStatusChanged</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</scope><name>Status</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a6516004b2e83e23a85b785e9edc6fe13" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</scope><name>~ConnectionStatusObserverInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ApplicationImplementation_8h" kind="file" language="C++">
+    <compoundname>ApplicationImplementation.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="DcsSdk_8h" local="no">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</includedby>
+    <includedby refid="DcsSdkParameters_8h" local="no">/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</includedby>
+    <incdepgraph>
+      <node id="0">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h</label>
+        <link refid="ApplicationImplementation_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h</label>
+        <link refid="ApplicationImplementation_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h</label>
+        <link refid="DcsSdkParameters_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdk.h</label>
+        <link refid="DcsSdk_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" prot="public">duerOSDcsSDK::sdkInterfaces::SystemInformation</innerclass>
+    <innerclass refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" prot="public">duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" prot="public">duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</innerclass>
+    <innernamespace refid="namespaceduerOSDcsSDK">duerOSDcsSDK</innernamespace>
+    <innernamespace refid="namespaceduerOSDcsSDK_1_1sdkInterfaces">duerOSDcsSDK::sdkInterfaces</innernamespace>
+    <briefdescription>
+<para>SDK定义一系列接口，需要由APP层实现，并在APP生存期间由SDK调用。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2017<sp/>Baidu,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#ifndef<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_APPLICATION_IMPLEMENTATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_APPLICATION_IMPLEMENTATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceduerOSDcsSDK" kindref="compound">duerOSDcsSDK</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">sdkInterfaces<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" kindref="compound">SystemInformation</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0aa3bae54c13fff6792d94dc275f3f27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0aa3bae54c13fff6792d94dc275f3f27" kindref="member">ssid</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ad9caf013cb012f387190640ef15fe08e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ad9caf013cb012f387190640ef15fe08e" kindref="member">mac</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a6134155a23d32e00714203c37c7a1884" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a6134155a23d32e00714203c37c7a1884" kindref="member">ip</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1acddeebe9ffd3da5263d9425a08b7a3c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1acddeebe9ffd3da5263d9425a08b7a3c3" kindref="member">clientId</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a03f96e89d9a32cd3cb1f3b9f1bafbfe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a03f96e89d9a32cd3cb1f3b9f1bafbfe4" kindref="member">deviceId</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ab48bf926c5ada4bdd111c66068c9089f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ab48bf926c5ada4bdd111c66068c9089f" kindref="member">sn</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ac15ee05a69a139e4bd1a45b42d772109" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ac15ee05a69a139e4bd1a45b42d772109" kindref="member">bluetoothMac</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0e2db377bf9f20f232683718dd27903e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0e2db377bf9f20f232683718dd27903e" kindref="member">deviceVersion</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a288693ee6a8001b336b01c90dec17690" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a288693ee6a8001b336b01c90dec17690" kindref="member">softwareVersion</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a7a2868fa576db14d7974e083edebf6a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a7a2868fa576db14d7974e083edebf6a4" kindref="member">protocolVersion</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a44564c64df820891fde2623e37fa8957" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a44564c64df820891fde2623e37fa8957" kindref="member">onlineStatus</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>SystemUpdateState<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>NOT_UPDATABLE,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>UPDATABLE,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>UPDATING</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" kindref="compound">SystemUpdateInformation</ref><sp/>{</highlight></codeline>
+<codeline lineno="193" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ad995326d15f1da8af0c1da21a2095d5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ad995326d15f1da8af0c1da21a2095d5e" kindref="member">currentVersion</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a04c8fbb651fc3d91320ab35cbd2b0e8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a04c8fbb651fc3d91320ab35cbd2b0e8c" kindref="member">currentVersionDesc</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a50f921375b90b84c8a2f03ddc07d0b1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a50f921375b90b84c8a2f03ddc07d0b1e" kindref="member">targetVersion</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a33eb6b7623da36d78be04d7fa5f26c8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1a33eb6b7623da36d78be04d7fa5f26c8e" kindref="member">targetVersionDesc</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ab930a589e79a54318a0b2f4c0e74d2d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SystemUpdateState<sp/><ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation_1ab930a589e79a54318a0b2f4c0e74d2d9" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>SdkConnectionState<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>SDK_AUTH_FAILED,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>SDK_AUTH_SUCCEED,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>SDK_CONNECT_FAILED,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>SDK_CONNECTING,</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>SDK_CONNECT_SUCCEED</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kindref="compound">ApplicationImplementation</ref><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a676b760481c0ea05cd2a870b6b324ad7" kindref="member">~ApplicationImplementation</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a9fb5a1e88b63327a7216335c8668a427" kindref="member">setSpeakerVolume</ref>(int64_t<sp/>volume)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1c0b876db837a498edfd46c07a642b0" kindref="member">setSpeakerMute</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isMute)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8578e0315740c83868c7d8818ad23023" kindref="member">getSpeakerVolume</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ae07cada57638548151d4ae53923ffd85" kindref="member">getSpeakerMuteStatus</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab7c22526b77d47b463d8bfcba5320180" kindref="member">setBluetoothStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28e429d6ff9ee0f6ba70770b39007ca1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28e429d6ff9ee0f6ba70770b39007ca1" kindref="member">setBluetoothConnectionStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status)<sp/>{}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1af1dc79663449f715e08c35757d11bfab" kindref="member">setMicrophoneStatus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab3c134187fc2961692b883f1121516e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab3c134187fc2961692b883f1121516e3" kindref="member">queryCurrentVersion</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aacb518c857399cc47c6ad005ebfc00fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aacb518c857399cc47c6ad005ebfc00fd" kindref="member">powerSleep</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a200b09dedd7dced2e41d8980901226e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a200b09dedd7dced2e41d8980901226e3" kindref="member">powerShutdown</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28300e1a0c2f3a41461a6d0a03b6299e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a28300e1a0c2f3a41461a6d0a03b6299e" kindref="member">powerReboot</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ac839c88ccbafd6fba8e5899bd2f2dd55" kindref="member">informSdkConnectionStatus</ref>(SdkConnectionState<sp/>sdkConnectionState)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a239692cd30f184acb165447c9484cf9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a239692cd30f184acb165447c9484cf9a" kindref="member">informCustomizeDirective</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>directive)<sp/>{}</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa4457826018c5fc361b29d141c723925" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa4457826018c5fc361b29d141c723925" kindref="member">linkThirdDevice</ref>(</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>clientId,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a18b9694bc2863798907a8572caa1b5da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a18b9694bc2863798907a8572caa1b5da" kindref="member">unlinkThirdDevice</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a86a2762383d248b63f5f815f1fbdc2c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a86a2762383d248b63f5f815f1fbdc2c5" kindref="member">onThirdDlpMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceType,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab5b78477782d2aa18010d4da7cd45ca3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1ab5b78477782d2aa18010d4da7cd45ca3" kindref="member">onThirdPartyMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a0e9c517a15e1933d5cb12e8032b34d90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a0e9c517a15e1933d5cb12e8032b34d90" kindref="member">notifySdkContext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>context,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceType)<sp/>{};</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a43f7f49462fc094905cf38b69bb4e848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a43f7f49462fc094905cf38b69bb4e848" kindref="member">notifySdkContextBySessionId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>context,</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>sessionId,</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceType)<sp/>{};</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aab4fcea97b804159073abf54e25075bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aab4fcea97b804159073abf54e25075bb" kindref="member">systemInformationGetStatus</ref>(<ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" kindref="compound">SystemInformation</ref>&amp;<sp/>systemInformation)<sp/>{</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"></highlight></codeline>
+<codeline lineno="566" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8ce2c9ad1c35f8c75a0dad0731b8850e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8ce2c9ad1c35f8c75a0dad0731b8850e" kindref="member">systemInformationHardReset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa1f6aab8cf3806120bce89da4f9447d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1aa1f6aab8cf3806120bce89da4f9447d6" kindref="member">systemUpdateGetStatus</ref>(<ref refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" kindref="compound">SystemUpdateInformation</ref><sp/>&amp;systemUpdateInformation)<sp/>{</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a644e2bfddb8d4a38fadc0acde7d568ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a644e2bfddb8d4a38fadc0acde7d568ac" kindref="member">systemUpdateUpdate</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="613" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8d12823ee272295a67796f6d39dcddae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a8d12823ee272295a67796f6d39dcddae" kindref="member">getCurrentConnectedDeviceInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deviceType,</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string&amp;<sp/>clientId,<sp/>std::string&amp;<sp/>deviceId)<sp/>{</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a2f38ee5cb10328c1dde10c8940dd4e8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a2f38ee5cb10328c1dde10c8940dd4e8c" kindref="member">getWifiBssid</ref>(){</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"></highlight></codeline>
+<codeline lineno="647" refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a852302b46fca3524968580092a9ff5e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation_1a852302b46fca3524968580092a9ff5e3" kindref="member">sendInfraredRayCodeRequest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carrierFrequency,</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;pattern)<sp/>{</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="651"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sdkInterfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>duerOSDcsSDK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="655"><highlight class="normal"></highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DUEROS_DCS_SDK_DCS_SDK_INCLUDE_APPLICATION_IMPLEMENTATION_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h"/>
+  </compounddef>
+</doxygen>

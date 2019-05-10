@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/menglingfeng/baidu/duer/dcs-device-app/dcs-device-sdk/Rk3308_32_buildout/third/lib
+includedir=/home/menglingfeng/baidu/duer/dcs-device-app/dcs-device-sdk/Rk3308_32_buildout/third/include/
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.64.101
+Requires: 
+Requires.private: libavutil >= 55.34.101
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lm -lz -pthread
+Cflags: -I${includedir}

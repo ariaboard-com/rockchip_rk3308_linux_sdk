@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::AttachmentReader</compoundname>
+    <includes refid="AttachmentReader_8h" local="no">AttachmentReader.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8" prot="public" static="no">
+        <name>Policy</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8a72323e5457d8fb855145bfee934aa415" prot="public">
+          <name>BLOCKING</name>
+          <briefdescription>
+<para>当数据不够n字节时，阻塞read函数，或者超时时间到。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8a71fed0a1fc7faaeab0a56a76799e5ad3" prot="public">
+          <name>NON_BLOCKING</name>
+          <briefdescription>
+<para>read函数直接返回，不管数据够不够n字节时。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>枚举，用于决定read数据时是否阻塞。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="52" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" bodystart="52" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" prot="public" static="no">
+        <name>ReadStatus</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abae0aa021e21dddbd6d8cecec71e9cf564" prot="public">
+          <name>OK</name>
+          <briefdescription>
+<para>正常状态。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba787bd2f5224b6b864eea398349436849" prot="public">
+          <name>OK_WOULDBLOCK</name>
+          <briefdescription>
+<para>用于非阻塞read，当可用数据小于请求数据长度n，立即返回。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abadb301c3410dd8d428a7f17043740bb14" prot="public">
+          <name>OK_TIMEDOUT</name>
+          <briefdescription>
+<para>用于阻塞read，当可用数据小于请求数据长度n，直到超时。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba110ccf2f5d2ff4eda1fd1a494293467d" prot="public">
+          <name>CLOSED</name>
+          <briefdescription>
+<para>底层数据已关闭，读取数据无效。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba6473b0b6f8e61be94630555e2d4a9baa" prot="public">
+          <name>ERROR_OVERRUN</name>
+          <briefdescription>
+<para>数据损坏，读取数据无效。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4abaa1238e1a739964feb62763f7bf0875f0" prot="public">
+          <name>ERROR_BYTES_LESS_THAN_WORD_SIZE</name>
+          <briefdescription>
+<para>请求数据长度小于最小数据单位。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4aba7b6311615dfbbaccec8279677f19feea" prot="public">
+          <name>ERROR_INTERNAL</name>
+          <briefdescription>
+<para>未定义错误。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>枚举，伴随每次read调用返回。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="78" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" bodystart="78" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" prot="public" static="no">
+        <name>ClosePoint</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ad051319484a869ba5244878e7ed93b8d" prot="public">
+          <name>IMMEDIATELY</name>
+          <briefdescription>
+<para>调用close函数后，read函数立即返回。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79" prot="public">
+          <name>AFTER_DRAINING_CURRENT_BUFFER</name>
+          <briefdescription>
+<para>调用close函数后，read函数持续返回，直到buffer没有可用数据。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>枚举，指定调用close函数后，read函数的行为。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="150" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" bodystart="150" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a0524e068572417466c220cb44c27fd9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::AttachmentReader::~AttachmentReader</definition>
+        <argsstring>()=default</argsstring>
+        <name>~AttachmentReader</name>
+        <briefdescription>
+<para>析构函数。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a8e3e1a18275e89086c1b972401a98e38" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::size_t</type>
+        <definition>virtual std::size_t duerOSDcsSDK::sdkInterfaces::AttachmentReader::read</definition>
+        <argsstring>(void *buf, std::size_t numBytes, ReadStatus *readStatus, std::chrono::milliseconds timeoutMs=std::chrono::milliseconds(0))=0</argsstring>
+        <name>read</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>numBytes</declname>
+        </param>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" kindref="member">ReadStatus</ref> *</type>
+          <declname>readStatus</declname>
+        </param>
+        <param>
+          <type>std::chrono::milliseconds</type>
+          <declname>timeoutMs</declname>
+          <defval>std::chrono::milliseconds(0)</defval>
+        </param>
+        <briefdescription>
+<para>read函数，通过此函数从SDK读取TTS数据流。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>目标buffer。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">numBytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>请求数据长度，以字节为单位。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">readStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>读取状态返回，参考ReadStatus枚举。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeoutMs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>超时时间，以毫秒为单位，仅用于BLOCKING读取策略。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>读取到的真实数据长度，以字节为单位。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a9660710b89712142a451236144968acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::AttachmentReader::close</definition>
+        <argsstring>(ClosePoint closePoint=ClosePoint::AFTER_DRAINING_CURRENT_BUFFER)=0</argsstring>
+        <name>close</name>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" kindref="member">ClosePoint</ref></type>
+          <declname>closePoint</declname>
+          <defval><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79" kindref="member">ClosePoint::AFTER_DRAINING_CURRENT_BUFFER</ref></defval>
+        </param>
+        <briefdescription>
+<para>关闭函数，应用层需要认真管理相关资源。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">closePoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>关闭策略，参考ClosePoint枚举。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="215" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>应用层通过此接口，从SDK读取TTS数据流。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" line="43" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/AttachmentReader.h" bodystart="43" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a9660710b89712142a451236144968acc" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::AttachmentReader</scope><name>close</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a16bb338aa4735c8f4414ae1708b293a3" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::AttachmentReader</scope><name>ClosePoint</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a2a81f7484b9256dd6d171ebd46469da8" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::AttachmentReader</scope><name>Policy</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a8e3e1a18275e89086c1b972401a98e38" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::AttachmentReader</scope><name>read</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1af6f8eba4943349ffd1588d56e4b9e4ab" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::AttachmentReader</scope><name>ReadStatus</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_1a0524e068572417466c220cb44c27fd9a" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::AttachmentReader</scope><name>~AttachmentReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

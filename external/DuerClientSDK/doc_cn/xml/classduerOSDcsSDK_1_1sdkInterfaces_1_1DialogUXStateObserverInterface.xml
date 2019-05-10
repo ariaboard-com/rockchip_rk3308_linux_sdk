@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</compoundname>
+    <includes refid="DialogUXStateObserverInterface_8h" local="no">DialogUXStateObserverInterface.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cd" prot="public" static="no">
+        <name>DialogUXState</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdaa5daf7f2ebbba4975d61dab1c40188c7" prot="public">
+          <name>IDLE</name>
+          <briefdescription>
+<para>DuerOS处于空闲状态，可以进行交互。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdac0ff938e396e72c225bd66562b80a77e" prot="public">
+          <name>LISTENING</name>
+          <briefdescription>
+<para>DuerOS正在聆听。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda18004389aa6f827c608aad2441a2bc53" prot="public">
+          <name>THINKING</name>
+          <briefdescription>
+<para>聆听结束，等待DCS返回内容。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdaddee564b336f5de690b746eb04e62114" prot="public">
+          <name>SPEAKING</name>
+          <briefdescription>
+<para>DuerOS正在播放TTS。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda2c616b2713e2e0aed04b4c4752c88133" prot="public">
+          <name>FINISHED</name>
+          <briefdescription>
+<para>DuerOS播放TTS结束。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdad91f1c898ec44b2a141bcd5c214bae42" prot="public">
+          <name>MEDIA_PLAYING</name>
+          <briefdescription>
+<para>DuerOS正在播放音乐。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda0dd094bc11dfac6f035f22c4740ae0fc" prot="public">
+          <name>MEDIA_STOPPED</name>
+          <briefdescription>
+<para>DuerOS停止音乐播放。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda07cd4dc17fafe8ec3c4eb3f8d384c947" prot="public">
+          <name>MEDIA_FINISHED</name>
+          <briefdescription>
+<para>DuerOS完成音乐播放。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>DCS UX状态枚举。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="51" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="51" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46" prot="public" static="no">
+        <name>AlertState</name>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a2baa69eafc7204f3bd8648eba580c489" prot="public">
+          <name>READY</name>
+          <briefdescription>
+<para>闹钟时间到，等待音频焦点。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a17130e6c806885e23770df1519b18eb7" prot="public">
+          <name>STARTED</name>
+          <briefdescription>
+<para>闹钟已经开始播放。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a09d4d696b4e935115b9313e3c412509a" prot="public">
+          <name>STOPPED</name>
+          <briefdescription>
+<para>系统或者用户打断闹钟，导致闹钟结束播放。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46adbd414f9aaabb67e8430e9520f604a79" prot="public">
+          <name>SNOOZED</name>
+          <briefdescription>
+<para>小睡一会儿。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a8f7afecbc8fbc4cd0f50a57d1172482e" prot="public">
+          <name>COMPLETED</name>
+          <briefdescription>
+<para>闹钟响铃超时(15分钟)。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a560bb2d9ea9002aa8c70a4462ca6c304" prot="public">
+          <name>PAST_DUE</name>
+          <briefdescription>
+<para>闹钟已经过期太久(30分钟)，不会再响铃。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46aa72d9c6d4fab6a8bb2fcc8fe3f7dff13" prot="public">
+          <name>FOCUS_ENTERED_FOREGROUND</name>
+          <briefdescription>
+<para>闹钟进入前台。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a8f2c39a6e3871da5c682a37a792a6b05" prot="public">
+          <name>FOCUS_ENTERED_BACKGROUND</name>
+          <briefdescription>
+<para>闹钟进入后台。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46abb1ca97ec761fc37101737ba0aa2e7c5" prot="public">
+          <name>ERROR</name>
+          <briefdescription>
+<para>闹钟发生错误，播放错误时发生。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>闹钟状态枚举。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="133" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="133" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a35c278a6bbec5a99f727adf843b1f6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::~DialogUXStateObserverInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~DialogUXStateObserverInterface</name>
+        <briefdescription>
+<para>析构函数。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a637d0af6797816b4e5cd72198e3f3781" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onDialogUXStateChanged</definition>
+        <argsstring>(DialogUXState newState)=0</argsstring>
+        <name>onDialogUXStateChanged</name>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cd" kindref="member">DialogUXState</ref></type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>回调函数，用于通知DCS UX系统状态变化。由于此回调函数回阻塞其他状态，所以实现方需要尽快返回。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">newState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DCS UX状态，参考DialogUXState枚举。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ae7aeb5e14429beb2de4f39343e212454" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onMessageSendComplete</definition>
+        <argsstring>(bool success)=0</argsstring>
+        <name>onMessageSendComplete</name>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>发送语音流(做语音识别)是否成功 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">success</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true, 成功; false,失败 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a444993d3b7cf37527bb2201659215094" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onHttp2NotConnected</definition>
+        <argsstring>()</argsstring>
+        <name>onHttp2NotConnected</name>
+        <briefdescription>
+<para>通知http2 stream连接断开了 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="259" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="259" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aa2696e09b8315aebb1a5a22a954c0131" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onListenStarted</definition>
+        <argsstring>(bool success)</argsstring>
+        <name>onListenStarted</name>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>通知开始上传语音流数据做语音识别 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">success</parametername>
+<parametername direction="in">目前总是为true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="270" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a4449d08c2a37dab840892f81e4aef8b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onStopListen</definition>
+        <argsstring>(bool success)</argsstring>
+        <name>onStopListen</name>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>通知已结束上传语音流数据 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">succcess</parametername>
+<parametername direction="in">目前总是为true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="281" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a1d2558050e701fd223c5f71d41e6042a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onReceivedDirective</definition>
+        <argsstring>(const std::string &amp;contextId, const std::string &amp;message)=0</argsstring>
+        <name>onReceivedDirective</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>contextId</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>通知已结束上传语音流数据 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">contextId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>上下文id </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>server端下发的指令信息 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aad6473c61fe192e97afa9a2b79aad7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onAlertStateChange</definition>
+        <argsstring>(const std::string &amp;alertToken, AlertState state, const std::string &amp;reason=&quot;&quot;)=0</argsstring>
+        <name>onAlertStateChange</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alertToken</declname>
+        </param>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46" kindref="member">AlertState</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>reason</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>回调函数，用于通知闹钟状态变化。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">alertToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DCS协议里的闹钟token，标识不同的闹钟。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>闹钟状态。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发状态变化的原因。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ad64bcd73399ce997208ff0eb438b9ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onExpectSpeech</definition>
+        <argsstring>(bool success)=0</argsstring>
+        <name>onExpectSpeech</name>
+        <param>
+          <type>bool</type>
+          <declname>success</declname>
+        </param>
+        <briefdescription>
+<para>通知已进入多轮识别状态 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">success</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>目前总是为true </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac705edbf0fe9a07e4f72ecd4c911e779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::onSpeechFinished</definition>
+        <argsstring>()</argsstring>
+        <name>onSpeechFinished</name>
+        <briefdescription>
+<para>TTS播放已结束。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="331" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="331" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a92870093ce3de85233e4e7b098c94185" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::stateToString</definition>
+        <argsstring>(DialogUXState state)</argsstring>
+        <name>stateToString</name>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cd" kindref="member">DialogUXState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>枚举状态转换成字符串。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要转换的状态枚举值。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态枚举值对应的字符串。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="344" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="360" bodyend="380"/>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda2c616b2713e2e0aed04b4c4752c88133">FINISHED</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdaa5daf7f2ebbba4975d61dab1c40188c7">IDLE</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdac0ff938e396e72c225bd66562b80a77e">LISTENING</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda07cd4dc17fafe8ec3c4eb3f8d384c947">MEDIA_FINISHED</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdad91f1c898ec44b2a141bcd5c214bae42">MEDIA_PLAYING</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda0dd094bc11dfac6f035f22c4740ae0fc">MEDIA_STOPPED</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cdaddee564b336f5de690b746eb04e62114">SPEAKING</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cda18004389aa6f827c608aad2441a2bc53">THINKING</references>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aa80a09873abe1e5f805594deb2a38afa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface::stateToString</definition>
+        <argsstring>(AlertState state)</argsstring>
+        <name>stateToString</name>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46" kindref="member">AlertState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>枚举状态转换成字符串。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>需要转换的状态枚举值。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态枚举值对应的字符串。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="357" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="398" bodyend="420"/>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a8f7afecbc8fbc4cd0f50a57d1172482e">COMPLETED</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46abb1ca97ec761fc37101737ba0aa2e7c5">ERROR</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a8f2c39a6e3871da5c682a37a792a6b05">FOCUS_ENTERED_BACKGROUND</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46aa72d9c6d4fab6a8bb2fcc8fe3f7dff13">FOCUS_ENTERED_FOREGROUND</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a560bb2d9ea9002aa8c70a4462ca6c304">PAST_DUE</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a2baa69eafc7204f3bd8648eba580c489">READY</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46adbd414f9aaabb67e8430e9520f604a79">SNOOZED</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a17130e6c806885e23770df1519b18eb7">STARTED</references>
+        <references refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46a09d4d696b4e935115b9313e3c412509a">STOPPED</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DuerOS状态观察接口。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="42" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="42" bodyend="358"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>AlertState</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cd" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>DialogUXState</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aad6473c61fe192e97afa9a2b79aad7cc" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onAlertStateChange</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a637d0af6797816b4e5cd72198e3f3781" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onDialogUXStateChanged</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ad64bcd73399ce997208ff0eb438b9ca7" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onExpectSpeech</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a444993d3b7cf37527bb2201659215094" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onHttp2NotConnected</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aa2696e09b8315aebb1a5a22a954c0131" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onListenStarted</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ae7aeb5e14429beb2de4f39343e212454" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onMessageSendComplete</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a1d2558050e701fd223c5f71d41e6042a" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onReceivedDirective</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac705edbf0fe9a07e4f72ecd4c911e779" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onSpeechFinished</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a4449d08c2a37dab840892f81e4aef8b2" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>onStopListen</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a92870093ce3de85233e4e7b098c94185" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>stateToString</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1aa80a09873abe1e5f805594deb2a38afa" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>stateToString</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1a35c278a6bbec5a99f727adf843b1f6ca" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</scope><name>~DialogUXStateObserverInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

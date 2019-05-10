@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" kind="struct" language="C++" prot="public">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::SystemInformation</compoundname>
+    <includes refid="ApplicationImplementation_8h" local="no">ApplicationImplementation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0aa3bae54c13fff6792d94dc275f3f27" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::ssid</definition>
+        <argsstring></argsstring>
+        <name>ssid</name>
+        <briefdescription>
+<para>当前wifi连接的热点名称。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="49" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ad9caf013cb012f387190640ef15fe08e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::mac</definition>
+        <argsstring></argsstring>
+        <name>mac</name>
+        <briefdescription>
+<para>设备无线网卡的的mac地址。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="58" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a6134155a23d32e00714203c37c7a1884" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+<para>当前无线网卡的ip地址。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="67" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1acddeebe9ffd3da5263d9425a08b7a3c3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::clientId</definition>
+        <argsstring></argsstring>
+        <name>clientId</name>
+        <briefdescription>
+<para>设备的client id，此参数不需要APP层传入，由SDK自行获取。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="76" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a03f96e89d9a32cd3cb1f3b9f1bafbfe4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::deviceId</definition>
+        <argsstring></argsstring>
+        <name>deviceId</name>
+        <briefdescription>
+<para>设备的device id。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="85" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ab48bf926c5ada4bdd111c66068c9089f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::sn</definition>
+        <argsstring></argsstring>
+        <name>sn</name>
+        <briefdescription>
+<para>设备的serial number。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="94" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ac15ee05a69a139e4bd1a45b42d772109" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::bluetoothMac</definition>
+        <argsstring></argsstring>
+        <name>bluetoothMac</name>
+        <briefdescription>
+<para>蓝牙的mac地址。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="103" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0e2db377bf9f20f232683718dd27903e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::deviceVersion</definition>
+        <argsstring></argsstring>
+        <name>deviceVersion</name>
+        <briefdescription>
+<para>设备的serial number。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="112" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a288693ee6a8001b336b01c90dec17690" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::softwareVersion</definition>
+        <argsstring></argsstring>
+        <name>softwareVersion</name>
+        <briefdescription>
+<para>设备的软件版本。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="121" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a7a2868fa576db14d7974e083edebf6a4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::SystemInformation::protocolVersion</definition>
+        <argsstring></argsstring>
+        <name>protocolVersion</name>
+        <briefdescription>
+<para>设备当前支持的DuerOS协议版本，此参数不需要APP层传入，由SDK自行获取。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="130" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a44564c64df820891fde2623e37fa8957" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool duerOSDcsSDK::sdkInterfaces::SystemInformation::onlineStatus</definition>
+        <argsstring></argsstring>
+        <name>onlineStatus</name>
+        <briefdescription>
+<para>设备当前的网络连接状态。True/False：网络已连接/网络未连接。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="139" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>设备系统信息。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="41" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="41" bodyend="140"/>
+    <listofallmembers>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ac15ee05a69a139e4bd1a45b42d772109" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>bluetoothMac</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1acddeebe9ffd3da5263d9425a08b7a3c3" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>clientId</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a03f96e89d9a32cd3cb1f3b9f1bafbfe4" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>deviceId</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0e2db377bf9f20f232683718dd27903e" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>deviceVersion</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a6134155a23d32e00714203c37c7a1884" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>ip</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ad9caf013cb012f387190640ef15fe08e" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>mac</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a44564c64df820891fde2623e37fa8957" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>onlineStatus</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a7a2868fa576db14d7974e083edebf6a4" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>protocolVersion</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1ab48bf926c5ada4bdd111c66068c9089f" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>sn</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a288693ee6a8001b336b01c90dec17690" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>softwareVersion</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation_1a0aa3bae54c13fff6792d94dc275f3f27" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::SystemInformation</scope><name>ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

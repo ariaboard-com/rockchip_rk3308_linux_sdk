@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface</compoundname>
+    <includes refid="LocalSourcePlayerInterface_8h" local="no">LocalSourcePlayerInterface.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_1a431411441e84ce2cf6e1beb3a1e9b92e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface::playLocalSource</definition>
+        <argsstring>(const std::string &amp;source, bool needFocus, void(*start_callback)(void *arg), void *start_cb_arg, void(*finish_callback)())=0</argsstring>
+        <name>playLocalSource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needFocus</declname>
+        </param>
+        <param>
+          <type>void(*)(void *arg)</type>
+          <declname>start_callback</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>start_cb_arg</declname>
+        </param>
+        <param>
+          <type>void(*)()</type>
+          <declname>finish_callback</declname>
+        </param>
+        <briefdescription>
+<para>播放local资源. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source uri。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">needFocus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True/False。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">start_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>开始播放时的回调函数。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">start_cb_arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>开始播放时回调函数的参数列表。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">finish_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>结束播放时的回调函数。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalSourcePlayerInterface.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_1add348d72e87c2bcb4c7fbdd91fc4f590" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface::playTts</definition>
+        <argsstring>(const std::string &amp;content, bool needFocus, void(*callback)())=0</argsstring>
+        <name>playTts</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>needFocus</declname>
+        </param>
+        <param>
+          <type>void(*)()</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>播放tts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>content。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">needFocus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True/False。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>播放时的回调函数。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalSourcePlayerInterface.h" line="79" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface of local source player. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalSourcePlayerInterface.h" line="41" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalSourcePlayerInterface.h" bodystart="41" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_1a431411441e84ce2cf6e1beb3a1e9b92e" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface</scope><name>playLocalSource</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface_1add348d72e87c2bcb4c7fbdd91fc4f590" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface</scope><name>playTts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

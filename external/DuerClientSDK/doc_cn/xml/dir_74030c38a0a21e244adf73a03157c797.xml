@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_74030c38a0a21e244adf73a03157c797" kind="dir">
+    <compoundname>/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk</compoundname>
+    <innerfile refid="ApplicationImplementation_8h">ApplicationImplementation.h</innerfile>
+    <innerfile refid="AttachmentReader_8h">AttachmentReader.h</innerfile>
+    <innerfile refid="ConnectionStatusObserverInterface_8h">ConnectionStatusObserverInterface.h</innerfile>
+    <innerfile refid="DcsSdk_8h">DcsSdk.h</innerfile>
+    <innerfile refid="DcsSdkParameters_8h">DcsSdkParameters.h</innerfile>
+    <innerfile refid="DialogUXStateObserverInterface_8h">DialogUXStateObserverInterface.h</innerfile>
+    <innerfile refid="ErrorTypes_8h">ErrorTypes.h</innerfile>
+    <innerfile refid="KeyWordObserverInterface_8h">KeyWordObserverInterface.h</innerfile>
+    <innerfile refid="LocalMediaPlayerInterface_8h">LocalMediaPlayerInterface.h</innerfile>
+    <innerfile refid="LocalMediaPlayerObserverInterface_8h">LocalMediaPlayerObserverInterface.h</innerfile>
+    <innerfile refid="LocalSourcePlayerInterface_8h">LocalSourcePlayerInterface.h</innerfile>
+    <innerfile refid="MediaPlayerInterface_8h">MediaPlayerInterface.h</innerfile>
+    <innerfile refid="MediaPlayerObserverInterface_8h">MediaPlayerObserverInterface.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface</compoundname>
+    <includes refid="KeyWordObserverInterface_8h" local="no">KeyWordObserverInterface.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a11ee242b3d72866143211ed5526953c1" prot="public" static="yes" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface::UNSPECIFIED_INDEX</definition>
+        <argsstring></argsstring>
+        <name>UNSPECIFIED_INDEX</name>
+        <initializer>=
+        std::numeric_limits&lt;uint64_t&gt;::max()</initializer>
+        <briefdescription>
+<para>这是默认的index,如果在onKeyWordDetected()参数里有设置,可以忽略它 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/KeyWordObserverInterface.h" line="51" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/KeyWordObserverInterface.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a4c45583ddde82010ad7f6399af45feb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface::~KeyWordObserverInterface</definition>
+        <argsstring>()=default</argsstring>
+        <name>~KeyWordObserverInterface</name>
+        <briefdescription>
+<para>析构函数. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/KeyWordObserverInterface.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1af2a248b56dd4977e02cfdcfffa9047bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface::onKeyWordDetected</definition>
+        <argsstring>(std::string keyword, uint64_t beginIndex=UNSPECIFIED_INDEX, uint64_t=UNSPECIFIED_INDEX)=0</argsstring>
+        <name>onKeyWordDetected</name>
+        <param>
+          <type>std::string</type>
+          <declname>keyword</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>beginIndex</declname>
+          <defval><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a11ee242b3d72866143211ed5526953c1" kindref="member">UNSPECIFIED_INDEX</ref></defval>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <defval><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a11ee242b3d72866143211ed5526953c1" kindref="member">UNSPECIFIED_INDEX</ref></defval>
+        </param>
+        <briefdescription>
+<para>用于通知唤醒词检测的observer, 一旦调用,客户端应该尽快返回. 如果不这样做,可能会阻塞唤醒引擎继续处理音频数据, 任何额外的工作应该在分开的线程或唤醒后进行. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">keyword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>检测到的唤醒词. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">beginIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>检测到的唤醒词的开始位置,如果设置为UNSPECIFIED_INDEX,可以被忽略. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">endIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>检测到的唤醒词的结束位置,如果设置为UNSPECIFIED_INDEX,可以被忽略. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/KeyWordObserverInterface.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>接口类,用于客户端监听唤醒的检测。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/KeyWordObserverInterface.h" line="42" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/KeyWordObserverInterface.h" bodystart="42" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1af2a248b56dd4977e02cfdcfffa9047bf" prot="public" virt="pure-virtual"><scope>duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface</scope><name>onKeyWordDetected</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a11ee242b3d72866143211ed5526953c1" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface</scope><name>UNSPECIFIED_INDEX</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface_1a4c45583ddde82010ad7f6399af45feb2" prot="public" virt="virtual"><scope>duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface</scope><name>~KeyWordObserverInterface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

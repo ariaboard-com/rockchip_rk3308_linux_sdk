@@ -1,0 +1,171 @@
+\hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader}{}\section{duer\+O\+S\+Dcs\+S\+DK\+:\+:sdk\+Interfaces\+:\+:Attachment\+Reader Class Reference}
+\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}
+
+
+应用层通过此接口，从\+S\+D\+K读取\+T\+T\+S数据流。  
+
+
+
+
+{\ttfamily \#include $<$Attachment\+Reader.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8}{Policy} \{ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8a72323e5457d8fb855145bfee934aa415}{Policy\+::\+B\+L\+O\+C\+K\+I\+NG}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8a71fed0a1fc7faaeab0a56a76799e5ad3}{Policy\+::\+N\+O\+N\+\_\+\+B\+L\+O\+C\+K\+I\+NG}
+ \}
+\begin{DoxyCompactList}\small\item\em 枚举，用于决定read数据时是否阻塞。 \end{DoxyCompactList}\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4ab}{Read\+Status} \{ \newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abae0aa021e21dddbd6d8cecec71e9cf564}{Read\+Status\+::\+OK}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba787bd2f5224b6b864eea398349436849}{Read\+Status\+::\+O\+K\+\_\+\+W\+O\+U\+L\+D\+B\+L\+O\+CK}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abadb301c3410dd8d428a7f17043740bb14}{Read\+Status\+::\+O\+K\+\_\+\+T\+I\+M\+E\+D\+O\+UT}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba110ccf2f5d2ff4eda1fd1a494293467d}{Read\+Status\+::\+C\+L\+O\+S\+ED}, 
+\newline
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba6473b0b6f8e61be94630555e2d4a9baa}{Read\+Status\+::\+E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+R\+UN}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abaa1238e1a739964feb62763f7bf0875f0}{Read\+Status\+::\+E\+R\+R\+O\+R\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba7b6311615dfbbaccec8279677f19feea}{Read\+Status\+::\+E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL}
+ \}
+\begin{DoxyCompactList}\small\item\em 枚举，伴随每次read调用返回。 \end{DoxyCompactList}\item 
+enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3}{Close\+Point} \{ \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ad051319484a869ba5244878e7ed93b8d}{Close\+Point\+::\+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}, 
+\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79}{Close\+Point\+::\+A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}
+ \}
+\begin{DoxyCompactList}\small\item\em 枚举，指定调用close函数后，read函数的行为。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a0524e068572417466c220cb44c27fd9a}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a0524e068572417466c220cb44c27fd9a}} 
+virtual \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a0524e068572417466c220cb44c27fd9a}{$\sim$\+Attachment\+Reader} ()=default
+\begin{DoxyCompactList}\small\item\em 析构函数。 \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a8e3e1a18275e89086c1b972401a98e38}{read} (void $\ast$buf, std\+::size\+\_\+t num\+Bytes, \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4ab}{Read\+Status} $\ast$read\+Status, std\+::chrono\+::milliseconds timeout\+Ms=std\+::chrono\+::milliseconds(0))=0
+\begin{DoxyCompactList}\small\item\em read函数，通过此函数从\+S\+D\+K读取\+T\+T\+S数据流。 \end{DoxyCompactList}\item 
+virtual void \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a9660710b89712142a451236144968acc}{close} (\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3}{Close\+Point} close\+Point=\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79}{Close\+Point\+::\+A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER})=0
+\begin{DoxyCompactList}\small\item\em 关闭函数，应用层需要认真管理相关资源。 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+应用层通过此接口，从\+S\+D\+K读取\+T\+T\+S数据流。 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!Close\+Point@{Close\+Point}}
+\index{Close\+Point@{Close\+Point}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}
+\subsubsection{\texorpdfstring{Close\+Point}{ClosePoint}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader\+::\+Close\+Point}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+枚举，指定调用close函数后，read函数的行为。 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+M\+M\+E\+D\+I\+A\+T\+E\+LY@{I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!I\+M\+M\+E\+D\+I\+A\+T\+E\+LY@{I\+M\+M\+E\+D\+I\+A\+T\+E\+LY}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ad051319484a869ba5244878e7ed93b8d}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ad051319484a869ba5244878e7ed93b8d}} 
+I\+M\+M\+E\+D\+I\+A\+T\+E\+LY&调用close函数后，read函数立即返回。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER@{A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER@{A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79}} 
+A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER&调用close函数后，read函数持续返回，直到buffer没有可用数据。 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!Policy@{Policy}}
+\index{Policy@{Policy}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}
+\subsubsection{\texorpdfstring{Policy}{Policy}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader\+::\+Policy}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+枚举，用于决定read数据时是否阻塞。 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+L\+O\+C\+K\+I\+NG@{B\+L\+O\+C\+K\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!B\+L\+O\+C\+K\+I\+NG@{B\+L\+O\+C\+K\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8a72323e5457d8fb855145bfee934aa415}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8a72323e5457d8fb855145bfee934aa415}} 
+B\+L\+O\+C\+K\+I\+NG&当数据不够n字节时，阻塞read函数，或者超时时间到。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+N\+\_\+\+B\+L\+O\+C\+K\+I\+NG@{N\+O\+N\+\_\+\+B\+L\+O\+C\+K\+I\+NG}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!N\+O\+N\+\_\+\+B\+L\+O\+C\+K\+I\+NG@{N\+O\+N\+\_\+\+B\+L\+O\+C\+K\+I\+NG}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8a71fed0a1fc7faaeab0a56a76799e5ad3}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a2a81f7484b9256dd6d171ebd46469da8a71fed0a1fc7faaeab0a56a76799e5ad3}} 
+N\+O\+N\+\_\+\+B\+L\+O\+C\+K\+I\+NG&read函数直接返回，不管数据够不够n字节时。 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4ab}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4ab}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!Read\+Status@{Read\+Status}}
+\index{Read\+Status@{Read\+Status}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Status}{ReadStatus}}
+{\footnotesize\ttfamily enum \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4ab}{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader\+::\+Read\+Status}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+枚举，伴随每次read调用返回。 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OK@{OK}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!OK@{OK}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abae0aa021e21dddbd6d8cecec71e9cf564}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abae0aa021e21dddbd6d8cecec71e9cf564}} 
+OK&正常状态。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+K\+\_\+\+W\+O\+U\+L\+D\+B\+L\+O\+CK@{O\+K\+\_\+\+W\+O\+U\+L\+D\+B\+L\+O\+CK}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!O\+K\+\_\+\+W\+O\+U\+L\+D\+B\+L\+O\+CK@{O\+K\+\_\+\+W\+O\+U\+L\+D\+B\+L\+O\+CK}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba787bd2f5224b6b864eea398349436849}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba787bd2f5224b6b864eea398349436849}} 
+O\+K\+\_\+\+W\+O\+U\+L\+D\+B\+L\+O\+CK&用于非阻塞read，当可用数据小于请求数据长度n，立即返回。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+K\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{O\+K\+\_\+\+T\+I\+M\+E\+D\+O\+UT}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!O\+K\+\_\+\+T\+I\+M\+E\+D\+O\+UT@{O\+K\+\_\+\+T\+I\+M\+E\+D\+O\+UT}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abadb301c3410dd8d428a7f17043740bb14}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abadb301c3410dd8d428a7f17043740bb14}} 
+O\+K\+\_\+\+T\+I\+M\+E\+D\+O\+UT&用于阻塞read，当可用数据小于请求数据长度n，直到超时。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+L\+O\+S\+ED@{C\+L\+O\+S\+ED}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!C\+L\+O\+S\+ED@{C\+L\+O\+S\+ED}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba110ccf2f5d2ff4eda1fd1a494293467d}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba110ccf2f5d2ff4eda1fd1a494293467d}} 
+C\+L\+O\+S\+ED&底层数据已关闭，读取数据无效。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+R\+UN@{E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+R\+UN}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+R\+UN@{E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+R\+UN}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba6473b0b6f8e61be94630555e2d4a9baa}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba6473b0b6f8e61be94630555e2d4a9baa}} 
+E\+R\+R\+O\+R\+\_\+\+O\+V\+E\+R\+R\+UN&数据损坏，读取数据无效。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+O\+R\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE@{E\+R\+R\+O\+R\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!E\+R\+R\+O\+R\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE@{E\+R\+R\+O\+R\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abaa1238e1a739964feb62763f7bf0875f0}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4abaa1238e1a739964feb62763f7bf0875f0}} 
+E\+R\+R\+O\+R\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+L\+E\+S\+S\+\_\+\+T\+H\+A\+N\+\_\+\+W\+O\+R\+D\+\_\+\+S\+I\+ZE&请求数据长度小于最小数据单位。 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL@{E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL@{E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL}}}\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba7b6311615dfbbaccec8279677f19feea}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4aba7b6311615dfbbaccec8279677f19feea}} 
+E\+R\+R\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL&未定义错误。 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a9660710b89712142a451236144968acc}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a9660710b89712142a451236144968acc}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!close@{close}}
+\index{close@{close}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader\+::close (\begin{DoxyParamCaption}\item[{\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3}{Close\+Point}}]{close\+Point = {\ttfamily \hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a16bb338aa4735c8f4414ae1708b293a3ac7b7279c5169b23f95b28bd9e9437b79}{Close\+Point\+::\+A\+F\+T\+E\+R\+\_\+\+D\+R\+A\+I\+N\+I\+N\+G\+\_\+\+C\+U\+R\+R\+E\+N\+T\+\_\+\+B\+U\+F\+F\+ER}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+关闭函数，应用层需要认真管理相关资源。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em close\+Point} & 关闭策略，参考\+Close\+Point枚举。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a8e3e1a18275e89086c1b972401a98e38}\label{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_a8e3e1a18275e89086c1b972401a98e38}} 
+\index{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}!read@{read}}
+\index{read@{read}!duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader@{duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual std\+::size\+\_\+t duer\+O\+S\+Dcs\+S\+D\+K\+::sdk\+Interfaces\+::\+Attachment\+Reader\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buf,  }\item[{std\+::size\+\_\+t}]{num\+Bytes,  }\item[{\hyperlink{classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader_af6f8eba4943349ffd1588d56e4b9e4ab}{Read\+Status} $\ast$}]{read\+Status,  }\item[{std\+::chrono\+::milliseconds}]{timeout\+Ms = {\ttfamily std\+:\+:chrono\+:\+:milliseconds(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+read函数，通过此函数从\+S\+D\+K读取\+T\+T\+S数据流。 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buf} & 目标buffer。 \\
+\hline
+\mbox{\tt in}  & {\em num\+Bytes} & 请求数据长度，以字节为单位。 \\
+\hline
+\mbox{\tt out}  & {\em read\+Status} & 读取状态返回，参考\+Read\+Status枚举。 \\
+\hline
+\mbox{\tt in}  & {\em timeout\+Ms} & 超时时间，以毫秒为单位，仅用于\+B\+L\+O\+C\+K\+I\+N\+G读取策略。 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+读取到的真实数据长度，以字节为单位。 
+\end{DoxyReturn}

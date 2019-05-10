@@ -1,0 +1,571 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespaceduerOSDcsSDK_1_1sdkInterfaces" kind="namespace" language="C++">
+    <compoundname>duerOSDcsSDK::sdkInterfaces</compoundname>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" prot="public">duerOSDcsSDK::sdkInterfaces::ApplicationImplementation</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1AttachmentReader" prot="public">duerOSDcsSDK::sdkInterfaces::AttachmentReader</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::ConnectionStatusObserverInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdk" prot="public">duerOSDcsSDK::sdkInterfaces::DcsSdk</innerclass>
+    <innerclass refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters" prot="public">duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::DialogUXStateObserverInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::KeyWordObserverInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface" prot="public">duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerObserverInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" prot="public">duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalSourcePlayerInterface" prot="public">duerOSDcsSDK::sdkInterfaces::LocalSourcePlayerInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" prot="public">duerOSDcsSDK::sdkInterfaces::MediaPlayerInterface</innerclass>
+    <innerclass refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerObserverInterface" prot="public">duerOSDcsSDK::sdkInterfaces::MediaPlayerObserverInterface</innerclass>
+    <innerclass refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemInformation" prot="public">duerOSDcsSDK::sdkInterfaces::SystemInformation</innerclass>
+    <innerclass refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1SystemUpdateInformation" prot="public">duerOSDcsSDK::sdkInterfaces::SystemUpdateInformation</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0e" prot="public" static="no">
+        <name>SystemUpdateState</name>
+        <enumvalue id="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0ea0c32f1ab4fdb8e1f074758f762db44ef" prot="public">
+          <name>NOT_UPDATABLE</name>
+          <briefdescription>
+<para>系统已经是最新的版本。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0ea536d35c5e0c653a259fb56e190bc2741" prot="public">
+          <name>UPDATABLE</name>
+          <briefdescription>
+<para>可以进行系统软件更新。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ApplicationImplementation_8h_1ae39232cc6bb2023a72eb05e0bdc64c0ea4cc8dfdc76b1ecc5d8f62d660654a742" prot="public">
+          <name>UPDATING</name>
+          <briefdescription>
+<para>系统更新中。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>系统更新状态。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="149" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="149" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="enum" id="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3a" prot="public" static="no">
+        <name>SdkConnectionState</name>
+        <enumvalue id="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa59b15df5bdbc6ea3fd43264e2a5c1130" prot="public">
+          <name>SDK_AUTH_FAILED</name>
+          <briefdescription>
+<para>认证失败。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa079bcb5476ca0345d26931c3b632fd83" prot="public">
+          <name>SDK_AUTH_SUCCEED</name>
+          <briefdescription>
+<para>认证成功。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa3cb8d7e316f280202a7ece78aafa2c7c" prot="public">
+          <name>SDK_CONNECT_FAILED</name>
+          <briefdescription>
+<para>连接失败。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa267f4963822f12ba4859dafe930aa5ed" prot="public">
+          <name>SDK_CONNECTING</name>
+          <briefdescription>
+<para>正在连接中。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ApplicationImplementation_8h_1aeb623e41ba0539c79f27014e50dcdb3aa5ac34ebfcafb51c7f3155d52dfa231ba" prot="public">
+          <name>SDK_CONNECT_SUCCEED</name>
+          <briefdescription>
+<para>连接成功。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>sdk连接状态。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="239" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" bodystart="239" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="enum" id="ErrorTypes_8h_1adfb493b25fb2ed8ba711b0e8b56e1604" prot="public" static="no">
+        <name>ErrorType</name>
+        <enumvalue id="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604a8a46c6871379464dbd33be70a24cfba3" prot="public">
+          <name>MEDIA_ERROR_UNKNOWN</name>
+          <briefdescription>
+<para>未知错误。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604af0506be275f28c97934bda2659eb4367" prot="public">
+          <name>MEDIA_ERROR_INVALID_REQUEST</name>
+          <briefdescription>
+<para>错误的请求。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604a71091367e6d03f68244823010b052a51" prot="public">
+          <name>MEDIA_ERROR_SERVICE_UNAVAILABLE</name>
+          <briefdescription>
+<para>服务不可用。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604ab1f98ed35decb700504a4a434fe5056e" prot="public">
+          <name>MEDIA_ERROR_INTERNAL_SERVER_ERROR</name>
+          <briefdescription>
+<para>服务器错误。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1adfb493b25fb2ed8ba711b0e8b56e1604a5183b820e865ed35bcd230a8be0140fa" prot="public">
+          <name>MEDIA_ERROR_INTERNAL_DEVICE_ERROR</name>
+          <briefdescription>
+<para>设备错误。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>错误类型。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ErrorTypes.h" line="42" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ErrorTypes.h" bodystart="42" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="enum" id="LocalMediaPlayerInterface_8h_1a84139ee3f1740fc5f035bc78cb8c0ccf" prot="public" static="no">
+        <name>LocalMediaPlayerStatus</name>
+        <enumvalue id="dummy_1a84139ee3f1740fc5f035bc78cb8c0ccfa76e2fe9a413ff88132a4914e4e8abd77" prot="public">
+          <name>LOCAL_MEDIA_PLAYER_SUCCESS</name>
+          <briefdescription>
+<para>本地(蓝牙播放)播放器播放成功 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a84139ee3f1740fc5f035bc78cb8c0ccfa910d621e5d4720435e3ac04debca1ee9" prot="public">
+          <name>LOCAL_MEDIA_PLAYER_PENDING</name>
+          <briefdescription>
+<para>本地(蓝牙播放)播放器正在尝试播放中，当前播放成功/失败状态未知 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1a84139ee3f1740fc5f035bc78cb8c0ccfab0786040f43b09bb14b3e5a882a1982b" prot="public">
+          <name>LOCAL_MEDIA_PLAYER_FAILURE</name>
+          <briefdescription>
+<para>本地(蓝牙播放)播放器播放失败 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>本地(蓝牙播放)播放器状态枚举类 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerInterface.h" line="36" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerInterface.h" bodystart="36" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0" prot="public" static="no">
+        <name>LocalMediaPlayerPlayActivity</name>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0aeb509a0770f0db4d8d02f6e92607d003" prot="public">
+          <name>IDLE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>初始状态，尚未开始播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0a6c08c57155c7373cd20acfd34477d16c" prot="public">
+          <name>PAUSED</name>
+          <briefdescription>
+<para>播放暂停状态 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0aa35cbed6d00b1ad31c304dcefcf11750" prot="public">
+          <name>PLAYING</name>
+          <briefdescription>
+<para>正在播放状态 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a536016938d1f81661b7c6740f1aa69c0a43376e155d1c85f4ae737605d417b821" prot="public">
+          <name>STOPPED</name>
+          <briefdescription>
+<para>播放停止状态 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>本地播放器播放活动状态 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="33" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="33" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1b" prot="public" static="no">
+        <name>LocalMediaPlayerPlayStatus</name>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1bab43b72c7c001149cc0c18a1791c2c89b" prot="public">
+          <name>FOREGROUND</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>前台播放状态 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1ba4bdc96ca290e007268dd181c4b7d5152" prot="public">
+          <name>BACKGROUND</name>
+          <briefdescription>
+<para>后台播放状态 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1abdda8dcb89a493668366b8274dbe4d1bac0fb50dec83935096da665e5b6457547" prot="public">
+          <name>CLOSED</name>
+          <briefdescription>
+<para>关闭状态 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>本地播放器播放播放状态(主要是指前台播放，后台播放，播放器关闭) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="75" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="75" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2" prot="public" static="no">
+        <name>LocalMediaPlayerName</name>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a612913ecbd41e018155007077ea4ed01" prot="public">
+          <name>BLUETOOTH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>蓝牙播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2ad01c3ac146ce08ac8160814bf9e9d72a" prot="public">
+          <name>QQ</name>
+          <briefdescription>
+<para>QQ音乐播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2af21b4ead4f031fe7698c7962f1ec7e04" prot="public">
+          <name>BAIDU</name>
+          <briefdescription>
+<para>百度音乐播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a015a0a32337733e80c7cfeb89644d599" prot="public">
+          <name>XIAMI</name>
+          <briefdescription>
+<para>虾米音乐播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a9de25fa44ff3560c655e3798a63af316" prot="public">
+          <name>NETEASE</name>
+          <briefdescription>
+<para>网易云音乐播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a491cd9519d401ed54f05ed0539a399c6" prot="public">
+          <name>KUWO</name>
+          <briefdescription>
+<para>酷我音乐播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="LocalMediaPlayerObserverInterface_8h_1a568b674717db6fa8cd5dac0f619ba7e2a56093123494ffde32f31ecbc79316cd0" prot="public">
+          <name>KUGOU</name>
+          <briefdescription>
+<para>酷狗音乐播放 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>本地播放来源名称 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="110" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="110" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="enum" id="MediaPlayerInterface_8h_1ac060779e85f450f00143f4ab2f0ceae1" prot="public" static="no">
+        <name>MediaPlayerStatus</name>
+        <enumvalue id="dummy_1ac060779e85f450f00143f4ab2f0ceae1ad0749aaba8b833466dfcbb0428e4f89c" prot="public">
+          <name>SUCCESS</name>
+          <briefdescription>
+<para>执行成功。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1ac060779e85f450f00143f4ab2f0ceae1ac69f06e1a9b016d133907b4e5f5864d2" prot="public">
+          <name>PENDING</name>
+          <briefdescription>
+<para>正在执行。如果发生错误需要通过onPlaybackError上报状态。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dummy_1ac060779e85f450f00143f4ab2f0ceae1a36fc6065a3e970bc3e6b2e59da52bf2a" prot="public">
+          <name>FAILURE</name>
+          <briefdescription>
+<para>发生错误，执行失败。 </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>表示MediaPlayer成员函数执行结果的枚举类。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="42" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="42" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="MediaPlayerInterface_8h_1ae8de57fa3d770a99fe58f704a523816d" prot="public" static="yes" mutable="no">
+        <type>const std::chrono::milliseconds</type>
+        <definition>const std::chrono::milliseconds duerOSDcsSDK::sdkInterfaces::MEDIA_PLAYER_INVALID_OFFSET</definition>
+        <argsstring></argsstring>
+        <name>MEDIA_PLAYER_INVALID_OFFSET</name>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+<para>表示播放器处于无效状态时所返回的播放时间偏移量。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" line="78" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/MediaPlayerInterface.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ConnectionStatusObserverInterface_8h_1a28fbb2852122f035a850d29d66a5e955" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; duerOSDcsSDK::sdkInterfaces::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, ConnectionStatusObserverInterface::Status status)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a3e9317c341d07a60d5c5f321495d0b4f" kindref="member">ConnectionStatusObserverInterface::Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>将连接状态枚举值转化为文本输出到ostream </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ostream输出文件流 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>连接状态枚举值 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ostream输出文件流 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="245" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" bodystart="245" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="ConnectionStatusObserverInterface_8h_1a095ff5b13ff7b74a74f8796c687ffb1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; duerOSDcsSDK::sdkInterfaces::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, ConnectionStatusObserverInterface::ChangedReason reason)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface_1a532c8f67d5315b6f0bdef01752463a38" kindref="member">ConnectionStatusObserverInterface::ChangedReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>将连接状态变化原因枚举值转化为文本输出到ostream </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ostream输出文件流 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>连接状态变化原因枚举值 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ostream输出文件流 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" line="277" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ConnectionStatusObserverInterface.h" bodystart="277" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="DialogUXStateObserverInterface_8h_1a1d637d844dd8e5e1cff1d493bff4593a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; duerOSDcsSDK::sdkInterfaces::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const DialogUXStateObserverInterface::DialogUXState &amp;state)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1abbcd31d45f9112289ba73c574bf191cd" kindref="member">DialogUXStateObserverInterface::DialogUXState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>将DialogUX状态输出到ostream。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ostream输出文件流 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DialogUX状态。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ostream输出文件流 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="394" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="394" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="DialogUXStateObserverInterface_8h_1a9ee43d45fbb1d6e2990ed7f1882729b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; duerOSDcsSDK::sdkInterfaces::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const DialogUXStateObserverInterface::AlertState &amp;state)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface_1ac45d1c6a17f061837ace6a4aeff9cc46" kindref="member">DialogUXStateObserverInterface::AlertState</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>将闹钟状态输出到ostream。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ostream输出文件流 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>闹钟状态。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ostream输出文件流 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" line="435" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DialogUXStateObserverInterface.h" bodystart="435" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="ErrorTypes_8h_1a0b01caef8edae20e87388b3849029e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::errorTypeToString</definition>
+        <argsstring>(ErrorType errorType)</argsstring>
+        <name>errorTypeToString</name>
+        <param>
+          <type>ErrorType</type>
+          <declname>errorType</declname>
+        </param>
+        <briefdescription>
+<para>错误类型对应的字符串。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">errorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>错误类型。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>错误类型对应的字符串。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ErrorTypes.h" line="100" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ErrorTypes.h" bodystart="100" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="ErrorTypes_8h_1a32c40db44b295f709fe2212f97daca06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; duerOSDcsSDK::sdkInterfaces::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;stream, const ErrorType &amp;errorType)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>const ErrorType &amp;</type>
+          <declname>errorType</declname>
+        </param>
+        <briefdescription>
+<para>写入错误类型到ostream中。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ostream。 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">errorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>错误类型。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>写入的ostream。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ErrorTypes.h" line="129" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ErrorTypes.h" bodystart="129" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/ApplicationImplementation.h" line="32" column="1"/>
+  </compounddef>
+</doxygen>

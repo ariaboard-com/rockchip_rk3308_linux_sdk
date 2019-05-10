@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters" kind="struct" language="C++" prot="public">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</compoundname>
+    <includes refid="DcsSdkParameters_8h" local="no">DcsSdkParameters.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a3ea1682c3f53008826f7a8052a0d6928" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_pathToConfig</definition>
+        <argsstring></argsstring>
+        <name>m_pathToConfig</name>
+        <briefdescription>
+<para>SDK配置文件名（只读配置）。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="501" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a81ea7a2b19677dc1b7fa6a2e0a3a5cb1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_pathToRuntimeConfig</definition>
+        <argsstring></argsstring>
+        <name>m_pathToRuntimeConfig</name>
+        <briefdescription>
+<para>SDK配置文件名（可变配置）。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="510" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad04728326ee78e7ed23d38d653f433cf" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_deviceId</definition>
+        <argsstring></argsstring>
+        <name>m_deviceId</name>
+        <briefdescription>
+<para>Device id。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="519" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a24e3ebbe6cd5f4dced011396a2eee730" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_speakMediaPlayer</definition>
+        <argsstring></argsstring>
+        <name>m_speakMediaPlayer</name>
+        <briefdescription>
+<para>Tts player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="528" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a942f8ba8164cbbb4a4142d8c0cad9c56" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_audioMediaPlayer</definition>
+        <argsstring></argsstring>
+        <name>m_audioMediaPlayer</name>
+        <briefdescription>
+<para>Audio player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="537" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a9a524a3548c1358fec095248bb810543" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_alertsMediaPlayer</definition>
+        <argsstring></argsstring>
+        <name>m_alertsMediaPlayer</name>
+        <briefdescription>
+<para>Alerts player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="546" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a831ec4dd4c4d6550d859aa9da8dd2b07" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface" kindref="compound">LocalMediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;LocalMediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_localMediaPlayer</definition>
+        <argsstring></argsstring>
+        <name>m_localMediaPlayer</name>
+        <briefdescription>
+<para>Local player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="555" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a744bb0199689f9ad3618236ee76c2005" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kindref="compound">DialogUXStateObserverInterface</ref> &gt; &gt;</type>
+        <definition>std::unordered_set&lt;std::shared_ptr&lt;DialogUXStateObserverInterface&gt; &gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_dialogStateObservers</definition>
+        <argsstring></argsstring>
+        <name>m_dialogStateObservers</name>
+        <briefdescription>
+<para>DialogUXStateObserverInterface实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="565" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a103a5300a0efb80ba3416ecdf9d00bea" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kindref="compound">sdkInterfaces::ConnectionStatusObserverInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;sdkInterfaces::ConnectionStatusObserverInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_connectionObservers</definition>
+        <argsstring></argsstring>
+        <name>m_connectionObservers</name>
+        <briefdescription>
+<para>ConnectionStatusObserverInterface实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="575" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1af431364cf9b33e739738febd9db27612" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kindref="compound">sdkInterfaces::ApplicationImplementation</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;sdkInterfaces::ApplicationImplementation&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_applicationImplementation</definition>
+        <argsstring></argsstring>
+        <name>m_applicationImplementation</name>
+        <briefdescription>
+<para>ApplicationImplementation实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="585" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7051a81f2907c90f90f80391a713b6fb" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_localTtsMediaPlayer</definition>
+        <argsstring></argsstring>
+        <name>m_localTtsMediaPlayer</name>
+        <briefdescription>
+<para>Local tts player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="594" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0199d040c9524710741f0851046ffce2" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_localPromptPlayer</definition>
+        <argsstring></argsstring>
+        <name>m_localPromptPlayer</name>
+        <briefdescription>
+<para>Prompt player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="603" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aa515cfbb4e89bc37f541ef04fbfec27a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, std::string&gt; &gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_customizeDirective</definition>
+        <argsstring></argsstring>
+        <name>m_customizeDirective</name>
+        <briefdescription>
+<para>自定义指令集。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="612" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad0e970981e1932bf8165679c9fd3953e" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" kindref="compound">sdkInterfaces::KeyWordObserverInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;sdkInterfaces::KeyWordObserverInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_keyWordObserverInterface</definition>
+        <argsstring></argsstring>
+        <name>m_keyWordObserverInterface</name>
+        <briefdescription>
+<para>KeyWordObserverInterface实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="621" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="621" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ae80d43f8e0f5f9a887f056cbcd280a26" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_enableSdkWakeup</definition>
+        <argsstring></argsstring>
+        <name>m_enableSdkWakeup</name>
+        <briefdescription>
+<para>启用/不启用百度唤醒库。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="630" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeea15d42773a44f528c7fa1346d09ac9" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::m_clientSecret</definition>
+        <argsstring></argsstring>
+        <name>m_clientSecret</name>
+        <briefdescription>
+<para>clientSecret </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="639" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4f7783b647c950318c10ba951f1a99e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::DcsSdkParameters</definition>
+        <argsstring>()</argsstring>
+        <name>DcsSdkParameters</name>
+        <briefdescription>
+<para>构造函数。 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="63" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="63" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a95c8300f4163e33cc6d639900afe1a6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setPathToConfig</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>setPathToConfig</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置SDK配置文件全路径名（只读配置）。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDK配置文件的全路径名（只读配置）。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="84" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab62fb7501f438a401592b2a1c4ef1548" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setPathToRuntimeConfig</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>setPathToRuntimeConfig</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置SDK配置文件全路径名（可变配置）。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SDK配置文件的全路径名（可变配置）。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="97" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a560bb54f6250f35c976d32abc69f8879" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setDeviceId</definition>
+        <argsstring>(const std::string &amp;value)</argsstring>
+        <name>setDeviceId</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置设备的device id。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设备的device id。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="110" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a5f35981ec0f7f048c658dd5778c877af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setSpeakMediaPlayer</definition>
+        <argsstring>(std::shared_ptr&lt; MediaPlayerInterface &gt; value)</argsstring>
+        <name>setSpeakMediaPlayer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置TTS player的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tts player实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="123" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac9b35322064082a043a10c50631dfbab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setAudioMediaPlayer</definition>
+        <argsstring>(std::shared_ptr&lt; MediaPlayerInterface &gt; value)</argsstring>
+        <name>setAudioMediaPlayer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置Audio player的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Audio player的实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="136" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a08fd79d632571c5e943fd85196ba0411" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setAlertsMediaPlayer</definition>
+        <argsstring>(std::shared_ptr&lt; MediaPlayerInterface &gt; value)</argsstring>
+        <name>setAlertsMediaPlayer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置Alerts player的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alerts player的实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="149" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a02a6263c432994bf0acb036e4ed6d7c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setLocalMediaPlayer</definition>
+        <argsstring>(std::shared_ptr&lt; LocalMediaPlayerInterface &gt; value)</argsstring>
+        <name>setLocalMediaPlayer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface" kindref="compound">LocalMediaPlayerInterface</ref> &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置Local player的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local player的实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="162" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad2b64e3b8c64580ea28c7699e6fa7d74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setDialogStateObservers</definition>
+        <argsstring>(std::unordered_set&lt; std::shared_ptr&lt; DialogUXStateObserverInterface &gt;&gt; value)</argsstring>
+        <name>setDialogStateObservers</name>
+        <param>
+          <type>std::unordered_set&lt; std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kindref="compound">DialogUXStateObserverInterface</ref> &gt;&gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置DialogUXStateObserverInterface实例指针set。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DialogUXStateObserverInterface的实例指针set。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="175" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a82391d394920edd2cdce280c111021b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setConnectionObservers</definition>
+        <argsstring>(std::shared_ptr&lt; sdkInterfaces::ConnectionStatusObserverInterface &gt; value)</argsstring>
+        <name>setConnectionObservers</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kindref="compound">sdkInterfaces::ConnectionStatusObserverInterface</ref> &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置ConnectionStatusObserverInterface的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ConnectionStatusObserverInterface实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="188" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="188" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4560432cd5e52eb3aed9f40dba480ac3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setApplicationImplementation</definition>
+        <argsstring>(std::shared_ptr&lt; sdkInterfaces::ApplicationImplementation &gt; value)</argsstring>
+        <name>setApplicationImplementation</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kindref="compound">sdkInterfaces::ApplicationImplementation</ref> &gt;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>设置ApplicationImplementation的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ApplicationImplementation实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="201" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77608e2433a08f05eb6f4ab86ff44950" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setLocalTtsMediaPlayer</definition>
+        <argsstring>(std::shared_ptr&lt; MediaPlayerInterface &gt; player)</argsstring>
+        <name>setLocalTtsMediaPlayer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>设置Local tts player的实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local tts player的实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="214" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab6583b5f18881e63eab064be6c006b35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setLocalPromptPlayer</definition>
+        <argsstring>(std::shared_ptr&lt; MediaPlayerInterface &gt; player)</argsstring>
+        <name>setLocalPromptPlayer</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>设置Prompt player实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prompt player的实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="228" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad1c083f3e2cd3c5be0e8cb96625bb5a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setCustomizeDirectives</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;customizeDirective)</argsstring>
+        <name>setCustomizeDirectives</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;</type>
+          <declname>customizeDirective</declname>
+        </param>
+        <briefdescription>
+<para>设置APP支持的个性化指令集。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>个性化指令集。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="242" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="242" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a681260954fd2cd2d198eebe4dff45603" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setKeyWordObserverInterface</definition>
+        <argsstring>(std::shared_ptr&lt; sdkInterfaces::KeyWordObserverInterface &gt; keyWordObserverInterface)</argsstring>
+        <name>setKeyWordObserverInterface</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" kindref="compound">sdkInterfaces::KeyWordObserverInterface</ref> &gt;</type>
+          <declname>keyWordObserverInterface</declname>
+        </param>
+        <briefdescription>
+<para>设置KeyWordObserverInterface实例指针。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>KeyWordObserverInterface实例指针。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="255" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="255" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a146e85296deb8442956997bf2b1e17ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setEnableSdkWakeup</definition>
+        <argsstring>(const bool enableWakeup)</argsstring>
+        <name>setEnableSdkWakeup</name>
+        <param>
+          <type>const bool</type>
+          <declname>enableWakeup</declname>
+        </param>
+        <briefdescription>
+<para>设置是否使用百度的唤醒库。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True/False：使用/不使用百度的唤醒库。 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="268" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="268" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0206523f4fd71ef4730b12030dcb7cd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::setClientSecret</definition>
+        <argsstring>(const std::string clientSecret)</argsstring>
+        <name>setClientSecret</name>
+        <param>
+          <type>const std::string</type>
+          <declname>clientSecret</declname>
+        </param>
+        <briefdescription>
+<para>设置clientSecret。 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">clientSecret。</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="281" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="281" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a15acf1146e64b5f08d8b0017c07eb09e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getPathToConfig</definition>
+        <argsstring>()</argsstring>
+        <name>getPathToConfig</name>
+        <briefdescription>
+<para>获取SDK配置文件的全路径名。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK配置文件的全路径名。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="294" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0700d03aa8a280cbd5f93ef0e40e55a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getPathToRuntimeConfig</definition>
+        <argsstring>()</argsstring>
+        <name>getPathToRuntimeConfig</name>
+        <briefdescription>
+<para>获取SDK配置文件的全路径名（可变配置）。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK配置文件的全路径名（可变配置）。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="307" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="307" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7d1bced577a3150094f87fd9c39792c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getDeviceId</definition>
+        <argsstring>()</argsstring>
+        <name>getDeviceId</name>
+        <briefdescription>
+<para>获取设备的device id。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>设备的device id。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="320" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="320" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7440f93b6b2f3ad352ebc7cdfee9cf7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getClientSecret</definition>
+        <argsstring>()</argsstring>
+        <name>getClientSecret</name>
+        <briefdescription>
+<para>获取SDK配置文件的全路径名（可变配置）。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>SDK配置文件的全路径名（可变配置）。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="333" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a137453bcd818997f0916d48e60af3523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getSpeakMediaPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getSpeakMediaPlayer</name>
+        <briefdescription>
+<para>获取Tts player handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tts player handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="346" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="346" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a778d9c0e35063af224264cb4c2d69b67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getAudioMediaPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getAudioMediaPlayer</name>
+        <briefdescription>
+<para>获取Audio player handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Audio player handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="359" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="359" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aedb56e9d51342ce49920decb10c4aae3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getAlertsMediaPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getAlertsMediaPlayer</name>
+        <briefdescription>
+<para>获取alerts player handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Alerts player handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="372" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="372" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a20b4b22628b1708787e12f3623082f7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerInterface" kindref="compound">LocalMediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;LocalMediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getLocalMediaPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getLocalMediaPlayer</name>
+        <briefdescription>
+<para>获取Local player handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Local player handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="385" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="385" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77f1bc5116b53c12cb1d115e35ff7b14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unordered_set&lt; std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kindref="compound">DialogUXStateObserverInterface</ref> &gt; &gt;</type>
+        <definition>std::unordered_set&lt;std::shared_ptr&lt;DialogUXStateObserverInterface&gt; &gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getDialogStateObservers</definition>
+        <argsstring>()</argsstring>
+        <name>getDialogStateObservers</name>
+        <briefdescription>
+<para>获取DialogUXStateObserverInterface handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1DialogUXStateObserverInterface" kindref="compound">DialogUXStateObserverInterface</ref> handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="398" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="398" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1adfd39ff4af037a2844d1e977eb00b8c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kindref="compound">sdkInterfaces::ConnectionStatusObserverInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;sdkInterfaces::ConnectionStatusObserverInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getConnectionObservers</definition>
+        <argsstring>()</argsstring>
+        <name>getConnectionObservers</name>
+        <briefdescription>
+<para>获取ConnectionStatusObserverInterface handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ConnectionStatusObserverInterface" kindref="compound">ConnectionStatusObserverInterface</ref> handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="411" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="411" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac6c35ff867585dbfce21418ee200bcb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kindref="compound">sdkInterfaces::ApplicationImplementation</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;sdkInterfaces::ApplicationImplementation&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getApplicationImplementation</definition>
+        <argsstring>()</argsstring>
+        <name>getApplicationImplementation</name>
+        <briefdescription>
+<para>获取ApplicationImplementation handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1ApplicationImplementation" kindref="compound">ApplicationImplementation</ref> handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="424" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="424" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1acda5dfd2e1e9a8eb07d0613b61f37642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getLocalTtsMediaPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getLocalTtsMediaPlayer</name>
+        <briefdescription>
+<para>获取Local tts player handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Local tts player handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="437" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="437" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeb569e85ff702f3ec9794e99e7e9cab1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1MediaPlayerInterface" kindref="compound">MediaPlayerInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;MediaPlayerInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getLocalPromptPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>getLocalPromptPlayer</name>
+        <briefdescription>
+<para>获取Prompt player handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Prompt player handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="450" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="450" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0622206b1833f62c98e79de840698645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; &amp;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, std::string&gt; &gt;&amp; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getCustomizeDirective</definition>
+        <argsstring>()</argsstring>
+        <name>getCustomizeDirective</name>
+        <briefdescription>
+<para>获取自定义指令集。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>自定义指令集。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="463" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="463" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a50665d3ef7fcfcfbe08b38cfbf9c26cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" kindref="compound">sdkInterfaces::KeyWordObserverInterface</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;sdkInterfaces::KeyWordObserverInterface&gt; duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getKeyWordObserverInterface</definition>
+        <argsstring>()</argsstring>
+        <name>getKeyWordObserverInterface</name>
+        <briefdescription>
+<para>获取KeyWordObserverInterface handler。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1KeyWordObserverInterface" kindref="compound">KeyWordObserverInterface</ref> handler。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="476" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="476" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7260bc59f129332b464b8574ca101662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool duerOSDcsSDK::sdkInterfaces::DcsSdkParameters::getEnableSdkWakeup</definition>
+        <argsstring>()</argsstring>
+        <name>getEnableSdkWakeup</name>
+        <briefdescription>
+<para>获取是否使用百度唤醒库的配置。 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True/False：使用/不使用百度唤醒库。 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="489" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="489" bodyend="491"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SDK初始化参数。 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" line="54" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/DcsSdkParameters.h" bodystart="54" bodyend="641"/>
+    <listofallmembers>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4f7783b647c950318c10ba951f1a99e9" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>DcsSdkParameters</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aedb56e9d51342ce49920decb10c4aae3" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getAlertsMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac6c35ff867585dbfce21418ee200bcb2" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getApplicationImplementation</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a778d9c0e35063af224264cb4c2d69b67" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getAudioMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7440f93b6b2f3ad352ebc7cdfee9cf7d" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getClientSecret</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1adfd39ff4af037a2844d1e977eb00b8c5" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getConnectionObservers</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0622206b1833f62c98e79de840698645" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getCustomizeDirective</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7d1bced577a3150094f87fd9c39792c8" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getDeviceId</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77f1bc5116b53c12cb1d115e35ff7b14" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getDialogStateObservers</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7260bc59f129332b464b8574ca101662" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getEnableSdkWakeup</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a50665d3ef7fcfcfbe08b38cfbf9c26cf" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getKeyWordObserverInterface</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a20b4b22628b1708787e12f3623082f7b" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getLocalMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeb569e85ff702f3ec9794e99e7e9cab1" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getLocalPromptPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1acda5dfd2e1e9a8eb07d0613b61f37642" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getLocalTtsMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a15acf1146e64b5f08d8b0017c07eb09e" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getPathToConfig</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0700d03aa8a280cbd5f93ef0e40e55a5" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getPathToRuntimeConfig</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a137453bcd818997f0916d48e60af3523" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>getSpeakMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a9a524a3548c1358fec095248bb810543" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_alertsMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1af431364cf9b33e739738febd9db27612" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_applicationImplementation</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a942f8ba8164cbbb4a4142d8c0cad9c56" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_audioMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aeea15d42773a44f528c7fa1346d09ac9" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_clientSecret</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a103a5300a0efb80ba3416ecdf9d00bea" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_connectionObservers</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1aa515cfbb4e89bc37f541ef04fbfec27a" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_customizeDirective</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad04728326ee78e7ed23d38d653f433cf" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_deviceId</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a744bb0199689f9ad3618236ee76c2005" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_dialogStateObservers</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ae80d43f8e0f5f9a887f056cbcd280a26" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_enableSdkWakeup</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad0e970981e1932bf8165679c9fd3953e" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_keyWordObserverInterface</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a831ec4dd4c4d6550d859aa9da8dd2b07" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_localMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0199d040c9524710741f0851046ffce2" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_localPromptPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a7051a81f2907c90f90f80391a713b6fb" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_localTtsMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a3ea1682c3f53008826f7a8052a0d6928" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_pathToConfig</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a81ea7a2b19677dc1b7fa6a2e0a3a5cb1" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_pathToRuntimeConfig</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a24e3ebbe6cd5f4dced011396a2eee730" prot="private" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>m_speakMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a08fd79d632571c5e943fd85196ba0411" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setAlertsMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a4560432cd5e52eb3aed9f40dba480ac3" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setApplicationImplementation</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ac9b35322064082a043a10c50631dfbab" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setAudioMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a0206523f4fd71ef4730b12030dcb7cd1" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setClientSecret</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a82391d394920edd2cdce280c111021b4" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setConnectionObservers</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad1c083f3e2cd3c5be0e8cb96625bb5a0" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setCustomizeDirectives</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a560bb54f6250f35c976d32abc69f8879" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setDeviceId</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ad2b64e3b8c64580ea28c7699e6fa7d74" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setDialogStateObservers</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a146e85296deb8442956997bf2b1e17ff" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setEnableSdkWakeup</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a681260954fd2cd2d198eebe4dff45603" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setKeyWordObserverInterface</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a02a6263c432994bf0acb036e4ed6d7c7" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setLocalMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab6583b5f18881e63eab064be6c006b35" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setLocalPromptPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a77608e2433a08f05eb6f4ab86ff44950" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setLocalTtsMediaPlayer</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a95c8300f4163e33cc6d639900afe1a6d" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setPathToConfig</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1ab62fb7501f438a401592b2a1c4ef1548" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setPathToRuntimeConfig</name></member>
+      <member refid="structduerOSDcsSDK_1_1sdkInterfaces_1_1DcsSdkParameters_1a5f35981ec0f7f048c658dd5778c877af" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::DcsSdkParameters</scope><name>setSpeakMediaPlayer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

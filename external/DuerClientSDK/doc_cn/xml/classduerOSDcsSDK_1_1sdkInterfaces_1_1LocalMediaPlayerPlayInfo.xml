@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo" kind="class" language="C++" prot="public">
+    <compoundname>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</compoundname>
+    <includes refid="LocalMediaPlayerObserverInterface_8h" local="no">LocalMediaPlayerObserverInterface.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a50478449b67a6fe841f1f568ea125ac2" prot="public" static="no" mutable="no">
+        <type>LocalMediaPlayerPlayActivity</type>
+        <definition>LocalMediaPlayerPlayActivity duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_playerActivity</definition>
+        <argsstring></argsstring>
+        <name>m_playerActivity</name>
+        <briefdescription>
+<para>本地播放器播放活动状态 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="185" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a17da3f1a2f0f61df1241f91b0e7e4cce" prot="public" static="no" mutable="no">
+        <type>LocalMediaPlayerPlayStatus</type>
+        <definition>LocalMediaPlayerPlayStatus duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_status</definition>
+        <argsstring></argsstring>
+        <name>m_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>本地播放器播放状态 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="194" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a8838f186d30e5878010c50019bda9c17" prot="public" static="no" mutable="no">
+        <type>LocalMediaPlayerName</type>
+        <definition>LocalMediaPlayerName duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_playerName</definition>
+        <argsstring></argsstring>
+        <name>m_playerName</name>
+        <briefdescription>
+<para>本地播放器播放来源名称 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="203" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1acfafdcdfad0dd820068b05ca07b511f8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_audioId</definition>
+        <argsstring></argsstring>
+        <name>m_audioId</name>
+        <briefdescription>
+<para>播放音频的Id, 默认为空 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="212" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1ae2e0b63af38f5d1b1bb96b960f3dcd2a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_title</definition>
+        <argsstring></argsstring>
+        <name>m_title</name>
+        <briefdescription>
+<para>播放音频的标题, 默认为空 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="221" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a142a0a14dbb28c0f9d3127bdd5cd92ad" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_artist</definition>
+        <argsstring></argsstring>
+        <name>m_artist</name>
+        <briefdescription>
+<para>歌曲作者名称 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="230" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a22393f1fb99c6d3c3f66461fa24650e7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_album</definition>
+        <argsstring></argsstring>
+        <name>m_album</name>
+        <briefdescription>
+<para>歌曲专辑名称 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="239" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a0ae7b7047fe5ceadf7fcdd4db0556cbe" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_year</definition>
+        <argsstring></argsstring>
+        <name>m_year</name>
+        <briefdescription>
+<para>歌曲年份 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="248" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a330b7580750ad5d327151f0bfb96953a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo::m_genre</definition>
+        <argsstring></argsstring>
+        <name>m_genre</name>
+        <briefdescription>
+<para>歌曲类型/种类 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="257" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>本地播放器播放信息 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" line="176" column="1" bodyfile="/home/zhangguopeng01/dcs-device-platform/Rk3229_devkit/dcs-device-app/dcs-device-sdk/ApplicationUtilities/DcsSdk/include/DcsSdk/LocalMediaPlayerObserverInterface.h" bodystart="176" bodyend="258"/>
+    <listofallmembers>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a22393f1fb99c6d3c3f66461fa24650e7" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_album</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a142a0a14dbb28c0f9d3127bdd5cd92ad" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_artist</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1acfafdcdfad0dd820068b05ca07b511f8" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_audioId</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a330b7580750ad5d327151f0bfb96953a" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_genre</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a50478449b67a6fe841f1f568ea125ac2" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_playerActivity</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a8838f186d30e5878010c50019bda9c17" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_playerName</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a17da3f1a2f0f61df1241f91b0e7e4cce" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_status</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1ae2e0b63af38f5d1b1bb96b960f3dcd2a" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_title</name></member>
+      <member refid="classduerOSDcsSDK_1_1sdkInterfaces_1_1LocalMediaPlayerPlayInfo_1a0ae7b7047fe5ceadf7fcdd4db0556cbe" prot="public" virt="non-virtual"><scope>duerOSDcsSDK::sdkInterfaces::LocalMediaPlayerPlayInfo</scope><name>m_year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
