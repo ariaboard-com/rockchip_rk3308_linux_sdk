@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH="$PATH:/sbin:/usr/sbin"
+
 COMMON_DIR=$(cd `dirname $0`; pwd)
 if [ -h $0 ]
 then

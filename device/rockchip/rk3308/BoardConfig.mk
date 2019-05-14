@@ -22,8 +22,8 @@ export RK_CFG_PCBA=firefly_rk3308_pcba
 export RK_JOBS=4
 # target chip
 export RK_TARGET_PRODUCT=rk3308
-# Set rootfs type, including ext2 ext4 squashfs
-export RK_ROOTFS_TYPE=ext4
+# Set rootfs type, including ext2(ext4) squashfs
+export RK_ROOTFS_TYPE=ext2
 # rootfs image path
 export RK_ROOTFS_IMG=buildroot/output/$RK_CFG_BUILDROOT/images/rootfs.$RK_ROOTFS_TYPE
 # Set oem partition type, including ext2 squashfs
