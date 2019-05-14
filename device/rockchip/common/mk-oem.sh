@@ -29,9 +29,13 @@ else
 fi
 #echo "OEM_IMG:$OEM_IMG"
 #echo "FS_TYPE:$FS_TYPE"
-if [ $FS_TYPE = ext2 ]
+if [ $FS_TYPE = ext4 ]
 then
-	$COMMON_DIR/mke2img.sh $OEM_DIR $OEM_IMG
+	$COMMON_DIR/mke4img.sh $OEM_DIR $OEM_IMG
+
+elif [ $FS_TYPE = ext2 ]
+then
+        $COMMON_DIR/mke2img.sh $OEM_DIR $OEM_IMG
 
 elif [ $FS_TYPE = squashfs ]
 then

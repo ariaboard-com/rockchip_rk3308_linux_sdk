@@ -23,17 +23,17 @@ export RK_JOBS=4
 # target chip
 export RK_TARGET_PRODUCT=rk3308
 # Set rootfs type, including ext2 ext4 squashfs
-export RK_ROOTFS_TYPE=ext2
+export RK_ROOTFS_TYPE=ext4
 # rootfs image path
 export RK_ROOTFS_IMG=buildroot/output/$RK_CFG_BUILDROOT/images/rootfs.$RK_ROOTFS_TYPE
 # Set oem partition type, including ext2 squashfs
-export RK_OEM_FS_TYPE=ext2
+export RK_OEM_FS_TYPE=ext4
 # Set userdata partition type, including ext2, fat
 export RK_USERDATA_FS_TYPE=ext4
 # Set flash type. support <emmc, nand, spi_nand, spi_nor>
 export RK_STORAGE_TYPE=emmc
 #OEM config: /oem/dueros/aispeech-6mic-64bit/aispeech-2mic-64bit/aispeech-4mic-32bit/aispeech-2mic-32bit/aispeech-2mic-kongtiao-32bit/iflytekSDK/CaeDemo_VAD/smart_voice/alexa
-export RK_OEM_DIR=dueros
+export RK_OEM_DIR=oem
 #userdata config
 export RK_USERDATA_DIR=userdata_amppanel
 MIC_NUM=6
