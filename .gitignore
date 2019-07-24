@@ -1,6 +1,6 @@
-buildroot/board/rockchip/rk322x/fs-overlay/usr/bin/softapServer
-IMAGE/
-rockdev/
+/buildroot/board/rockchip/rk322x/fs-overlay/usr/bin/softapServer
+/IMAGE/
+/rockdev/*
 *.swp
 *.swo
 *.bak
