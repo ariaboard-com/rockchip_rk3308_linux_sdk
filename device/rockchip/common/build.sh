@@ -64,7 +64,7 @@ function build_kernel(){
 	echo "TARGET_KERNEL_CONFIG =$RK_KERNEL_DEFCONFIG"
 	echo "TARGET_KERNEL_DTS    =$RK_KERNEL_DTS"
 	echo "=========================================="
-	cd $TOP_DIR/kernel && make ARCH=$RK_ARCH $RK_KERNEL_DEFCONFIG && make ARCH=$RK_ARCH $RK_KERNEL_DTS.img -j$RK_JOBS && make modules -j$RK_JOBS && make modules_install INSTALL_MOD_PATH=deploy && cd -
+	cd $TOP_DIR/kernel && make ARCH=$RK_ARCH $RK_KERNEL_DEFCONFIG && make ARCH=$RK_ARCH $RK_KERNEL_DTS.img -j$RK_JOBS && make modules -j$RK_JOBS && make firmware && make modules_install INSTALL_MOD_PATH=deploy && make firmware_install INSTALL_MOD_PATH=deploy && cd -
 	if [ $? -eq 0 ]; then
 		echo "====Build kernel ok!===="
 	else
