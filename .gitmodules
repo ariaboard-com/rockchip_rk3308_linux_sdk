@@ -1,9 +1,9 @@
 [submodule "buildroot"]
 	path = buildroot
-	url = ./buildroot
+	url = https://github.com/ariaboard-com/rockchip_rk3308_buildroot.git
 [submodule "kernel"]
 	path = kernel
-	url = ./kernel
+	url = https://github.com/ariaboard-com/rockchip_rk3308_kernel.git
 [submodule "u-boot"]
 	path = u-boot
-	url = ./u-boot
+	url = https://github.com/ariaboard-com/rockchip_rk3308_uboot.git

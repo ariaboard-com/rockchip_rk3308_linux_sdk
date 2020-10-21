@@ -1,1 +1,1 @@
-rk3308/BoardConfig-Asclepius2.mk
+rk3308/BoardConfig-Novotech.mk

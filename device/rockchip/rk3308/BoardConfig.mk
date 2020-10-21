@@ -5,19 +5,19 @@ export RK_ARCH=arm64
 # Uboot defconfig
 export RK_UBOOT_DEFCONFIG=evb-rk3308-novotech
 # Kernel defconfig
-export RK_KERNEL_DEFCONFIG=rk3308-novotech-asclepius_linux_defconfig
+export RK_KERNEL_DEFCONFIG=rk3308-novotech_linux_defconfig
 # Kernel dts
-export RK_KERNEL_DTS=rk3308-novotech-asclepius-emmc
+export RK_KERNEL_DTS=rk3308-evb-amic-v10.dts
 # boot image type
 export RK_BOOT_IMG=zboot.img
 # parameter for GPT table
 export RK_PARAMETER=parameter-64bit-emmc.txt
 # Buildroot config
-export RK_CFG_BUILDROOT=asclepius_rk3308_release
+export RK_CFG_BUILDROOT=rockchip_rk3308_release
 # Recovery config
-export RK_CFG_RECOVERY=asclepius_rk3308_recovery
+export RK_CFG_RECOVERY=rockchip_rk3308_recovery
 # Pcba config
-export RK_CFG_PCBA=asclepius_rk3308_pcba
+export RK_CFG_PCBA=rockchip_rk3308_pcba
 # Build jobs
 export RK_JOBS=4
 # target chip
@@ -34,5 +34,5 @@ export RK_USERDATA_FS_TYPE=ext4
 export RK_STORAGE_TYPE=emmc
 export RK_OEM_DIR=oem
 #userdata config
-export RK_USERDATA_DIR=userdata_asclepius
+export RK_USERDATA_DIR=userdata_empty
 MIC_NUM=6
